@@ -23,17 +23,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Assemble site
+
+      - name: Stage current static release
         run: |
-          cat cleantrend-site.tar.gz.part-* > cleantrend-site.tar.gz
           mkdir site
-          tar -xzf cleantrend-site.tar.gz -C site
+          cp -R 404 _next _not-found catalog-images cleaning-tools expanded-products product-photos target-directory target-products verified-products site/
+          cp .nojekyll 404.html __next.__PAGE__.txt __next._full.txt __next._head.txt __next._index.txt __next._tree.txt favicon.svg file.svg globe.svg index.html index.txt og.png window.svg site/
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
