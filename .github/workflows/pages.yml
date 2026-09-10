@@ -24,11 +24,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Stage current static release
+      - name: Stage complete static release
         run: |
-          mkdir site
-          cp -R 404 _next _not-found catalog-images cleaning-tools expanded-products product-photos target-directory target-products verified-products site/
-          cp .nojekyll 404.html __next.__PAGE__.txt __next._full.txt __next._head.txt __next._index.txt __next._tree.txt favicon.svg file.svg globe.svg index.html index.txt og.png window.svg site/
+          mkdir -p "${RUNNER_TEMP}/site"
+          rsync -a --exclude='.git' --exclude='.github' ./ "${RUNNER_TEMP}/site/"
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -36,7 +35,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: ${{ runner.temp }}/site
 
       - name: Deploy to GitHub Pages
         id: deployment
