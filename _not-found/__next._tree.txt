@@ -1,2 +1,2 @@
-:HL["/cleantrend-opportunity-hub/_next/static/css/fea977be7b4fd616.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"jP9Xga5Rri_X22uSSLFEb"}
+:HL["/cleantrend-opportunity-hub/_next/static/css/c07e27c299345b1b.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"NdKwvc1sIo4as7HolNNue"}
