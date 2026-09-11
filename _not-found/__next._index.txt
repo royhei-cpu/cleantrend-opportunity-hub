@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[1362,[],""]
 3:I[3264,[],""]
-:HL["/cleantrend-opportunity-hub/_next/static/css/40b62db0dde91b3c.css","style"]
-0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/cleantrend-opportunity-hub/_next/static/css/40b62db0dde91b3c.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"A36rYyl6Q2mydC0hoGCa3"}
+:HL["/cleantrend-opportunity-hub/_next/static/css/7fcaadba9e63304c.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/cleantrend-opportunity-hub/_next/static/css/7fcaadba9e63304c.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"oIEjREuiGrAq7Xa8qClVI"}
