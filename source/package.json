@@ -9,10 +9,11 @@
   "private": true,
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --test logic.test.mjs"
+    "test": "node --test logic.test.mjs checkout.test.mjs"
   },
   "devDependencies": {
     "@babel/parser": "^7.28.5",
-    "@babel/traverse": "^7.28.5"
+    "@babel/traverse": "^7.28.5",
+    "react-test-renderer": "^19.2.6"
   }
 }
