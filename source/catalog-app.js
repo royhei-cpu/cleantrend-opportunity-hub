@@ -718,7 +718,7 @@ let $ = catalogData,
   es = new Set(["category"]),
   eo = new Set(["retailer"]),
   el = new Set(["brandType"]),
-  ec = new Map($.map((e) => [e.id, buildSearchText(e)])),
+  searchIndex = new Map($.map((e) => [e.id, buildSearchText(e)])),
   ed = (e, a, t = en) => {
     var r;
     let i = a.query.trim().toLowerCase();
@@ -760,7 +760,7 @@ let $ = catalogData,
           ("private-label" === a.brandType
             ? "Private label"
             : "National brand")) &&
-      (!!t.has("query") || !i || matchesSearch(ec.get(e.id) || "", i)) &&
+      (!!t.has("query") || !i || matchesSearch(searchIndex.get(e.id) || "", i)) &&
       !0
     );
   },
@@ -1020,7 +1020,7 @@ function ew() {
         T(36),
         U("all"));
     },
-    searchMatches = $.filter((product) => e.trim() && matchesSearch(ec.get(product.id) || "", e)),
+    searchMatches = $.filter((product) => e.trim() && matchesSearch(searchIndex.get(product.id) || "", e)),
     showSearchMatches = () => { n("All"); o("All categories"); c("All retailers"); p("all"); g("all"); U("all"); T(36); },
     eH = (e) => {
       (U(e),
