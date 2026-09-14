@@ -7,9 +7,11 @@ import {
   SignalTabs,
   CardDecision,
   CheckoutRecords,
+  ViralHistory,
 } from "./decision-ui.jsx";
-import { isFreshViral, trendLabel, assess } from "./logic.js";
+import { isFreshViral, hasViralHistory, trendLabel, assess } from "./logic.js";
 import { buildSearchText, matchesSearch } from "./search.js";
+import { TargetRecommendations } from "./recommendations-ui.jsx";
 import * as r from "react/jsx-runtime";
 import * as i from "react";
 let h = [
@@ -738,7 +740,7 @@ let $ = catalogData,
         ("viral" === a.signal
           ? isFreshViral(e)
           : "history" === a.signal
-            ? "Viral" === e.trend && !isFreshViral(e)
+            ? hasViralHistory(e)
             : "research" === a.signal
               ? assess(e, $).tone === "unknown"
               : assess(e, $).isWhitespace)) &&
@@ -835,7 +837,7 @@ function ew() {
     [G, j] = (0, i.useState)("All captured retailers"),
     [clock, setClock] = (0, i.useState)(0);
   (0, i.useEffect)(() => { const timer = window.setInterval(() => setClock(Date.now()), 60000); return () => window.clearInterval(timer); }, []);
-  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); if(query){a(query); U("all");} }, []);
+  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); const view = params.get("view"); if(query)a(query); if(["priority","research","all","viral","history","recommendations"].includes(view))U(view); else if(query)U("all"); }, []);
   (0, i.useEffect)(() => {
     let e = window.setTimeout(() => {
       try {
@@ -1560,7 +1562,8 @@ function ew() {
             className: "catalog-section",
             id: "directory",
             children: [
-              (0, r.jsx)(SignalTabs, { products: $, active: R, onChange: eH }),
+              (0, r.jsx)(SignalTabs, { products: $, active: R, onChange: eH, onBrowseHistory: () => { a(""); eH("history"); } }),
+              R === "recommendations" ? (0, r.jsx)(TargetRecommendations, {catalog:$,selected:b,onOpen:k,onToggle:id=>w(ids=>ids.includes(id)?ids.filter(value=>value!==id):ids.length<6?[...ids,id]:ids),onResearch:()=>{a("");eH("research");},imagePath:ef}) : (0, r.jsxs)(r.Fragment, {children:[
               e.trim() && searchMatches.length > eL.length && (0, r.jsxs)("div", {
                 className: "search-scope-notice", role: "status",
                 children: [(0, r.jsx)("p", {children: `${searchMatches.length} matches for “${e}” across all products. ${searchMatches.length-eL.length} are hidden by your current filters. Target listings appear in All products.`}),
@@ -1576,7 +1579,7 @@ function ew() {
                         children: "Opportunity library",
                       }),
                       (0, r.jsx)("h2", {
-                        children: R === "priority" ? "Verified Target whitespace" : R === "research" ? "Products needing a Target check" : "Explore cleaning products",
+                        children: R === "priority" ? "Verified Target whitespace" : R === "research" ? "Products needing a Target check" : R === "history" ? "Viral history" : R === "viral" ? "Fresh viral products" : "Explore cleaning products",
                       }),
                     ],
                   }),
@@ -2026,13 +2029,13 @@ function ew() {
                                         (0, r.jsxs)("div", {
                                           children: [
                                             (0, r.jsx)("span", {
-                                              children: "Demand signal",
+                                              children: hasViralHistory(e) && !isFreshViral(e) ? "Historical demand claim" : "Demand signal",
                                             }),
                                             (0, r.jsx)("strong", {
                                               children: e.salesSignal,
                                             }),
                                             (0, r.jsx)("small", {
-                                              children: e.signalType,
+                                              children: hasViralHistory(e) && !isFreshViral(e) ? "Saved claim; current demand not verified" : e.signalType,
                                             }),
                                           ],
                                         }),
@@ -2063,6 +2066,7 @@ function ew() {
                                         }),
                                       ],
                                     }),
+                                    (0, r.jsx)(ViralHistory, { product: e }),
                                     (0, r.jsx)(CardDecision, {
                                       product: e,
                                       catalog: $,
@@ -2150,6 +2154,7 @@ function ew() {
                           }),
                     ],
                   }),
+              ]}),
             ],
           }),
           (0, r.jsx)(CheckoutRecords, {records: B, onChange: x, storageKey: eb, imagePath: ef}),

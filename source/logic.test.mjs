@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {isFreshViral,assess,DAY} from './logic.js';
+import {isFreshViral,hasViralHistory,getViralHistory,assess,DAY} from './logic.js';
 const now=Date.parse('2026-09-14T12:00:00Z');
 const item=(extra={})=>({id:'a',name:'New sponge',brand:'A',category:'Sponges',tags:[],...extra});
 const review=(extra={})=>({status:'not-carried',currentlyCarried:false,equivalentCurrentlyCarried:false,temporarilyOutOfStock:false,reviewedBy:'Test reviewer',checkedAt:'2026-09-14T11:00:00Z',scope:'target-us',exactProductChecked:true,equivalentsChecked:true,targetPlusChecked:true,reason:'Synthetic absence review for this test only.',sourceUrls:['https://www.target.com/s?searchTerm=synthetic-test-product'],...extra});
@@ -13,3 +13,16 @@ test('Target and Target Plus listings veto whitespace, including out of stock it
 test('A prior Target listing needs a newer explicit delisting check, and fresh positive observations veto it',()=>{const p=item({availability:[{retailer:'Target',evidence:{checkedAt:'2026-09-11T09:00:00Z'}}],targetAssessment:review({previousListingResolved:true})});assert.equal(decision(p).isWhitespace,true);assert.equal(decision({...p,availability:[{retailer:'Target',evidence:{checkedAt:'2026-09-14T11:30:00Z'}}]}).isWhitespace,false)});
 test('Related formats are comparisons and do not decide Target absence',()=>{const q=item({id:'b',name:'Sponge 2pk',brand:'B',retailer:'Target',link:'https://www.target.com/p/item'});const d=decision(item(),[q]);assert.equal(d.similar[0].id,'b');assert.equal(d.isWhitespace,false);assert.equal(d.status,'Needs Target check')});
 test('Commercial evidence cannot make an unverified product ready for a whitespace test',()=>{const p=item({demandEvidence:{sourceUrl:'https://example.com/demand',summary:'Synthetic demand',checkedAt:'2026-09-14T11:00:00Z'},priceUsd:3,link:'https://example.com/product',evidence:{checkedAt:'2026-09-14T11:00:00Z'},feasibility:{approved:true,reviewedBy:'Test',sourceUrl:'https://example.com/quote',checkedAt:'2026-09-14T11:00:00Z'}});assert.equal(decision(p).checked,3);assert.equal(decision(p).ready,false);assert.equal(decision({...p,targetAssessment:review()}).ready,true)});
+
+test('Historical viral claims survive a changed trend label without creating a fresh signal or invented date',()=>{
+ const p={id:'pink-stuff-paste',trend:'Growing'};
+ assert.equal(hasViralHistory(p),true);
+ assert.equal(isFreshViral(p,now),false);
+ const history=getViralHistory(p);
+ assert.equal(history.length,1);
+ assert.equal(history[0].observedAt,null);
+ assert.equal(history[0].periodEnd,null);
+ assert.equal(history[0].signal,'500+ bought since yesterday');
+ p.trendHistory=[{observedAt:'2026-08-01',sourceUrl:'https://example.com/past',signal:'Prior dated signal'}];
+ assert.equal(getViralHistory(p).length,2);
+});

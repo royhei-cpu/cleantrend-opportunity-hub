@@ -1,3 +1,4 @@
+import viralArchive from './viral-history.json' with { type: 'json' };
 export const DAY = 86400000;
 export function recent(date, days = 7, now = Date.now()) {
   const time = Date.parse(date || '');
@@ -7,6 +8,12 @@ export function isFreshViral(p, now = Date.now()) {
   const e = p.trendEvidence;
   return p.trend === 'Viral' && e?.qualified === true && !!e.sourceUrl && !!e.summary && recent(e.observedAt, 7, now) && recent(e.periodEnd, 7, now);
 }
+export function getViralHistory(p) {
+  const records=[...(viralArchive[p.id]||[]),...(Array.isArray(p.trendHistory)?p.trendHistory:[])];
+  if(!records.length && p.trend==='Viral' && !isFreshViral(p)) records.push({observedAt:p.trendEvidence?.observedAt||null,periodEnd:p.trendEvidence?.periodEnd||null,sourceUrl:p.trendEvidence?.sourceUrl||p.link,signal:p.salesSignal||'',summary:p.trendEvidence?.summary||p.trendDetail||''});
+  return records;
+}
+export function hasViralHistory(p) { return getViralHistory(p).length>0; }
 export function trendLabel(p) {
   if (p.trend === 'Viral') return isFreshViral(p) ? 'Fresh viral signal' : 'Historical viral signal';
   return p.assessmentStatus === 'Pending' ? 'Catalog listing' : 'Recorded ' + p.trend.toLowerCase();
