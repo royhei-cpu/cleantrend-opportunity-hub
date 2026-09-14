@@ -837,7 +837,7 @@ function ew() {
     [G, j] = (0, i.useState)("All captured retailers"),
     [clock, setClock] = (0, i.useState)(0);
   (0, i.useEffect)(() => { const timer = window.setInterval(() => setClock(Date.now()), 60000); return () => window.clearInterval(timer); }, []);
-  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); const view = params.get("view"); if(query)a(query); if(["priority","research","all","viral","history","recommendations"].includes(view))U(view); else if(query)U("all"); }, []);
+  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); const view = params.get("view"); if(query)a(query); if(["priority","research","all","viral","history","recommendations"].includes(view)){U(view);document.getElementById("directory")?.scrollIntoView({behavior:"auto"});} else if(query){U("all");document.getElementById("directory")?.scrollIntoView({behavior:"auto"});} }, []);
   (0, i.useEffect)(() => {
     let e = window.setTimeout(() => {
       try {
