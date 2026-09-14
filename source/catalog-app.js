@@ -6,6 +6,7 @@ import {
   RefreshNotice,
   SignalTabs,
   CardDecision,
+  CheckoutRecords,
 } from "./decision-ui.jsx";
 import { isFreshViral, trendLabel, assess } from "./logic.js";
 import * as r from "react/jsx-runtime";
@@ -752,7 +753,9 @@ let $ = catalogData,
           ? isFreshViral(e)
           : "history" === a.signal
             ? "Viral" === e.trend && !isFreshViral(e)
-            : assess(e, $).tone === "potential")) &&
+            : "research" === a.signal
+              ? assess(e, $).tone === "unknown"
+              : assess(e, $).isWhitespace)) &&
       (!!t.has("category") ||
         "All categories" === a.category ||
         e.category === a.category) &&
@@ -760,10 +763,10 @@ let $ = catalogData,
         a.score === "all" ||
         {
           90: assess(e, $).ready,
-          78: assess(e, $).tone === "potential",
-          70: assess(e, $).status === "Target alternatives to check",
+          78: assess(e, $).isWhitespace,
+          70: assess(e, $).similar.length > 0,
           below: assess(e, $).status === "Target listing recorded",
-          pending: assess(e, $).status === "Not verified",
+          pending: assess(e, $).tone === "unknown",
         }[a.score]) &&
       (!!t.has("brandType") ||
         "all" === a.brandType ||
@@ -843,15 +846,16 @@ function ew() {
     [B, x] = (0, i.useState)([]),
     [L, N] = (0, i.useState)(""),
     [M, E] = (0, i.useState)({ merchantName: "", items: {} }),
-    [G, j] = (0, i.useState)("All captured retailers");
+    [G, j] = (0, i.useState)("All captured retailers"),
+    [clock, setClock] = (0, i.useState)(0);
+  (0, i.useEffect)(() => { const timer = window.setInterval(() => setClock(Date.now()), 60000); return () => window.clearInterval(timer); }, []);
   (0, i.useEffect)(() => {
     let e = window.setTimeout(() => {
       try {
         let e = window.localStorage.getItem(eb),
           a = e ? JSON.parse(e) : [],
-          t = a.slice(0, 1);
-        (x(t),
-          a.length > 1 && window.localStorage.setItem(eb, JSON.stringify(t)));
+          t = Array.isArray(a) ? a : [];
+        x(t);
       } catch {
         x([]);
       }
@@ -868,7 +872,7 @@ function ew() {
         brandType: m,
         signal: R,
       }),
-      [e, t, s, l, d, m, R],
+      [e, t, s, l, d, m, R, clock],
     ),
     H = (0, i.useMemo)(
       () => Array.from(new Set($.map((e) => e.category))).sort(),
@@ -1016,8 +1020,8 @@ function ew() {
     eN = $.filter((e) => b.includes(e.id)),
     eM = S ? K(S, t, l) : null,
     eE = eL.slice(0, C),
-    eG = $.filter((e) => assess(e, $).tone === "potential").length,
-    ej = $.filter(isFreshViral).length,
+    eG = $.filter((e) => assess(e, $).isWhitespace).length,
+    ej = $.filter((e) => isFreshViral(e)).length,
     e_ = () => {
       (a(""),
         n("All"),
@@ -1095,7 +1099,11 @@ function ew() {
           id: crypto.randomUUID(),
           createdAt: new Date().toISOString(),
         };
-      (x([t]), window.localStorage.setItem(eb, JSON.stringify([t])));
+      try {
+        const records = [t, ...B];
+        window.localStorage.setItem(eb, JSON.stringify(records));
+        x(records);
+      } catch { N("Could not save this record. Browser storage is unavailable."); return; }
       let r = encodeURIComponent(
           `CleanTrend merchant selection — ${M.merchantName}`,
         ),
@@ -1190,7 +1198,7 @@ function ew() {
                   (0, r.jsx)("p", {
                     className: "intro-copy",
                     children:
-                      "Choose a category. Review potential gaps. Compare your shortlist and decide what to investigate next.",
+                      "Find products Target does not currently carry. Review verified whitespace, check the evidence and compare your shortlist.",
                   }),
                 ],
               }),
@@ -1247,10 +1255,10 @@ function ew() {
                 className: "clickable-metric",
                 onClick: () => eH("priority"),
                 children: [
-                  (0, r.jsx)("span", { children: "Potential Target gaps" }),
+                  (0, r.jsx)("span", { children: "Verified Target whitespace" }),
                   (0, r.jsx)("strong", { children: eG }),
                   (0, r.jsx)("small", {
-                    children: "Directory leads · live Target check required →",
+                    children: "Confirmed absence checks within 24 hours →",
                   }),
                 ],
               }),
@@ -1602,7 +1610,7 @@ function ew() {
                         children: "Opportunity library",
                       }),
                       (0, r.jsx)("h2", {
-                        children: R === "priority" ? "Potential Target opportunities" : "Explore cleaning products",
+                        children: R === "priority" ? "Verified Target whitespace" : R === "research" ? "Products needing a Target check" : "Explore cleaning products",
                       }),
                     ],
                   }),
@@ -1619,7 +1627,7 @@ function ew() {
                         (0, r.jsxs)("button", {
                           className: "inline-reset",
                           onClick: () => U("all"),
-                          children: ["Clear ", R, " filter \xd7"],
+                          children: ["Show all products ×"],
                         }),
                     ],
                   }),
@@ -1726,13 +1734,13 @@ function ew() {
                           (0, r.jsxs)("option", {
                             value: "78",
                             disabled: !ec["78"],
-                            children: ["Potential gap (", ec["78"], ")"],
+                            children: ["Verified whitespace (", ec["78"], ")"],
                           }),
                           (0, r.jsxs)("option", {
                             value: "70",
                             disabled: !ec["70"],
                             children: [
-                              "Alternatives to check (",
+                              "Related Target comparisons (",
                               ec["70"],
                               ")",
                             ],
@@ -1749,7 +1757,7 @@ function ew() {
                           (0, r.jsxs)("option", {
                             value: "pending",
                             disabled: !ec.pending,
-                            children: ["Not verified (", ec.pending, ")"],
+                            children: ["Needs Target check (", ec.pending, ")"],
                           }),
                         ],
                       }),
@@ -2152,13 +2160,13 @@ function ew() {
                       (0, r.jsx)("span", { children: "⌕" }),
                       (0, r.jsx)("h3", {
                         children:
-                          "Global" === t && ea
+                          R === "priority" ? "No verified Target whitespace yet." : "Global" === t && ea
                             ? `No captured ${ea.name} entries match.`
                             : "No products match those filters.",
                       }),
                       (0, r.jsx)("p", {
                         children:
-                          "Global" === t && ea
+                          R === "priority" ? "No products in this view have a qualifying current Target absence check. This does not mean Target has no gaps. Browse products needing verification to continue research." : "Global" === t && ea
                             ? "This is a directory coverage gap, not evidence that the retailer has no cleaning products. Exact product listings and photos still need to be captured for this selection."
                             : "Try another keyword or reset the channel and category.",
                       }),
@@ -2171,205 +2179,14 @@ function ew() {
                             children: ["Open ", ea.name, " for research ↗"],
                           })
                         : (0, r.jsx)("button", {
-                            onClick: e_,
-                            children: "Reset filters",
+                            onClick: () => R === "priority" ? eH("research") : e_(),
+                            children: R === "priority" ? "Browse products to verify" : "Reset filters",
                           }),
                     ],
                   }),
             ],
           }),
-          (0, r.jsxs)("section", {
-            className: "checkout-history",
-            id: "checkout-records",
-            children: [
-              (0, r.jsxs)("div", {
-                className: "section-heading",
-                children: [
-                  (0, r.jsxs)("div", {
-                    children: [
-                      (0, r.jsx)("p", {
-                        className: "eyebrow",
-                        children: "Merchant follow-through",
-                      }),
-                      (0, r.jsx)("h2", { children: "Checkout records" }),
-                    ],
-                  }),
-                  (0, r.jsx)("p", {
-                    children: "Saved selection briefs and commercial targets",
-                  }),
-                ],
-              }),
-              B.length
-                ? (0, r.jsx)("div", {
-                    className: "record-grid",
-                    children: B.map((e) =>
-                      (0, r.jsxs)(
-                        "article",
-                        {
-                          className: "checkout-record",
-                          children: [
-                            (0, r.jsxs)("div", {
-                              className: "record-heading",
-                              children: [
-                                (0, r.jsx)("span", {
-                                  children: new Date(
-                                    e.createdAt,
-                                  ).toLocaleDateString(),
-                                }),
-                                (0, r.jsx)("strong", {
-                                  children: e.merchantName,
-                                }),
-                              ],
-                            }),
-                            e.items?.length
-                              ? (0, r.jsx)("div", {
-                                  className: "record-items",
-                                  children: e.items.map((e) =>
-                                    (0, r.jsxs)(
-                                      "section",
-                                      {
-                                        className: "record-item",
-                                        children: [
-                                          (0, r.jsxs)("div", {
-                                            className: "record-item-product",
-                                            children: [
-                                              (0, r.jsx)("img", {
-                                                src: ef(e.image),
-                                                alt: e.productName,
-                                              }),
-                                              (0, r.jsx)("strong", {
-                                                children: e.productName,
-                                              }),
-                                            ],
-                                          }),
-                                          (0, r.jsxs)("dl", {
-                                            children: [
-                                              (0, r.jsxs)("div", {
-                                                children: [
-                                                  (0, r.jsx)("dt", {
-                                                    children: "Target retail",
-                                                  }),
-                                                  (0, r.jsx)("dd", {
-                                                    children:
-                                                      e.targetRetailPrice,
-                                                  }),
-                                                ],
-                                              }),
-                                              (0, r.jsxs)("div", {
-                                                children: [
-                                                  (0, r.jsx)("dt", {
-                                                    children: "Target PMU",
-                                                  }),
-                                                  (0, r.jsx)("dd", {
-                                                    children: e.targetPmu,
-                                                  }),
-                                                ],
-                                              }),
-                                              (0, r.jsxs)("div", {
-                                                children: [
-                                                  (0, r.jsx)("dt", {
-                                                    children:
-                                                      "Number of stores",
-                                                  }),
-                                                  (0, r.jsx)("dd", {
-                                                    children: e.numberOfStores,
-                                                  }),
-                                                ],
-                                              }),
-                                              (0, r.jsxs)("div", {
-                                                children: [
-                                                  (0, r.jsx)("dt", {
-                                                    children:
-                                                      "Potential launch",
-                                                  }),
-                                                  (0, r.jsx)("dd", {
-                                                    children:
-                                                      e.potentialLaunchDate,
-                                                  }),
-                                                ],
-                                              }),
-                                            ],
-                                          }),
-                                          e.comments &&
-                                            (0, r.jsx)("small", {
-                                              children: e.comments,
-                                            }),
-                                        ],
-                                      },
-                                      e.productId,
-                                    ),
-                                  ),
-                                })
-                              : (0, r.jsxs)(r.Fragment, {
-                                  children: [
-                                    (0, r.jsx)("p", {
-                                      children: e.productNames.join(" \xb7 "),
-                                    }),
-                                    (0, r.jsxs)("dl", {
-                                      children: [
-                                        (0, r.jsxs)("div", {
-                                          children: [
-                                            (0, r.jsx)("dt", {
-                                              children: "Target retail",
-                                            }),
-                                            (0, r.jsx)("dd", {
-                                              children:
-                                                e.targetRetailPrice || "—",
-                                            }),
-                                          ],
-                                        }),
-                                        (0, r.jsxs)("div", {
-                                          children: [
-                                            (0, r.jsx)("dt", {
-                                              children: "Target PMU",
-                                            }),
-                                            (0, r.jsx)("dd", {
-                                              children: e.targetPmu || "—",
-                                            }),
-                                          ],
-                                        }),
-                                        (0, r.jsxs)("div", {
-                                          children: [
-                                            (0, r.jsx)("dt", {
-                                              children: "Number of stores",
-                                            }),
-                                            (0, r.jsx)("dd", {
-                                              children: e.numberOfStores || "—",
-                                            }),
-                                          ],
-                                        }),
-                                        (0, r.jsxs)("div", {
-                                          children: [
-                                            (0, r.jsx)("dt", {
-                                              children: "Potential launch",
-                                            }),
-                                            (0, r.jsx)("dd", {
-                                              children:
-                                                e.potentialLaunchDate || "—",
-                                            }),
-                                          ],
-                                        }),
-                                      ],
-                                    }),
-                                    e.comments &&
-                                      (0, r.jsx)("small", {
-                                        children: e.comments,
-                                      }),
-                                  ],
-                                }),
-                          ],
-                        },
-                        e.id,
-                      ),
-                    ),
-                  })
-                : (0, r.jsx)("div", {
-                    className: "empty-records",
-                    children:
-                      "No checkout records yet. Select products and use “Checkout selection” to create the first merchant brief.",
-                  }),
-            ],
-          }),
+          (0, r.jsx)(CheckoutRecords, {records: B, onChange: x, storageKey: eb, imagePath: ef}),
           (0, r.jsxs)("section", {
             className: "methodology",
             children: [

@@ -1,7 +1,7 @@
 export const DAY = 86400000;
 export function recent(date, days = 7, now = Date.now()) {
   const time = Date.parse(date || '');
-  return Number.isFinite(time) && time <= now && now - time <= days * DAY;
+  return Number.isFinite(time) && time <= now && now - time < days * DAY;
 }
 export function isFreshViral(p, now = Date.now()) {
   const e = p.trendEvidence;
@@ -14,31 +14,44 @@ export function trendLabel(p) {
 export function offers(p) {
   return p.availability?.length ? p.availability : [{retailer:p.retailer,channel:p.channel,link:p.link,priceLabel:p.priceLabel,priceUsd:p.priceUsd,evidence:p.evidence}];
 }
-export function atTarget(p) { return offers(p).some(o=>o.retailer==='Target' && o.channel==='Target'); }
+function targetUrl(url) { try { const u=new URL(url); return u.protocol==='https:' && (u.hostname==='target.com'||u.hostname.endsWith('.target.com')); } catch { return false; } }
+function targetOffer(o) { return /^target(?:\s*plus|\s*\+)?$/i.test(o.retailer||'') || o.channel==='Target' || targetUrl(o.link); }
+export function atTarget(p) { return targetOffer(p) || offers(p).some(targetOffer); }
 const formats = ['refill','tablet','powder','spray','paste','foam','concentrate','liquid','wipe','cloth','sponge','brush','mop','vacuum','scrubber','bag','glove','squeegee','duster'];
 export function productFormats(p) { const s=(p.name+' '+(p.tags||[]).join(' ')).toLowerCase(); return formats.filter(f=>new RegExp('\\b'+f+'(?:s|es)?\\b').test(s)); }
+export function hasCurrentTargetReview(r,now=Date.now()) {
+  return !!(r && typeof r.reviewedBy==='string' && r.reviewedBy.trim() && typeof r.reason==='string' && r.reason.trim() && Array.isArray(r.sourceUrls) && r.sourceUrls.some(targetUrl) && recent(r.checkedAt,1,now) && r.scope==='target-us' && r.exactProductChecked===true && r.equivalentsChecked===true && r.targetPlusChecked===true);
+}
 const assessmentCache = new WeakMap();
 export function assess(p,catalog,now=Date.now()){
  let cache=assessmentCache.get(catalog);if(!cache){cache=new WeakMap();assessmentCache.set(catalog,cache)}
- const day=Math.floor(now/DAY), hit=cache.get(p);if(hit?.day===day)return hit.value;
- const value=computeAssessment(p,catalog,now);cache.set(p,{day,value});return value;
+ const minute=Math.floor(now/60000), hit=cache.get(p);
+ if(hit?.minute===minute && now>=hit.now && now<hit.expires)return hit.value;
+ const value=computeAssessment(p,catalog,now);
+ const targetExpiry=Date.parse(p.targetAssessment?.checkedAt||'')+DAY;
+ const expiries=[targetExpiry,Date.parse(p.demandEvidence?.checkedAt||'')+7*DAY,Date.parse(p.feasibility?.checkedAt||'')+90*DAY,...offers(p).map(o=>Date.parse(o.evidence?.checkedAt||'')+7*DAY)].filter(t=>Number.isFinite(t)&&t>now);
+ cache.set(p,{minute,now,expires:Math.min(...expiries),value});return value;
 }
 function computeAssessment(p, catalog, now) {
   const own=atTarget(p), f=productFormats(p);
   const peers=catalog.filter(q=>q.id!==p.id && q.category===p.category && atTarget(q));
   const similar=peers.map(q=>({p:q,n:productFormats(q).filter(x=>f.includes(x)).length})).filter(q=>q.n>0).sort((a,b)=>b.n-a.n||a.p.id.localeCompare(b.p.id)).slice(0,2).map(q=>q.p);
   const reviewed=p.targetAssessment;
-  const validated=reviewed?.reviewedBy && reviewed?.sourceUrls?.length && recent(reviewed.checkedAt,30,now) && reviewed?.reason;
-  let status='Not verified',tone='unknown',reason='',next='';
-  if(own) { status='Target listing recorded';tone='benchmark';reason='This exact product has a Target offer in the directory. Recheck the offer and seller before treating it as current Target assortment.';next='Use this as a Target benchmark. Confirm current price, pack and whether it is sold by Target or a marketplace seller.'; }
-  else if(validated && reviewed.status==='potential-gap') {status='Potential Target gap';tone='potential';reason=reviewed.reason;next=reviewed.nextStep||'Validate the shopper need, supplier cost and sample performance before proposing a test.';}
-  else if(similar.length) {status='Target alternatives to check';tone='benchmark';reason=`The directory contains ${similar.map(q=>q.brand+' '+q.name).join(' and ')} in the same category with a related format. These are suggested comparisons, not confirmed equivalents.`;next=`Compare ${f.join(' / ')||'function'}, pack size and guest benefit against ${similar[0].brand} ${similar[0].name}. A specific improvement must justify adding this item.`;}
-  else if(peers.length && f.length) {status='Potential Target gap';tone='potential';reason=`No related ${f.join(' / ')} format was found among ${peers.length} recorded Target products in ${p.category}. This is a directory lead only; Target coverage is incomplete.`;next=`Search live Target assortment for ${p.brand} ${p.name} and the ${f.join(' / ')} format. Confirm a meaningful benefit before claiming whitespace.`;}
-  else {reason=`The captured Target assortment is insufficient to decide whether this ${p.category.toLowerCase()} product fills a gap.`;next=`Find the nearest current Target ${p.category.toLowerCase()} product, then compare the function, pack and guest benefit.`;}
-  const gapChecked=!!validated;
+  const currentReview=hasCurrentTargetReview(reviewed,now);
+  const confirmedAbsent=currentReview && reviewed.status==='not-carried' && reviewed.currentlyCarried===false && reviewed.equivalentCurrentlyCarried===false && reviewed.temporarilyOutOfStock===false;
+  // A missing catalog match never establishes absence. A prior Target listing
+  // needs an explicit, newer delisting review; current Target offers still veto it.
+  const freshTargetOffer=[p,...offers(p)].filter(targetOffer).some(o=>recent(o.evidence?.checkedAt,1,now));
+  const lastTargetObservation=Math.max(0,...[p,...offers(p)].filter(targetOffer).map(o=>Date.parse(o.evidence?.checkedAt||'')||0));
+  const resolvedOldListing=confirmedAbsent && reviewed.previousListingResolved===true && Date.parse(reviewed.checkedAt)>lastTargetObservation && !freshTargetOffer;
+  const isWhitespace=!!(confirmedAbsent && (!own||resolvedOldListing));
+  let status='Needs Target check',tone='unknown',reason='',next='';
+  if(isWhitespace) {status='Verified Target whitespace';tone='whitespace';reason=reviewed.reason;next=reviewed.nextStep||'Target absence has been checked. Validate current shopper demand, comparable price and supplier feasibility before proposing a test.';}
+  else if(own || (currentReview && (reviewed.currentlyCarried===true || reviewed.equivalentCurrentlyCarried===true || reviewed.temporarilyOutOfStock===true))) {status='Target listing recorded';tone='benchmark';reason='Excluded from whitespace: this product or a confirmed equivalent is recorded at Target. A temporarily sold-out item still belongs to its assortment.';next='Use it as a benchmark. Recheck the current Target listing, seller, price and pack; do not present it as new whitespace.';}
+  else {reason='Not counted as whitespace. We have not verified that Target currently does not carry this product or an equivalent.';next=`Check current Target US assortment for ${p.brand} ${p.name}, including other names, equivalent products and Target Plus listings. Record the sources, scope and check time.`;if(reviewed?.status==='not-carried'&&!currentReview){reason='Not counted as whitespace. The earlier Target absence check is expired or incomplete and must be repeated.';}}
   const demandChecked=!!p.demandEvidence?.sourceUrl && !!p.demandEvidence?.summary && recent(p.demandEvidence?.checkedAt,7,now);
   const priceChecked=offers(p).some(o=>o.priceUsd>0 && o.link && recent(o.evidence?.checkedAt,7,now));
   const supplyChecked=!!p.feasibility?.reviewedBy && !!p.feasibility?.sourceUrl && p.feasibility?.approved===true && recent(p.feasibility?.checkedAt,90,now);
-  const gates=[{label:'Target gap',ok:gapChecked,detail:gapChecked?'Dated assortment review stored':'Live assortment review needed'},{label:'Shopper demand',ok:demandChecked,detail:demandChecked?p.demandEvidence.summary:'Current demand evidence needed'},{label:'Price evidence',ok:priceChecked,detail:priceChecked?'Recent recorded offer; verify pack and conditions':'Current price and pack check needed'},{label:'Cost & feasibility',ok:supplyChecked,detail:supplyChecked?'Dated feasibility review stored':'Supplier quote, claims and sample review needed'}];
-  return {status,tone,reason,next,similar,gates,checked:gates.filter(g=>g.ok).length,ready:!!(validated&&reviewed.status==='potential-gap'&&demandChecked&&priceChecked&&supplyChecked)};
+  const gates=[{label:'Not carried by Target',ok:isWhitespace,detail:isWhitespace?`Absence verified ${reviewed.checkedAt}`:tone==='benchmark'?'Target listing recorded — excluded from whitespace':'Current Target absence check needed'},{label:'Shopper demand',ok:demandChecked,detail:demandChecked?p.demandEvidence.summary:'Current demand evidence needed'},{label:'Price evidence',ok:priceChecked,detail:priceChecked?'Recent recorded offer; verify pack and conditions':'Current price and pack check needed'},{label:'Cost & feasibility',ok:supplyChecked,detail:supplyChecked?'Dated feasibility review stored':'Supplier quote, claims and sample review needed'}];
+  return {status,tone,reason,next,similar,gates,isWhitespace,checked:gates.filter(g=>g.ok).length,ready:!!(isWhitespace&&demandChecked&&priceChecked&&supplyChecked),checkedAt:currentReview?reviewed.checkedAt:null,sourceUrls:currentReview?reviewed.sourceUrls:[]};
 }

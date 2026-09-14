@@ -14,8 +14,8 @@ Open this repository as the working folder in the existing White Space project. 
 
 ## Accepted direction
 
-- Start with Target opportunities, not a long audit report or undifferentiated catalog.
-- Let the merchant choose a category and understand the candidate's guest benefit, Target comparison, missing evidence and next action.
+- Start with verified Target whitespace, not a long audit report or undifferentiated catalog.
+- Only items verified as not currently carried by Target qualify as whitespace. Use a complete Target review within 24 hours; exclude recorded listings, equivalents, Target Plus and temporary stockouts. Unknown items remain in Needs Target check. Keep dates, sources and next actions visible.
 - Keep all products accessible in All products.
 - Use four evidence checks: Target gap, shopper demand, price evidence, and cost/feasibility. Never present an unvalidated numeric score as product quality.
 - Compare up to six products with concrete next actions. Separate categories and noncomparable pack/currency units; do not invent an overall winner.
@@ -29,3 +29,5 @@ The existing Weekly Cleaning Trends automation has been updated to Daily CleanTr
 ## Current verification
 
 The September 14 migration retains 1,900 unique product IDs and 27 categories. Freshness tests cover missing evidence, seven-day expiration, future dates and conservative Target-gap decisions. Twenty old viral flags lacked dated viral evidence and are retained as historical. The first scheduled full catalog research run is pending; no claim of comprehensive current retailer coverage has been made.
+
+Latest correction: the previous 302 potential directory gaps were unverified and must not be counted as Target whitespace. At this correction there are 0 qualifying current absence checks. Checkout records now support Delete record, Clear all records and Undo without discarding other saved records.
