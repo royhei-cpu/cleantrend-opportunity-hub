@@ -1,0 +1,222 @@
+{
+  "date": "2026-09-14",
+  "scope": "Targeted sponge-cloth assortment repair; not a full retailer or category census",
+  "priorMatchingProducts": 1,
+  "additionalListings": 12,
+  "retailers": [
+    "Target",
+    "Walmart",
+    "Amazon",
+    "Costco",
+    "Home Depot"
+  ],
+  "products": [
+    {
+      "id": "sponge-cloth-target-93290444",
+      "name": "Super Absorbent Sponge Cloths, 3ct",
+      "brand": "O-Cedar",
+      "retailer": "Target",
+      "url": "https://www.target.com/p/o-cedar-sponge-cloths-3ct/-/A-93290444",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_b47fb7d2-4ed1-4dd2-a554-72d7016fa711",
+      "price": "$4.99",
+      "evidence": {
+        "sourceUrl": "https://www.target.com/p/o-cedar-sponge-cloths-3ct/-/A-93290444",
+        "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_b47fb7d2-4ed1-4dd2-a554-72d7016fa711",
+        "checkedAt": "2026-09-14",
+        "method": "Live retailer page (cache disabled)"
+      },
+      "availability": "Pickup and shipping shown for Pembroke, VA 23462"
+    },
+    {
+      "id": "sponge-cloth-target-90041614",
+      "name": "Sponge Cloths, Oars & Paddles, 2ct",
+      "brand": "MU Kitchen",
+      "retailer": "Target",
+      "url": "https://www.target.com/p/mu-kitchen-sponge-cloth-set-of-2-dish-cloths-oars-paddles/-/A-90041614",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3b1d096-c2c3-4a25-87ba-79395d51a764",
+      "price": "$10.95",
+      "evidence": {
+        "sourceUrl": "https://www.target.com/p/mu-kitchen-sponge-cloth-set-of-2-dish-cloths-oars-paddles/-/A-90041614",
+        "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3b1d096-c2c3-4a25-87ba-79395d51a764",
+        "checkedAt": "2026-09-14",
+        "method": "Retailer page capture; cache age not independently verified"
+      },
+      "availability": "Online marketplace listing; not sold in stores",
+      "seller": "eKitchenWorld"
+    },
+    {
+      "id": "sponge-cloth-target-1001830054",
+      "name": "Chickens Swedish Dishcloth Set, 2ct",
+      "brand": "Primitives by Kathy",
+      "retailer": "Target",
+      "url": "https://www.target.com/p/primitives-by-kathy-chickens-swedish-dishcloth-set/-/A-1001830054",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_87452445-b400-4642-9e69-e0d085611539",
+      "price": "$16.99",
+      "evidence": {
+        "sourceUrl": "https://www.target.com/p/primitives-by-kathy-chickens-swedish-dishcloth-set/-/A-1001830054",
+        "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_87452445-b400-4642-9e69-e0d085611539",
+        "checkedAt": "2026-09-14",
+        "method": "Retailer page capture; cache age not independently verified"
+      },
+      "availability": "Online marketplace listing; not sold in stores",
+      "seller": "Net Pet Shops"
+    },
+    {
+      "id": "sponge-cloth-target-91332057",
+      "name": "Red Sponge Cloths, 3ct",
+      "brand": "S.M. Arnold",
+      "retailer": "Target",
+      "url": "https://www.target.com/p/s-m-arnold-inc-sponge-cloth-red-pack-of-3/-/A-91332057",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_7d45759a-36e8-44da-a98d-90b5cc59c69f",
+      "price": "$29.95",
+      "evidence": {
+        "sourceUrl": "https://www.target.com/p/s-m-arnold-inc-sponge-cloth-red-pack-of-3/-/A-91332057",
+        "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_7d45759a-36e8-44da-a98d-90b5cc59c69f",
+        "checkedAt": "2026-09-14",
+        "method": "Retailer page capture; cache age not independently verified"
+      },
+      "availability": "Online marketplace listing; not sold in stores",
+      "seller": "Discount Learning Materials"
+    },
+    {
+      "id": "sponge-cloth-walmart-506250965",
+      "name": "Swedish Sponge Dish Cloths, Boho, 12ct",
+      "brand": "RITZ",
+      "retailer": "Walmart",
+      "url": "https://www.walmart.com/ip/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho/506250965",
+      "imageUrl": "https://i5.walmartimages.com/seo/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho_aa5f145a-d84f-45aa-a35f-f4bb525267b4.9aa167797e72a9ecf5841dafa9ac47dd.jpeg",
+      "price": "$24.99",
+      "evidence": {
+        "sourceUrl": "https://www.walmart.com/ip/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho/506250965",
+        "imageUrl": "https://i5.walmartimages.com/seo/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho_aa5f145a-d84f-45aa-a35f-f4bb525267b4.9aa167797e72a9ecf5841dafa9ac47dd.jpeg",
+        "checkedAt": "2026-09-14",
+        "method": "Live retailer page (cache disabled)"
+      },
+      "availability": "Shipping shown; pickup unavailable for Sacramento 95829",
+      "seller": "John Ritzenthaler Company"
+    },
+    {
+      "id": "sponge-cloth-walmart-1582259622",
+      "name": "Swedish Sponge Cloths, 24ct",
+      "brand": "Scotch-Brite",
+      "retailer": "Walmart",
+      "url": "https://www.walmart.com/ip/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths/1582259622",
+      "imageUrl": "https://i5.walmartimages.com/seo/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths_c8fa6d1b-c0e1-43cd-a29b-3e02a96c2497.4734421fcc8a1d41d3669ddc08c9e0f4.jpeg",
+      "price": "See Walmart",
+      "evidence": {
+        "sourceUrl": "https://www.walmart.com/ip/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths/1582259622",
+        "imageUrl": "https://i5.walmartimages.com/seo/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths_c8fa6d1b-c0e1-43cd-a29b-3e02a96c2497.4734421fcc8a1d41d3669ddc08c9e0f4.jpeg",
+        "checkedAt": "2026-09-14",
+        "method": "Live retailer page (cache disabled)"
+      },
+      "availability": "Shipping shown; pickup unavailable for Sacramento 95829",
+      "seller": "Supply the Home"
+    },
+    {
+      "id": "sponge-cloth-walmart-5484928964",
+      "name": "Original Swedish Sponge Cloths, 10ct × 2 packs",
+      "brand": "Wettex",
+      "retailer": "Walmart",
+      "url": "https://www.walmart.com/ip/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2/5484928964",
+      "imageUrl": "https://i5.walmartimages.com/seo/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2_60dcec94-c62a-4e57-9147-2f328207f2a3.451581dadbfbbd24597e13dbd8442c4b.jpeg",
+      "price": "See Walmart",
+      "evidence": {
+        "sourceUrl": "https://www.walmart.com/ip/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2/5484928964",
+        "imageUrl": "https://i5.walmartimages.com/seo/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2_60dcec94-c62a-4e57-9147-2f328207f2a3.451581dadbfbbd24597e13dbd8442c4b.jpeg",
+        "checkedAt": "2026-09-14",
+        "method": "Live retailer page (cache disabled)"
+      },
+      "availability": "Shipping shown; pickup unavailable for Sacramento 95829",
+      "seller": "Geodesign"
+    },
+    {
+      "id": "sponge-cloth-walmart-495734060",
+      "name": "Swedish Cellulose Sponge Cloths, Purple Moisturized, 12ct",
+      "brand": "Homeries",
+      "retailer": "Walmart",
+      "url": "https://www.walmart.com/ip/Homeries-Swedish-Dishcloth-Kitchen-Bulk-Pack-12-Reusable-Cellulose-Sponge-Cloths-Cleaning-Eco-Friendly-Odor-Washable-Absorbent-Cleaning-Cloth-Hand-To/495734060",
+      "imageUrl": "https://i5.walmartimages.com/asr/8393f24e-cfc6-46a7-a77b-7c29b8751eae_1.91005f1dd754f3fe0962a5ce72a096fb.jpeg",
+      "price": "$19.99",
+      "evidence": {
+        "sourceUrl": "https://www.walmart.com/ip/Homeries-Swedish-Dishcloth-Kitchen-Bulk-Pack-12-Reusable-Cellulose-Sponge-Cloths-Cleaning-Eco-Friendly-Odor-Washable-Absorbent-Cleaning-Cloth-Hand-To/495734060",
+        "imageUrl": "https://i5.walmartimages.com/asr/8393f24e-cfc6-46a7-a77b-7c29b8751eae_1.91005f1dd754f3fe0962a5ce72a096fb.jpeg",
+        "checkedAt": "2026-09-14",
+        "method": "Live retailer page (cache disabled)"
+      },
+      "availability": "Selected purple/moisturized variant out of stock"
+    },
+    {
+      "id": "sponge-cloth-walmart-200498646",
+      "name": "Swedish Dishcloths, Best Days Trailer, 3ct",
+      "brand": "Swededishcloths",
+      "retailer": "Walmart",
+      "url": "https://www.walmart.com/ip/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths/200498646",
+      "imageUrl": "https://i5.walmartimages.com/seo/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths_f81c9be0-65f8-4019-85e8-e9f92c16bc29_1.57979f8b23978e5ba0c77e939b702042.jpeg",
+      "price": "See Walmart",
+      "evidence": {
+        "sourceUrl": "https://www.walmart.com/ip/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths/200498646",
+        "imageUrl": "https://i5.walmartimages.com/seo/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths_f81c9be0-65f8-4019-85e8-e9f92c16bc29_1.57979f8b23978e5ba0c77e939b702042.jpeg",
+        "checkedAt": "2026-09-14",
+        "method": "Retailer page capture; cache age not independently verified"
+      },
+      "availability": "Not fully verified"
+    },
+    {
+      "id": "sponge-cloth-amazon-B07MX46M6H",
+      "name": "Original Swedish Dishcloths, Assorted Colors, 10ct",
+      "brand": "Wettex",
+      "retailer": "Amazon",
+      "url": "https://www.amazon.com/dp/B07MX46M6H",
+      "imageUrl": "https://m.media-amazon.com/images/I/81EM3Ndl8JL._AC_SY355_.jpg",
+      "price": "$9.72",
+      "evidence": {
+        "sourceUrl": "https://www.amazon.com/dp/B07MX46M6H",
+        "imageUrl": "https://m.media-amazon.com/images/I/81EM3Ndl8JL._AC_SY355_.jpg",
+        "checkedAt": "2026-09-14",
+        "method": "Live retailer page (cache disabled)"
+      },
+      "availability": "In stock on retrieved page",
+      "seller": "Ga Official"
+    },
+    {
+      "id": "sponge-cloth-costco-4000278014",
+      "name": "Swedish Dishcloths, Two Sizes, 12ct",
+      "brand": "Evergrace",
+      "retailer": "Costco",
+      "url": "https://www.costco.com/p/-/swedish-dishcloths-12-piece-set/4000278014",
+      "imageUrl": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:72ff53c6-5bf5-4d71-9e7d-3b169a314e4a/as/4000278014-847_latticebloom_1.avif?width=350",
+      "price": "See Costco",
+      "evidence": {
+        "sourceUrl": "https://www.costco.com/p/-/swedish-dishcloths-12-piece-set/4000278014",
+        "imageUrl": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:72ff53c6-5bf5-4d71-9e7d-3b169a314e4a/as/4000278014-847_latticebloom_1.avif?width=350",
+        "checkedAt": "2026-09-14",
+        "method": "Live retailer page (cache disabled)"
+      },
+      "availability": "Price and fulfillment did not render"
+    },
+    {
+      "id": "sponge-cloth-homedepot-205561300",
+      "name": "Microfiber Sponge Cloths, 3ct (Model 2103)",
+      "brand": "Libman",
+      "retailer": "Home Depot",
+      "url": "https://www.homedepot.com/p/Libman-Microfiber-Sponge-Cloth-3-Count-2103/205561300",
+      "imageUrl": "https://images.thdstatic.com/productImages/eb3c4c66-00ca-4b8f-a6b3-ac7ffeee62e2/svn/libman-microfiber-towels-2103-64_1000.jpg",
+      "price": "$3.80",
+      "evidence": {
+        "sourceUrl": "https://www.homedepot.com/p/Libman-Microfiber-Sponge-Cloth-3-Count-2103/205561300",
+        "imageUrl": "https://images.thdstatic.com/productImages/eb3c4c66-00ca-4b8f-a6b3-ac7ffeee62e2/svn/libman-microfiber-towels-2103-64_1000.jpg",
+        "checkedAt": "2026-09-14",
+        "method": "Retailer page capture; cache age not independently verified"
+      },
+      "availability": "Current fulfillment not verified"
+    }
+  ],
+  "sourceFailures": [
+    "Target Briarwood Lane Bee Happy Hive and Lemonade Summer pages returned item-unavailable content; not added.",
+    "One Walmart indexed listing returned 404; not added.",
+    "Swedish Wholesale Amazon ASIN B07GXCCTKP resolved to exploration/search content; no exact product record added.",
+    "Four Home Depot product pages failed extraction; related review pages were not treated as current product availability.",
+    "Costco product details loaded but price and fulfillment did not render."
+  ],
+  "fullAssortmentReconciled": false
+}

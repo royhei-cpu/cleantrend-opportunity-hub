@@ -67506,19 +67506,19 @@
     "retailer": "Target",
     "channel": "Target",
     "market": "United States",
-    "priceLabel": "$4.99",
-    "priceUsd": 4.99,
-    "priceNote": "Price observed in a Target category/search snapshot checked September 11, 2026, not independently confirmed at checkout. Current price and availability depend on selected pack, location and fulfillment; confirm with Target.",
+    "priceLabel": "$5.89",
+    "priceUsd": 5.89,
+    "priceNote": "Price $5.89 and sold-out status observed September 14, 2026 in the Columbia Heights, DC 20011 context. Stock and price can vary by location. A stockout does not establish assortment whitespace.",
     "link": "https://www.target.com/p/dish-sponge-cloths-3ct-everspring-8482/-/A-87488052",
     "evidence": {
       "sourceUrl": "https://www.target.com/p/dish-sponge-cloths-3ct-everspring-8482/-/A-87488052",
       "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3eb3e3b-0a8b-4dee-9e15-19019cb39bb0",
-      "checkedAt": "2026-09-11",
-      "method": "Retailer page"
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
     },
     "category": "Sponges",
     "image": "/retailer-source-repair/87488052.jpg",
-    "description": "Dish Sponge Cloths - 3ct. Retailer product-page title and product photo matched for this Target-owned-brand listing. Verify the selected pack and specifications on the source page.",
+    "description": "Three reusable sponge cloths made from 70% cellulose and 30% cotton. The Target page shows this Everspring item as sold out in the retrieved location; it remains a recorded Target listing, not whitespace.",
     "salesSignal": "No sales or demand claim assessed",
     "signalType": "Scout signal",
     "trend": "Established",
@@ -67531,17 +67531,34 @@
     "tags": [
       "Retailer product-page source",
       "Target owned brand",
-      "Everspring"
+      "Everspring",
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Cellulose cloth"
     ],
     "availability": [
       {
         "retailer": "Target",
         "channel": "Target",
         "market": "United States",
+        "priceLabel": "$5.89",
+        "priceUsd": 5.89,
+        "priceNote": "Price $5.89 and sold-out status observed September 14, 2026 in the Columbia Heights, DC 20011 context. Stock and price can vary by location. A stockout does not establish assortment whitespace.",
+        "link": "https://www.target.com/p/dish-sponge-cloths-3ct-everspring-8482/-/A-87488052",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/dish-sponge-cloths-3ct-everspring-8482/-/A-87488052",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3eb3e3b-0a8b-4dee-9e15-19019cb39bb0",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        },
+        "availabilityStatus": "Sold out in retrieved Columbia Heights, DC 20011 context"
+      }
+    ],
+    "offerHistory": [
+      {
         "priceLabel": "$4.99",
         "priceUsd": 4.99,
         "priceNote": "Price observed in a Target category/search snapshot checked September 11, 2026, not independently confirmed at checkout. Current price and availability depend on selected pack, location and fulfillment; confirm with Target.",
-        "link": "https://www.target.com/p/dish-sponge-cloths-3ct-everspring-8482/-/A-87488052",
         "evidence": {
           "sourceUrl": "https://www.target.com/p/dish-sponge-cloths-3ct-everspring-8482/-/A-87488052",
           "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3eb3e3b-0a8b-4dee-9e15-19019cb39bb0",
@@ -67549,7 +67566,10 @@
           "method": "Retailer page"
         }
       }
-    ]
+    ],
+    "rating": 4.39,
+    "reviews": 239,
+    "productType": "Cellulose sponge cloth"
   },
   {
     "id": "source-repair-target-75663184",
@@ -95683,5 +95703,701 @@
         }
       }
     ]
+  },
+  {
+    "id": "sponge-cloth-target-93290444",
+    "name": "Super Absorbent Sponge Cloths, 3ct",
+    "brand": "O-Cedar",
+    "brandType": "National brand",
+    "retailer": "Target",
+    "channel": "Target",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Cellulose sponge cloth",
+    "description": "Three reusable cellulose-and-cotton sponge cloths for spills and surface cleaning. The retailer lists machine-washing and top-rack dishwasher care.",
+    "priceLabel": "$4.99",
+    "priceUsd": 4.99,
+    "priceNote": "$4.99 observed September 14, 2026 for Pembroke, VA 23462. A separate location returned $5.89; price and availability vary by store. No promotion applied.",
+    "link": "https://www.target.com/p/o-cedar-sponge-cloths-3ct/-/A-93290444",
+    "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_b47fb7d2-4ed1-4dd2-a554-72d7016fa711",
+    "evidence": {
+      "sourceUrl": "https://www.target.com/p/o-cedar-sponge-cloths-3ct/-/A-93290444",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_b47fb7d2-4ed1-4dd2-a554-72d7016fa711",
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Recorded Target assortment benchmark. Excluded from Target whitespace.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Cellulose sponge cloth",
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Cellulose cloth",
+      "Target"
+    ],
+    "rating": 4.24,
+    "reviews": 17,
+    "availability": [
+      {
+        "retailer": "Target",
+        "channel": "Target",
+        "market": "United States",
+        "priceLabel": "$4.99",
+        "priceUsd": 4.99,
+        "priceNote": "$4.99 observed September 14, 2026 for Pembroke, VA 23462. A separate location returned $5.89; price and availability vary by store. No promotion applied.",
+        "link": "https://www.target.com/p/o-cedar-sponge-cloths-3ct/-/A-93290444",
+        "availabilityStatus": "Pickup and shipping shown for Pembroke, VA 23462",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/o-cedar-sponge-cloths-3ct/-/A-93290444",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_b47fb7d2-4ed1-4dd2-a554-72d7016fa711",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-target-93290444.jpg"
+  },
+  {
+    "id": "sponge-cloth-target-90041614",
+    "name": "Sponge Cloths, Oars & Paddles, 2ct",
+    "brand": "MU Kitchen",
+    "brandType": "National brand",
+    "retailer": "Target",
+    "channel": "Target",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Sponge cloth",
+    "description": "Two printed sponge cloths for countertop cleanup and dishwashing. Online Target marketplace offer, sold and shipped by eKitchenWorld.",
+    "priceLabel": "$10.95",
+    "priceUsd": 10.95,
+    "priceNote": "Retailer page captured September 14, 2026; cache age not independently verified. Target Plus seller and online assortment differ from Target stores. Confirm the current offer.",
+    "link": "https://www.target.com/p/mu-kitchen-sponge-cloth-set-of-2-dish-cloths-oars-paddles/-/A-90041614",
+    "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3b1d096-c2c3-4a25-87ba-79395d51a764",
+    "evidence": {
+      "sourceUrl": "https://www.target.com/p/mu-kitchen-sponge-cloth-set-of-2-dish-cloths-oars-paddles/-/A-90041614",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3b1d096-c2c3-4a25-87ba-79395d51a764",
+      "checkedAt": "2026-09-14",
+      "method": "Retailer page capture; cache age not independently verified"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Recorded Target assortment benchmark. Excluded from Target whitespace.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Sponge cloth",
+      "Target"
+    ],
+    "availability": [
+      {
+        "retailer": "Target",
+        "channel": "Target",
+        "market": "United States",
+        "priceLabel": "$10.95",
+        "priceUsd": 10.95,
+        "priceNote": "Retailer page captured September 14, 2026; cache age not independently verified. Target Plus seller and online assortment differ from Target stores. Confirm the current offer.",
+        "link": "https://www.target.com/p/mu-kitchen-sponge-cloth-set-of-2-dish-cloths-oars-paddles/-/A-90041614",
+        "seller": "eKitchenWorld",
+        "availabilityStatus": "Online marketplace listing; not sold in stores",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/mu-kitchen-sponge-cloth-set-of-2-dish-cloths-oars-paddles/-/A-90041614",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3b1d096-c2c3-4a25-87ba-79395d51a764",
+          "checkedAt": "2026-09-14",
+          "method": "Retailer page capture; cache age not independently verified"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-target-90041614.jpg"
+  },
+  {
+    "id": "sponge-cloth-target-1001830054",
+    "name": "Chickens Swedish Dishcloth Set, 2ct",
+    "brand": "Primitives by Kathy",
+    "brandType": "National brand",
+    "retailer": "Target",
+    "channel": "Target",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Swedish dishcloth",
+    "description": "Two washable Swedish dishcloths with chicken illustrations. Listed on Target.com by marketplace seller Net Pet Shops; the page states this item is not sold in stores.",
+    "priceLabel": "$16.99",
+    "priceUsd": 16.99,
+    "priceNote": "Retailer page captured September 14, 2026; cache age not independently verified. Target Plus seller and online assortment differ from Target stores. Confirm the current offer.",
+    "link": "https://www.target.com/p/primitives-by-kathy-chickens-swedish-dishcloth-set/-/A-1001830054",
+    "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_87452445-b400-4642-9e69-e0d085611539",
+    "evidence": {
+      "sourceUrl": "https://www.target.com/p/primitives-by-kathy-chickens-swedish-dishcloth-set/-/A-1001830054",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_87452445-b400-4642-9e69-e0d085611539",
+      "checkedAt": "2026-09-14",
+      "method": "Retailer page capture; cache age not independently verified"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Recorded Target assortment benchmark. Excluded from Target whitespace.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Target"
+    ],
+    "availability": [
+      {
+        "retailer": "Target",
+        "channel": "Target",
+        "market": "United States",
+        "priceLabel": "$16.99",
+        "priceUsd": 16.99,
+        "priceNote": "Retailer page captured September 14, 2026; cache age not independently verified. Target Plus seller and online assortment differ from Target stores. Confirm the current offer.",
+        "link": "https://www.target.com/p/primitives-by-kathy-chickens-swedish-dishcloth-set/-/A-1001830054",
+        "seller": "Net Pet Shops",
+        "availabilityStatus": "Online marketplace listing; not sold in stores",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/primitives-by-kathy-chickens-swedish-dishcloth-set/-/A-1001830054",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_87452445-b400-4642-9e69-e0d085611539",
+          "checkedAt": "2026-09-14",
+          "method": "Retailer page capture; cache age not independently verified"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-target-1001830054.jpg"
+  },
+  {
+    "id": "sponge-cloth-target-91332057",
+    "name": "Red Sponge Cloths, 3ct",
+    "brand": "S.M. Arnold",
+    "brandType": "National brand",
+    "retailer": "Target",
+    "channel": "Target",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Cellulose sponge cloth",
+    "description": "Three red cotton-and-cellulose sponge cloths for reusable surface cleaning. Online Target marketplace offer sold by Discount Learning Materials.",
+    "priceLabel": "$29.95",
+    "priceUsd": 29.95,
+    "priceNote": "Retailer page captured September 14, 2026; cache age not independently verified. Target Plus seller and online assortment differ from Target stores. Confirm the current offer.",
+    "link": "https://www.target.com/p/s-m-arnold-inc-sponge-cloth-red-pack-of-3/-/A-91332057",
+    "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_7d45759a-36e8-44da-a98d-90b5cc59c69f",
+    "evidence": {
+      "sourceUrl": "https://www.target.com/p/s-m-arnold-inc-sponge-cloth-red-pack-of-3/-/A-91332057",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_7d45759a-36e8-44da-a98d-90b5cc59c69f",
+      "checkedAt": "2026-09-14",
+      "method": "Retailer page capture; cache age not independently verified"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Recorded Target assortment benchmark. Excluded from Target whitespace.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Cellulose sponge cloth",
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Cellulose cloth",
+      "Target"
+    ],
+    "availability": [
+      {
+        "retailer": "Target",
+        "channel": "Target",
+        "market": "United States",
+        "priceLabel": "$29.95",
+        "priceUsd": 29.95,
+        "priceNote": "Retailer page captured September 14, 2026; cache age not independently verified. Target Plus seller and online assortment differ from Target stores. Confirm the current offer.",
+        "link": "https://www.target.com/p/s-m-arnold-inc-sponge-cloth-red-pack-of-3/-/A-91332057",
+        "seller": "Discount Learning Materials",
+        "availabilityStatus": "Online marketplace listing; not sold in stores",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/s-m-arnold-inc-sponge-cloth-red-pack-of-3/-/A-91332057",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_7d45759a-36e8-44da-a98d-90b5cc59c69f",
+          "checkedAt": "2026-09-14",
+          "method": "Retailer page capture; cache age not independently verified"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-target-91332057.jpg"
+  },
+  {
+    "id": "sponge-cloth-walmart-506250965",
+    "name": "Swedish Sponge Dish Cloths, Boho, 12ct",
+    "brand": "RITZ",
+    "brandType": "National brand",
+    "retailer": "Walmart",
+    "channel": "Walmart",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Cellulose sponge cloth",
+    "description": "Twelve printed cotton-cellulose sponge cloths in the Boho design, listed at 6.7 × 8 inches. Sold through Walmart Marketplace by John Ritzenthaler Company.",
+    "priceLabel": "$24.99",
+    "priceUsd": 24.99,
+    "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+    "link": "https://www.walmart.com/ip/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho/506250965",
+    "sourceImageUrl": "https://i5.walmartimages.com/seo/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho_aa5f145a-d84f-45aa-a35f-f4bb525267b4.9aa167797e72a9ecf5841dafa9ac47dd.jpeg",
+    "evidence": {
+      "sourceUrl": "https://www.walmart.com/ip/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho/506250965",
+      "imageUrl": "https://i5.walmartimages.com/seo/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho_aa5f145a-d84f-45aa-a35f-f4bb525267b4.9aa167797e72a9ecf5841dafa9ac47dd.jpeg",
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Cellulose sponge cloth",
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Cellulose cloth",
+      "Walmart"
+    ],
+    "rating": 5,
+    "reviews": 7,
+    "availability": [
+      {
+        "retailer": "Walmart",
+        "channel": "Walmart",
+        "market": "United States",
+        "priceLabel": "$24.99",
+        "priceUsd": 24.99,
+        "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+        "link": "https://www.walmart.com/ip/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho/506250965",
+        "seller": "John Ritzenthaler Company",
+        "availabilityStatus": "Shipping shown; pickup unavailable for Sacramento 95829",
+        "evidence": {
+          "sourceUrl": "https://www.walmart.com/ip/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho/506250965",
+          "imageUrl": "https://i5.walmartimages.com/seo/RITZ-Swedish-Sponge-Dish-Cloth-Set-of-Twelve-Boho_aa5f145a-d84f-45aa-a35f-f4bb525267b4.9aa167797e72a9ecf5841dafa9ac47dd.jpeg",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-walmart-506250965.jpg"
+  },
+  {
+    "id": "sponge-cloth-walmart-1582259622",
+    "name": "Swedish Sponge Cloths, 24ct",
+    "brand": "Scotch-Brite",
+    "brandType": "National brand",
+    "retailer": "Walmart",
+    "channel": "Walmart",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Swedish dishcloth",
+    "description": "A 24-cloth listing described as a reusable natural-fiber alternative to paper towels. Exact current price was not reliably extracted; compare the retailer offer.",
+    "priceLabel": "See Walmart",
+    "priceUsd": 0,
+    "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+    "link": "https://www.walmart.com/ip/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths/1582259622",
+    "sourceImageUrl": "https://i5.walmartimages.com/seo/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths_c8fa6d1b-c0e1-43cd-a29b-3e02a96c2497.4734421fcc8a1d41d3669ddc08c9e0f4.jpeg",
+    "evidence": {
+      "sourceUrl": "https://www.walmart.com/ip/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths/1582259622",
+      "imageUrl": "https://i5.walmartimages.com/seo/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths_c8fa6d1b-c0e1-43cd-a29b-3e02a96c2497.4734421fcc8a1d41d3669ddc08c9e0f4.jpeg",
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Walmart"
+    ],
+    "availability": [
+      {
+        "retailer": "Walmart",
+        "channel": "Walmart",
+        "market": "United States",
+        "priceLabel": "See Walmart",
+        "priceUsd": 0,
+        "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+        "link": "https://www.walmart.com/ip/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths/1582259622",
+        "seller": "Supply the Home",
+        "availabilityStatus": "Shipping shown; pickup unavailable for Sacramento 95829",
+        "evidence": {
+          "sourceUrl": "https://www.walmart.com/ip/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths/1582259622",
+          "imageUrl": "https://i5.walmartimages.com/seo/Scotch-Brite-Sponge-Cloth-Swedish-Dish-Cloths-Alternative-To-Reusable-Paper-Towels-24-Sponge-Cloths_c8fa6d1b-c0e1-43cd-a29b-3e02a96c2497.4734421fcc8a1d41d3669ddc08c9e0f4.jpeg",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-walmart-1582259622.jpg"
+  },
+  {
+    "id": "sponge-cloth-walmart-5484928964",
+    "name": "Original Swedish Sponge Cloths, 10ct × 2 packs",
+    "brand": "Wettex",
+    "brandType": "National brand",
+    "retailer": "Walmart",
+    "channel": "Walmart",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Swedish dishcloth",
+    "description": "Two packs of ten Wettex original sponge cloths, 20 cloths total. The current product page confirms the pack; price needs a fresh offer check.",
+    "priceLabel": "See Walmart",
+    "priceUsd": 0,
+    "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+    "link": "https://www.walmart.com/ip/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2/5484928964",
+    "sourceImageUrl": "https://i5.walmartimages.com/seo/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2_60dcec94-c62a-4e57-9147-2f328207f2a3.451581dadbfbbd24597e13dbd8442c4b.jpeg",
+    "evidence": {
+      "sourceUrl": "https://www.walmart.com/ip/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2/5484928964",
+      "imageUrl": "https://i5.walmartimages.com/seo/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2_60dcec94-c62a-4e57-9147-2f328207f2a3.451581dadbfbbd24597e13dbd8442c4b.jpeg",
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Walmart"
+    ],
+    "rating": 5,
+    "reviews": 7,
+    "availability": [
+      {
+        "retailer": "Walmart",
+        "channel": "Walmart",
+        "market": "United States",
+        "priceLabel": "See Walmart",
+        "priceUsd": 0,
+        "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+        "link": "https://www.walmart.com/ip/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2/5484928964",
+        "seller": "Geodesign",
+        "availabilityStatus": "Shipping shown; pickup unavailable for Sacramento 95829",
+        "evidence": {
+          "sourceUrl": "https://www.walmart.com/ip/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2/5484928964",
+          "imageUrl": "https://i5.walmartimages.com/seo/Wettex-The-Original-Dishcloth-Swedish-superabsorbent-Sponge-Cloth-10-ct-Pack-of-2_60dcec94-c62a-4e57-9147-2f328207f2a3.451581dadbfbbd24597e13dbd8442c4b.jpeg",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-walmart-5484928964.jpg"
+  },
+  {
+    "id": "sponge-cloth-walmart-495734060",
+    "name": "Swedish Cellulose Sponge Cloths, Purple Moisturized, 12ct",
+    "brand": "Homeries",
+    "brandType": "National brand",
+    "retailer": "Walmart",
+    "channel": "Walmart",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Cellulose sponge cloth",
+    "description": "Twelve cellulose sponge cloths in the selected purple, pre-moistened variant. The retrieved offer is out of stock; the dry variant has a separate listing.",
+    "priceLabel": "$19.99",
+    "priceUsd": 19.99,
+    "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+    "link": "https://www.walmart.com/ip/Homeries-Swedish-Dishcloth-Kitchen-Bulk-Pack-12-Reusable-Cellulose-Sponge-Cloths-Cleaning-Eco-Friendly-Odor-Washable-Absorbent-Cleaning-Cloth-Hand-To/495734060",
+    "sourceImageUrl": "https://i5.walmartimages.com/asr/8393f24e-cfc6-46a7-a77b-7c29b8751eae_1.91005f1dd754f3fe0962a5ce72a096fb.jpeg",
+    "evidence": {
+      "sourceUrl": "https://www.walmart.com/ip/Homeries-Swedish-Dishcloth-Kitchen-Bulk-Pack-12-Reusable-Cellulose-Sponge-Cloths-Cleaning-Eco-Friendly-Odor-Washable-Absorbent-Cleaning-Cloth-Hand-To/495734060",
+      "imageUrl": "https://i5.walmartimages.com/asr/8393f24e-cfc6-46a7-a77b-7c29b8751eae_1.91005f1dd754f3fe0962a5ce72a096fb.jpeg",
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Cellulose sponge cloth",
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Cellulose cloth",
+      "Walmart"
+    ],
+    "rating": 4.5,
+    "reviews": 12,
+    "availability": [
+      {
+        "retailer": "Walmart",
+        "channel": "Walmart",
+        "market": "United States",
+        "priceLabel": "$19.99",
+        "priceUsd": 19.99,
+        "priceNote": "Observed September 14, 2026 for the named pack/variant and selected Sacramento 95829 delivery context. Marketplace seller, shipping and stock can change.",
+        "link": "https://www.walmart.com/ip/Homeries-Swedish-Dishcloth-Kitchen-Bulk-Pack-12-Reusable-Cellulose-Sponge-Cloths-Cleaning-Eco-Friendly-Odor-Washable-Absorbent-Cleaning-Cloth-Hand-To/495734060",
+        "availabilityStatus": "Selected purple/moisturized variant out of stock",
+        "evidence": {
+          "sourceUrl": "https://www.walmart.com/ip/Homeries-Swedish-Dishcloth-Kitchen-Bulk-Pack-12-Reusable-Cellulose-Sponge-Cloths-Cleaning-Eco-Friendly-Odor-Washable-Absorbent-Cleaning-Cloth-Hand-To/495734060",
+          "imageUrl": "https://i5.walmartimages.com/asr/8393f24e-cfc6-46a7-a77b-7c29b8751eae_1.91005f1dd754f3fe0962a5ce72a096fb.jpeg",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-walmart-495734060.jpg"
+  },
+  {
+    "id": "sponge-cloth-walmart-200498646",
+    "name": "Swedish Dishcloths, Best Days Trailer, 3ct",
+    "brand": "Swededishcloths",
+    "brandType": "National brand",
+    "retailer": "Walmart",
+    "channel": "Walmart",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Swedish dishcloth",
+    "description": "A retailer-listed set of three printed Swedish sponge cloths with the Best Days Trailer design. Current price and fulfillment were not established.",
+    "priceLabel": "See Walmart",
+    "priceUsd": 0,
+    "priceNote": "Retailer product-page capture September 14, 2026; cache age not independently verified. Price and availability remain unverified.",
+    "link": "https://www.walmart.com/ip/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths/200498646",
+    "sourceImageUrl": "https://i5.walmartimages.com/seo/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths_f81c9be0-65f8-4019-85e8-e9f92c16bc29_1.57979f8b23978e5ba0c77e939b702042.jpeg",
+    "evidence": {
+      "sourceUrl": "https://www.walmart.com/ip/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths/200498646",
+      "imageUrl": "https://i5.walmartimages.com/seo/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths_f81c9be0-65f8-4019-85e8-e9f92c16bc29_1.57979f8b23978e5ba0c77e939b702042.jpeg",
+      "checkedAt": "2026-09-14",
+      "method": "Retailer page capture; cache age not independently verified"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Walmart"
+    ],
+    "availability": [
+      {
+        "retailer": "Walmart",
+        "channel": "Walmart",
+        "market": "United States",
+        "priceLabel": "See Walmart",
+        "priceUsd": 0,
+        "priceNote": "Retailer product-page capture September 14, 2026; cache age not independently verified. Price and availability remain unverified.",
+        "link": "https://www.walmart.com/ip/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths/200498646",
+        "availabilityStatus": "Not fully verified",
+        "evidence": {
+          "sourceUrl": "https://www.walmart.com/ip/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths/200498646",
+          "imageUrl": "https://i5.walmartimages.com/seo/Swedish-Dishcloth-Set-of-3-Cloths-Best-Days-Trailer-Paper-Towel-Replacements-Swededishcloths-ECO-Friendly-Reusable-Sponge-Cloths_f81c9be0-65f8-4019-85e8-e9f92c16bc29_1.57979f8b23978e5ba0c77e939b702042.jpeg",
+          "checkedAt": "2026-09-14",
+          "method": "Retailer page capture; cache age not independently verified"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-walmart-200498646.jpg"
+  },
+  {
+    "id": "sponge-cloth-amazon-B07MX46M6H",
+    "name": "Original Swedish Dishcloths, Assorted Colors, 10ct",
+    "brand": "Wettex",
+    "brandType": "National brand",
+    "retailer": "Amazon",
+    "channel": "Amazon",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Swedish dishcloth",
+    "description": "Ten reusable Swedish sponge cloths in assorted colors. The selected one-time offer is sold by Ga Official and fulfilled by Amazon.",
+    "priceLabel": "$9.72",
+    "priceUsd": 9.72,
+    "priceNote": "One-time price $9.72 observed September 14, 2026; subscription prices excluded. Seller, delivery destination and offer may change.",
+    "link": "https://www.amazon.com/dp/B07MX46M6H",
+    "sourceImageUrl": "https://m.media-amazon.com/images/I/81EM3Ndl8JL._AC_SY355_.jpg",
+    "evidence": {
+      "sourceUrl": "https://www.amazon.com/dp/B07MX46M6H",
+      "imageUrl": "https://m.media-amazon.com/images/I/81EM3Ndl8JL._AC_SY355_.jpg",
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Amazon"
+    ],
+    "availability": [
+      {
+        "retailer": "Amazon",
+        "channel": "Amazon",
+        "market": "United States",
+        "priceLabel": "$9.72",
+        "priceUsd": 9.72,
+        "priceNote": "One-time price $9.72 observed September 14, 2026; subscription prices excluded. Seller, delivery destination and offer may change.",
+        "link": "https://www.amazon.com/dp/B07MX46M6H",
+        "seller": "Ga Official",
+        "availabilityStatus": "In stock on retrieved page",
+        "evidence": {
+          "sourceUrl": "https://www.amazon.com/dp/B07MX46M6H",
+          "imageUrl": "https://m.media-amazon.com/images/I/81EM3Ndl8JL._AC_SY355_.jpg",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-amazon-B07MX46M6H.jpg"
+  },
+  {
+    "id": "sponge-cloth-costco-4000278014",
+    "name": "Swedish Dishcloths, Two Sizes, 12ct",
+    "brand": "Evergrace",
+    "brandType": "National brand",
+    "retailer": "Costco",
+    "channel": "Costco",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Cellulose sponge cloth",
+    "description": "Twelve sponge cloths: six 6.7 × 7.5-inch and six 9.7 × 11.7-inch cloths. The product page specifies 70% cellulose and 30% cotton; fabric made in Germany and printing in China.",
+    "priceLabel": "See Costco",
+    "priceUsd": 0,
+    "priceNote": "Product details verified September 14, 2026. Price and fulfillment did not render; confirm membership, destination and selected design with Costco.",
+    "link": "https://www.costco.com/p/-/swedish-dishcloths-12-piece-set/4000278014",
+    "sourceImageUrl": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:72ff53c6-5bf5-4d71-9e7d-3b169a314e4a/as/4000278014-847_latticebloom_1.avif?width=350",
+    "evidence": {
+      "sourceUrl": "https://www.costco.com/p/-/swedish-dishcloths-12-piece-set/4000278014",
+      "imageUrl": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:72ff53c6-5bf5-4d71-9e7d-3b169a314e4a/as/4000278014-847_latticebloom_1.avif?width=350",
+      "checkedAt": "2026-09-14",
+      "method": "Live retailer page (cache disabled)"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Cellulose sponge cloth",
+      "Sponge cloth",
+      "Swedish dishcloth",
+      "Cellulose cloth",
+      "Costco"
+    ],
+    "availability": [
+      {
+        "retailer": "Costco",
+        "channel": "Costco",
+        "market": "United States",
+        "priceLabel": "See Costco",
+        "priceUsd": 0,
+        "priceNote": "Product details verified September 14, 2026. Price and fulfillment did not render; confirm membership, destination and selected design with Costco.",
+        "link": "https://www.costco.com/p/-/swedish-dishcloths-12-piece-set/4000278014",
+        "availabilityStatus": "Price and fulfillment did not render",
+        "evidence": {
+          "sourceUrl": "https://www.costco.com/p/-/swedish-dishcloths-12-piece-set/4000278014",
+          "imageUrl": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:72ff53c6-5bf5-4d71-9e7d-3b169a314e4a/as/4000278014-847_latticebloom_1.avif?width=350",
+          "checkedAt": "2026-09-14",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-costco-4000278014.jpg"
+  },
+  {
+    "id": "sponge-cloth-homedepot-205561300",
+    "name": "Microfiber Sponge Cloths, 3ct (Model 2103)",
+    "brand": "Libman",
+    "brandType": "National brand",
+    "retailer": "Home Depot",
+    "channel": "Home Depot",
+    "market": "United States",
+    "category": "Sponges",
+    "productType": "Microfiber sponge cloth",
+    "description": "Three thin sponges covered in pillow-weave microfiber. This is a microfiber sponge cloth, distinct from the cellulose-and-cotton Swedish dishcloth format.",
+    "priceLabel": "$3.80",
+    "priceUsd": 3.8,
+    "priceNote": "$3.80 for three units in the retailer page capture September 14, 2026; cache age and current fulfillment were not independently verified.",
+    "link": "https://www.homedepot.com/p/Libman-Microfiber-Sponge-Cloth-3-Count-2103/205561300",
+    "sourceImageUrl": "https://images.thdstatic.com/productImages/eb3c4c66-00ca-4b8f-a6b3-ac7ffeee62e2/svn/libman-microfiber-towels-2103-64_1000.jpg",
+    "evidence": {
+      "sourceUrl": "https://www.homedepot.com/p/Libman-Microfiber-Sponge-Cloth-3-Count-2103/205561300",
+      "imageUrl": "https://images.thdstatic.com/productImages/eb3c4c66-00ca-4b8f-a6b3-ac7ffeee62e2/svn/libman-microfiber-towels-2103-64_1000.jpg",
+      "checkedAt": "2026-09-14",
+      "method": "Retailer page capture; cache age not independently verified"
+    },
+    "salesSignal": "Retailer listing verified; current sales momentum not assessed",
+    "signalType": "Scout signal",
+    "trend": "Established",
+    "trendDetail": "Catalog listing; no current viral momentum established.",
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "Medium",
+    "whyTest": "Compare format, pack and guest benefit. Target absence has not been verified.",
+    "watchout": "A retailer listing is not proof of Target whitespace. Confirm current offer and supplier requirements.",
+    "tags": [
+      "Microfiber sponge cloth",
+      "Sponge cloth",
+      "Home Depot"
+    ],
+    "availability": [
+      {
+        "retailer": "Home Depot",
+        "channel": "Home Depot",
+        "market": "United States",
+        "priceLabel": "$3.80",
+        "priceUsd": 3.8,
+        "priceNote": "$3.80 for three units in the retailer page capture September 14, 2026; cache age and current fulfillment were not independently verified.",
+        "link": "https://www.homedepot.com/p/Libman-Microfiber-Sponge-Cloth-3-Count-2103/205561300",
+        "availabilityStatus": "Current fulfillment not verified",
+        "evidence": {
+          "sourceUrl": "https://www.homedepot.com/p/Libman-Microfiber-Sponge-Cloth-3-Count-2103/205561300",
+          "imageUrl": "https://images.thdstatic.com/productImages/eb3c4c66-00ca-4b8f-a6b3-ac7ffeee62e2/svn/libman-microfiber-towels-2103-64_1000.jpg",
+          "checkedAt": "2026-09-14",
+          "method": "Retailer page capture; cache age not independently verified"
+        }
+      }
+    ],
+    "image": "/sponge-cloth-products/sponge-cloth-homedepot-205561300.jpg"
   }
 ]

@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --test logic.test.mjs checkout.test.mjs"
+    "test": "node --test logic.test.mjs checkout.test.mjs search.test.mjs"
   },
   "devDependencies": {
     "@babel/parser": "^7.28.5",

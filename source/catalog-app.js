@@ -9,6 +9,7 @@ import {
   CheckoutRecords,
 } from "./decision-ui.jsx";
 import { isFreshViral, trendLabel, assess } from "./logic.js";
+import { buildSearchText, matchesSearch } from "./search.js";
 import * as r from "react/jsx-runtime";
 import * as i from "react";
 let h = [
@@ -717,22 +718,7 @@ let $ = catalogData,
   es = new Set(["category"]),
   eo = new Set(["retailer"]),
   el = new Set(["brandType"]),
-  ec = new Map(
-    $.map((e) => [
-      e.id,
-      [
-        e.name,
-        e.brand,
-        e.category,
-        e.description,
-        e.whyTest,
-        e.tags.join(" "),
-        ...V(e).flatMap((e) => [e.retailer, e.market]),
-      ]
-        .join(" ")
-        .toLowerCase(),
-    ]),
-  ),
+  ec = new Map($.map((e) => [e.id, buildSearchText(e)])),
   ed = (e, a, t = en) => {
     var r;
     let i = a.query.trim().toLowerCase();
@@ -774,7 +760,7 @@ let $ = catalogData,
           ("private-label" === a.brandType
             ? "Private label"
             : "National brand")) &&
-      (!!t.has("query") || !i || !!ec.get(e.id)?.includes(i)) &&
+      (!!t.has("query") || !i || matchesSearch(ec.get(e.id) || "", i)) &&
       !0
     );
   },
@@ -849,6 +835,7 @@ function ew() {
     [G, j] = (0, i.useState)("All captured retailers"),
     [clock, setClock] = (0, i.useState)(0);
   (0, i.useEffect)(() => { const timer = window.setInterval(() => setClock(Date.now()), 60000); return () => window.clearInterval(timer); }, []);
+  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); if(query){a(query); U("all");} }, []);
   (0, i.useEffect)(() => {
     let e = window.setTimeout(() => {
       try {
@@ -1033,9 +1020,10 @@ function ew() {
         T(36),
         U("all"));
     },
+    searchMatches = $.filter((product) => e.trim() && matchesSearch(ec.get(product.id) || "", e)),
+    showSearchMatches = () => { n("All"); o("All categories"); c("All retailers"); p("all"); g("all"); U("all"); T(36); },
     eH = (e) => {
-      (a(""),
-        U(e),
+      (U(e),
         n("All"),
         o("All categories"),
         c("All retailers"),
@@ -1104,34 +1092,7 @@ function ew() {
         window.localStorage.setItem(eb, JSON.stringify(records));
         x(records);
       } catch { N("Could not save this record. Browser storage is unavailable."); return; }
-      let r = encodeURIComponent(
-          `CleanTrend merchant selection — ${M.merchantName}`,
-        ),
-        i = a.flatMap((e, a) => [
-          `${a + 1}. ${e.productName}`,
-          `   Target retail price: ${e.targetRetailPrice}`,
-          `   Target PMU: ${e.targetPmu}`,
-          `   Number of stores: ${e.numberOfStores}`,
-          `   Potential launch date: ${e.potentialLaunchDate}`,
-          `   Comments: ${e.comments || "None"}`,
-          "",
-        ]),
-        n = encodeURIComponent(
-          [
-            `Merchant: ${M.merchantName}`,
-            "",
-            "Selected product details:",
-            ...i,
-            `Checkout record: ${t.id}`,
-          ].join("\n"),
-        );
-      (N(
-        "Saved. Your email application is opening with all recipients and details prefilled.",
-      ),
-        window.open(
-          `mailto:Ryan.hei@Target.com,Danielle.larkin@target.com,Kai.sun@target.com?subject=${r}&body=${n}`,
-          "_self",
-        ));
+      N("Saved in this browser. You can delete the record from Checkout records.");
     };
   return (0, r.jsxs)("main", {
     children: [
@@ -1163,7 +1124,7 @@ function ew() {
                 className: "freshness",
                 children: [
                   (0, r.jsx)("i", {}),
-                  " Catalog revised \xb7 Sep 11, 2026",
+                  " Partial update · Sep 14, 2026",
                 ],
               }),
               (0, r.jsxs)("button", {
@@ -1246,7 +1207,7 @@ function ew() {
                   (0, r.jsxs)("small", {
                     children: [
                       ez,
-                      " recorded retailer offers \xb7 photographs stored locally \xb7 not complete retailer inventory",
+                      " recorded retailer offers · partial assortment; full retailer inventories are not collected",
                     ],
                   }),
                 ],
@@ -1600,6 +1561,11 @@ function ew() {
             id: "directory",
             children: [
               (0, r.jsx)(SignalTabs, { products: $, active: R, onChange: eH }),
+              e.trim() && searchMatches.length > eL.length && (0, r.jsxs)("div", {
+                className: "search-scope-notice", role: "status",
+                children: [(0, r.jsx)("p", {children: `${searchMatches.length} matches for “${e}” across all products. ${searchMatches.length-eL.length} are hidden by your current filters. Target listings appear in All products.`}),
+                  (0, r.jsx)("button", {onClick: showSearchMatches, children: `Show all ${searchMatches.length} matches`})]
+              }),
               (0, r.jsxs)("div", {
                 className: "section-heading",
                 children: [
@@ -1649,7 +1615,7 @@ function ew() {
                         onChange: (e) => {
                           (a(e.target.value), T(36));
                         },
-                        placeholder: "Search product, brand, trend or use case",
+                        placeholder: "Search products, e.g. sponge cloth",
                         "aria-label": "Search products",
                       }),
                     ],
@@ -2545,7 +2511,7 @@ function ew() {
               (0, r.jsx)("p", {
                 className: "checkout-intro",
                 children:
-                  "Enter the merchant name once, then complete a separate commercial entry for every selected product. The checkout saves as one record and opens a pre-addressed email to Ryan Hei, Danielle Larkin and Kai Sun.",
+                  "Enter the merchant name once, then complete a separate commercial entry for every selected product. Your selection saves as one record in this browser.",
               }),
               (0, r.jsxs)("form", {
                 onSubmit: eO,
@@ -2689,20 +2655,10 @@ function ew() {
                       );
                     }),
                   }),
-                  (0, r.jsxs)("div", {
-                    className: "checkout-recipients full-field",
-                    children: [
-                      (0, r.jsx)("span", { children: "Email recipients" }),
-                      (0, r.jsx)("strong", {
-                        children:
-                          "Ryan.hei@Target.com \xb7 Danielle.larkin@target.com \xb7 Kai.sun@target.com",
-                      }),
-                    ],
-                  }),
                   (0, r.jsx)("button", {
                     className: "checkout-submit full-field",
                     type: "submit",
-                    children: "Save record & prepare email",
+                    children: "Save record",
                   }),
                   L &&
                     (0, r.jsx)("p", {

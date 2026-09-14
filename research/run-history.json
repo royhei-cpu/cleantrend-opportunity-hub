@@ -13,5 +13,35 @@
     "lastSuccessfulCatalogRefresh": null,
     "changedProductIds": [],
     "retailerCoverage": "Full live assortment review not completed; category-by-retailer ledger initialized."
+  },
+  {
+    "date": "2026-09-14",
+    "type": "Targeted sponge-cloth catalog repair",
+    "priorCatalogSize": 1900,
+    "catalogSize": 1912,
+    "newProductIds": [
+      "sponge-cloth-target-93290444",
+      "sponge-cloth-target-90041614",
+      "sponge-cloth-target-1001830054",
+      "sponge-cloth-target-91332057",
+      "sponge-cloth-walmart-506250965",
+      "sponge-cloth-walmart-1582259622",
+      "sponge-cloth-walmart-5484928964",
+      "sponge-cloth-walmart-495734060",
+      "sponge-cloth-walmart-200498646",
+      "sponge-cloth-amazon-B07MX46M6H",
+      "sponge-cloth-costco-4000278014",
+      "sponge-cloth-homedepot-205561300"
+    ],
+    "updatedProductIds": [
+      "source-repair-target-87488052"
+    ],
+    "sourceDiscoveryQueries": 4,
+    "liveProductPageFetches": 9,
+    "liveFetchesWithExactProductContent": 8,
+    "otherSelectedProductCaptures": 5,
+    "scope": "13 sponge-cloth records across five retailers; not the full category or retailer assortment",
+    "auditFile": "research/sponge-cloth-audit-2026-09-14.json",
+    "fullAssortmentReconciled": false
   }
 ]

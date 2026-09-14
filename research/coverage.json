@@ -547,11 +547,12 @@
         },
         {
           "category": "Sponges",
-          "capturedCount": 4,
+          "capturedCount": 5,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-14",
+          "attemptedAt": "2026-09-14",
+          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
           "category": "Wipes",
@@ -3655,11 +3656,12 @@
         },
         {
           "category": "Sponges",
-          "capturedCount": 1,
+          "capturedCount": 2,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-14",
+          "attemptedAt": "2026-09-14",
+          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
           "category": "Wipes",
@@ -6319,11 +6321,12 @@
         },
         {
           "category": "Sponges",
-          "capturedCount": 0,
+          "capturedCount": 1,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-14",
+          "attemptedAt": "2026-09-14",
+          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
           "category": "Wipes",
@@ -11425,11 +11428,12 @@
         },
         {
           "category": "Sponges",
-          "capturedCount": 12,
+          "capturedCount": 16,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-14",
+          "attemptedAt": "2026-09-14",
+          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
           "category": "Wipes",
@@ -12757,11 +12761,12 @@
         },
         {
           "category": "Sponges",
-          "capturedCount": 13,
+          "capturedCount": 18,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-14",
+          "attemptedAt": "2026-09-14",
+          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
           "category": "Wipes",
