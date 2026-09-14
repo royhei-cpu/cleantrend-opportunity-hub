@@ -1,0 +1,17 @@
+[
+  {
+    "date": "2026-09-14",
+    "type": "Freshness setup and stored-signal audit",
+    "catalogSize": 1900,
+    "signalFlagsAudited": 20,
+    "currentViralEvidenceFound": 0,
+    "expiredFromFreshList": 20,
+    "sourceDiscoveryQueries": [
+      "cleaning products viral September 2026 TikTok Amazon Scrub Daddy mop soap"
+    ],
+    "discoveryResult": "Results were general or historical articles; no qualifying current viral period established. Not a comprehensive live refresh.",
+    "lastSuccessfulCatalogRefresh": null,
+    "changedProductIds": [],
+    "retailerCoverage": "Full live assortment review not completed; category-by-retailer ledger initialized."
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "esbuild": "^0.25.12",
+    "prettier": "^3.6.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test logic.test.mjs"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.28.5",
+    "@babel/traverse": "^7.28.5"
+  }
+}

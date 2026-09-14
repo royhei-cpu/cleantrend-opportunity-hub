@@ -1,0 +1,9 @@
+{
+  "schedule": "Daily around 8 AM Shenzhen time",
+  "lastSuccessfulCatalogRefresh": null,
+  "lastSignalAudit": "2026-09-14",
+  "lastAttempt": "2026-09-14",
+  "status": "Setup complete; first scheduled catalog refresh pending",
+  "notes": "20 historical viral flags had no dated viral evidence. They remain available in Historical signals, and are excluded from Fresh viral signals. All 1900 existing listings retained. Current web discovery did not establish a fresh qualifying viral signal.",
+  "coverage": "Partial. All 27 categories are represented, but no retailer's complete assortment has been reconciled."
+}
