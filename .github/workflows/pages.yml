@@ -26,8 +26,15 @@ jobs:
 
       - name: Stage complete static release
         run: |
+          cat .publish/catalog.part.* > source/catalog.json
+          cat .publish/app.part.* > assets/app-d0ef2d91c58d.js
+          test "$(wc -c < source/catalog.json)" -eq 4729630
+          test "$(wc -c < assets/app-d0ef2d91c58d.js)" -eq 4172376
+          echo "54d4c8339700d3981dd7b27096f9c22f630f39657c80ed8c9ab4ad19cead1618  source/catalog.json" | sha256sum -c -
+          echo "d0ef2d91c58d787ce97c30f3e379350cec17eb23462e0eff52a19e715079bcb2  assets/app-d0ef2d91c58d.js" | sha256sum -c -
+          node -e "const c=require('./source/catalog.json'); if(c.length!==1918||new Set(c.map(x=>x.id)).size!==1918) process.exit(1)"
           mkdir -p "${RUNNER_TEMP}/site"
-          rsync -a --exclude='.git' --exclude='.github' ./ "${RUNNER_TEMP}/site/"
+          rsync -a --exclude='.git' --exclude='.github' --exclude='.publish' ./ "${RUNNER_TEMP}/site/"
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

@@ -1,0 +1,245 @@
+rently lists rechargeable extendable power scrubbers, including the Target-retail Casabella Power Spin Scrubber. RYOBI P4500 is a branded platform benchmark, not a verified missing product type.",
+      "sourceUrls": [
+        "https://www.target.com/p/casabella-extendable-power-scrubber/-/A-89743180",
+        "https://www.target.com/s?searchTerm=cordless%20power%20scrubber"
+      ],
+      "nextStep": "Benchmark battery-platform reach, attachment system and tool-only economics against Target’s current rechargeable scrubber assortment; do not present it as whitespace."
+    },
+    "tags": [
+      "Powered Tools",
+      "Cordless scrubber",
+      "Telescoping",
+      "Tool only",
+      "Cumulative review observation"
+    ],
+    "availability": [
+      {
+        "retailer": "Home Depot",
+        "channel": "Home Depot",
+        "market": "United States",
+        "priceLabel": "$95.14",
+        "priceUsd": 95.14,
+        "priceNote": "Tool only; battery and charger not included.",
+        "availabilityStatus": "Not verified",
+        "link": "https://www.homedepot.com/p/RYOBI-ONE-18V-Cordless-Telescoping-Power-Scrubber-Tool-Only-P4500/311738437",
+        "evidence": {
+          "sourceUrl": "https://www.homedepot.com/p/RYOBI-ONE-18V-Cordless-Telescoping-Power-Scrubber-Tool-Only-P4500/311738437",
+          "imageUrl": "https://images.thdstatic.com/productImages/d889a476-85ab-4828-91e8-0574129ea7dd/svn/ryobi-power-scrubbers-p4500-64_1000.jpg",
+          "checkedAt": "2026-09-15",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ]
+  },
+  {
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "High",
+    "trend": "Established",
+    "signalType": "Retailer observation",
+    "trendDetail": "Catalog presence is verified. No fresh viral growth claim is made.",
+    "whyTest": "Use the current retailer evidence to define a specific benchmark or test question; do not treat catalog presence as a Target gap.",
+    "watchout": "Verify the exact pack, seller, current fulfillment and product claims at the linked source before a merchant decision.",
+    "id": "target-13547819",
+    "name": "Complete Car Care Automotive Cleaning Kit, 4-Piece",
+    "brand": "Armor All",
+    "brandOwner": "Energizer Holdings",
+    "brandOwnerSource": "https://energizerholdings.com/brands/",
+    "brandType": "National brand",
+    "retailer": "Target",
+    "channel": "Target",
+    "market": "United States",
+    "category": "Auto Care",
+    "image": "/assets/catalog-refresh-2026-09-15/target-13547819.jpg",
+    "description": "Four-piece Armor All car-care kit with interior, glass and tire-cleaning formats.",
+    "priceLabel": "$13.49",
+    "priceUsd": 13.49,
+    "priceNote": "Four-piece Target retail offer observed September 15, 2026.",
+    "link": "https://www.target.com/p/armor-all-complete-car-care-automotive-cleaning-kit/-/A-13547819",
+    "rating": 4.7,
+    "reviews": 741,
+    "salesSignal": "Target catalog benchmark; no current purchase-window metric captured",
+    "targetAssessment": {
+      "status": "target-listed",
+      "currentlyCarried": true,
+      "equivalentCurrentlyCarried": true,
+      "temporarilyOutOfStock": false,
+      "reviewedBy": "Automated catalog maintenance — official Target pages",
+      "checkedAt": "2026-09-15T00:36:00Z",
+      "scope": "target-us",
+      "exactProductChecked": true,
+      "equivalentsChecked": true,
+      "targetPlusChecked": true,
+      "reason": "Target retail listing recorded: Armor All Complete Car Care Automotive Cleaning Kit, TCIN 13547819, was available on the official Target product page.",
+      "sourceUrls": [
+        "https://www.target.com/p/armor-all-complete-car-care-automotive-cleaning-kit/-/A-13547819"
+      ],
+      "nextStep": "Keep as the current Target benchmark for automotive cleaning kits; recheck price, pack and fulfillment before use."
+    },
+    "tags": [
+      "Auto Care",
+      "Target listing",
+      "Car detailing",
+      "Four piece"
+    ],
+    "availability": [
+      {
+        "retailer": "Target",
+        "channel": "Target",
+        "market": "United States",
+        "priceLabel": "$13.49",
+        "priceUsd": 13.49,
+        "priceNote": "Four-piece kit.",
+        "seller": "Target",
+        "availabilityStatus": "Only 4 left for observed location; location-specific",
+        "link": "https://www.target.com/p/armor-all-complete-car-care-automotive-cleaning-kit/-/A-13547819",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/armor-all-complete-car-care-automotive-cleaning-kit/-/A-13547819",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_c46fa327-3ea6-4a14-8dd8-0cefa97e1282",
+          "checkedAt": "2026-09-15",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ]
+  },
+  {
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "High",
+    "trend": "Established",
+    "signalType": "Retailer observation",
+    "trendDetail": "Catalog presence is verified. No fresh viral growth claim is made.",
+    "whyTest": "Use the current retailer evidence to define a specific benchmark or test question; do not treat catalog presence as a Target gap.",
+    "watchout": "Verify the exact pack, seller, current fulfillment and product claims at the linked source before a merchant decision.",
+    "id": "target-89743180",
+    "name": "Power Spin Scrubber",
+    "brand": "Casabella",
+    "brandType": "National brand",
+    "retailer": "Target",
+    "channel": "Target",
+    "market": "United States",
+    "category": "Powered Tools",
+    "image": "/assets/catalog-refresh-2026-09-15/target-89743180.jpg",
+    "description": "Rechargeable extendable spin scrubber with four interchangeable heads and up to 100 minutes of runtime.",
+    "priceLabel": "$43.49",
+    "priceUsd": 43.49,
+    "priceNote": "One scrubber observed September 15, 2026.",
+    "link": "https://www.target.com/p/casabella-extendable-power-scrubber/-/A-89743180",
+    "rating": 3.89,
+    "reviews": 532,
+    "salesSignal": "Target catalog benchmark; no current purchase-window metric captured",
+    "targetAssessment": {
+      "status": "target-listed",
+      "currentlyCarried": true,
+      "equivalentCurrentlyCarried": true,
+      "temporarilyOutOfStock": false,
+      "reviewedBy": "Automated catalog maintenance — official Target pages",
+      "checkedAt": "2026-09-15T00:36:00Z",
+      "scope": "target-us",
+      "exactProductChecked": true,
+      "equivalentsChecked": true,
+      "targetPlusChecked": true,
+      "reason": "Target retail listing recorded: Casabella Power Spin Scrubber, TCIN 89743180, was in stock on the official Target product page.",
+      "sourceUrls": [
+        "https://www.target.com/p/casabella-extendable-power-scrubber/-/A-89743180"
+      ],
+      "nextStep": "Keep as the current Target benchmark for extendable rechargeable scrubbers; review rating themes and attachment durability before a line decision."
+    },
+    "tags": [
+      "Powered Tools",
+      "Target listing",
+      "Rechargeable",
+      "Extendable"
+    ],
+    "availability": [
+      {
+        "retailer": "Target",
+        "channel": "Target",
+        "market": "United States",
+        "priceLabel": "$43.49",
+        "priceUsd": 43.49,
+        "priceNote": "One scrubber.",
+        "seller": "Target",
+        "availabilityStatus": "In stock for observed location; location-specific",
+        "link": "https://www.target.com/p/casabella-extendable-power-scrubber/-/A-89743180",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/casabella-extendable-power-scrubber/-/A-89743180",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_fa062830-dfb2-4d7b-a4c1-2f3e07bbe4f3",
+          "checkedAt": "2026-09-15",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ]
+  },
+  {
+    "score": 0,
+    "assessmentStatus": "Pending",
+    "confidence": "High",
+    "trend": "Established",
+    "signalType": "Retailer observation",
+    "trendDetail": "Catalog presence is verified. No fresh viral growth claim is made.",
+    "whyTest": "Use the current retailer evidence to define a specific benchmark or test question; do not treat catalog presence as a Target gap.",
+    "watchout": "Verify the exact pack, seller, current fulfillment and product claims at the linked source before a merchant decision.",
+    "id": "target-94686633",
+    "name": "Reusable Latex Gloves, Large, 2ct",
+    "brand": "Dealworthy",
+    "brandOwner": "Target",
+    "brandType": "Private label",
+    "retailer": "Target",
+    "channel": "Target",
+    "market": "United States",
+    "category": "Cleaning Gloves",
+    "image": "/assets/catalog-refresh-2026-09-15/target-94686633.jpg",
+    "description": "Two pairs of reusable latex gloves for dishwashing, household cleaning and general chores.",
+    "priceLabel": "See Target",
+    "priceUsd": 0,
+    "priceNote": "Price was not exposed in the successful product-page extraction; do not reuse an older value.",
+    "link": "https://www.target.com/p/reusable-latex-gloves-2ct-dealworthy/-/A-94686633",
+    "rating": 4.51,
+    "reviews": 442,
+    "salesSignal": "Target catalog benchmark; no current purchase-window metric captured",
+    "targetAssessment": {
+      "status": "target-listed",
+      "currentlyCarried": true,
+      "equivalentCurrentlyCarried": true,
+      "temporarilyOutOfStock": false,
+      "reviewedBy": "Automated catalog maintenance — official Target pages",
+      "checkedAt": "2026-09-15T00:36:00Z",
+      "scope": "target-us",
+      "exactProductChecked": true,
+      "equivalentsChecked": true,
+      "targetPlusChecked": true,
+      "reason": "Target-owned listing recorded: Dealworthy Reusable Latex Gloves, two-pair pack, TCIN 94686633, was present on the official Target product page.",
+      "sourceUrls": [
+        "https://www.target.com/p/reusable-latex-gloves-2ct-dealworthy/-/A-94686633"
+      ],
+      "nextStep": "Use as the current Target-owned two-pair latex-glove benchmark; recheck price and location-specific availability."
+    },
+    "tags": [
+      "Cleaning Gloves",
+      "Target listing",
+      "Target owned brand",
+      "Reusable latex",
+      "Two pairs"
+    ],
+    "availability": [
+      {
+        "retailer": "Target",
+        "channel": "Target",
+        "market": "United States",
+        "priceLabel": "See Target",
+        "priceUsd": 0,
+        "priceNote": "Current price not captured.",
+        "seller": "Target",
+        "availabilityStatus": "Pickup and delivery options shown; exact local stock not captured",
+        "link": "https://www.target.com/p/reusable-latex-gloves-2ct-dealworthy/-/A-94686633",
+        "evidence": {
+          "sourceUrl": "https://www.target.com/p/reusable-latex-gloves-2ct-dealworthy/-/A-94686633",
+          "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_b2346994-2de4-475c-8f23-ac21313e959a",
+          "checkedAt": "2026-09-15",
+          "method": "Live retailer page (cache disabled)"
+        }
+      }
+    ]
+  }
+]
