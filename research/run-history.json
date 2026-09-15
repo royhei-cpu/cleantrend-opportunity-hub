@@ -43,5 +43,43 @@
     "scope": "13 sponge-cloth records across five retailers; not the full category or retailer assortment",
     "auditFile": "research/sponge-cloth-audit-2026-09-14.json",
     "fullAssortmentReconciled": false
+  },
+  {
+    "date": "2026-09-15",
+    "type": "Partial market-led catalog and Target benchmark refresh",
+    "priorCatalogSize": 1912,
+    "catalogSize": 1918,
+    "newProductIds": [
+      "amazon-B08RP8D27B",
+      "walmart-17790510154",
+      "homedepot-311738437",
+      "target-13547819",
+      "target-89743180",
+      "target-94686633"
+    ],
+    "updatedProductIds": [
+      "amazon-repair-B08DVFZTTG"
+    ],
+    "changedProductIds": [
+      "amazon-B08RP8D27B",
+      "walmart-17790510154",
+      "homedepot-311738437",
+      "target-13547819",
+      "target-89743180",
+      "target-94686633",
+      "amazon-repair-B08DVFZTTG"
+    ],
+    "marketEvidenceFile": "source/market-evidence.json",
+    "marketObservations": 4,
+    "qualifyingCurrentDemandObservations": 3,
+    "verifiedTargetWhitespace": 0,
+    "signalFlagsAudited": 20,
+    "currentViralEvidenceFound": 0,
+    "sourceDiscoveryQueries": 32,
+    "exactProductPageFetches": 11,
+    "exactProductPageSuccesses": 10,
+    "sourceFailures": 8,
+    "coverage": "Partial: all 27 category terms attempted across priority US channels and six international market groups; no retailer inventory was fully reconciled.",
+    "auditFile": "research/market-discovery-2026-09-15.json"
   }
 ]

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "lastAttemptAt": "2026-09-15T00:36:00Z",
+  "limitedSample": true,
+  "scope": "Partial current observations from exact retailer pages and retailer-indexed search results. These observations are not a full assortment census and are not compared across unlike categories, retailers, metrics, windows or dates.",
+  "observations": [
+    {
+      "productId": "amazon-repair-B08DVFZTTG",
+      "productIdentity": "ACTIVE Washing Machine Cleaner Tablets, 24 Pack (ASIN B08DVFZTTG)",
+      "category": "Appliance Care",
+      "retailer": "Amazon",
+      "market": "United States",
+      "sourceUrl": "https://www.amazon.com/Washing-Machine-Cleaner-Descaler-Pack/dp/B08DVFZTTG",
+      "metric": "amazon-bought-band-minimum",
+      "value": 50000,
+      "displayValue": "50K+ bought in the past month",
+      "measurementWindow": "rolling past month",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": true,
+      "context": "Amazon's platform purchase band is a lower bound and may aggregate variations. It is not audited unit sales and does not establish growth."
+    },
+    {
+      "productId": "walmart-17790510154",
+      "productIdentity": "Armor All Car Cleaning Kit, 8-Piece Bucket Set (Walmart item 17790510154)",
+      "category": "Auto Care",
+      "retailer": "Walmart",
+      "market": "United States",
+      "sourceUrl": "https://www.walmart.com/ip/Armor-All-Car-Care-Cleaning-Kit-for-Car-Detailing-8-Piece-Bucket/17790510154",
+      "metric": "walmart-bought-band-minimum",
+      "value": 100,
+      "displayValue": "100+ bought since yesterday",
+      "measurementWindow": "since yesterday",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": true,
+      "context": "Walmart's platform purchase band is a lower bound, not audited sell-through or proof of growth."
+    },
+    {
+      "productId": "amazon-B08RP8D27B",
+      "productIdentity": "Mamison Rubber Dishwashing Gloves, Green Medium, 2 Pairs (ASIN B08RP8D27B)",
+      "category": "Cleaning Gloves",
+      "retailer": "Amazon",
+      "market": "United States",
+      "sourceUrl": "https://www.amazon.com/dp/B08RP8D27B",
+      "metric": "amazon-bought-band-minimum",
+      "value": 100,
+      "displayValue": "100+ bought in the past month",
+      "measurementWindow": "rolling past month",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": true,
+      "context": "Amazon's platform purchase band is a lower bound and may aggregate variations. It is not audited unit sales and does not establish growth."
+    },
+    {
+      "productId": "homedepot-311738437",
+      "productIdentity": "RYOBI ONE+ 18V Cordless VORTEX Telescoping Power Scrubber P4500",
+      "category": "Powered Tools",
+      "retailer": "Home Depot",
+      "market": "United States",
+      "sourceUrl": "https://www.homedepot.com/p/RYOBI-ONE-18V-Cordless-Telescoping-Power-Scrubber-Tool-Only-P4500/311738437",
+      "metric": "retailer-review-count",
+      "value": 2960,
+      "displayValue": "2,960 cumulative retailer reviews",
+      "measurementWindow": "cumulative as displayed",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": false,
+      "context": "A cumulative review base is a product-history observation, not a current purchase indicator or growth measurement."
+    }
+  ]
+}

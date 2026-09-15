@@ -1,9 +1,9 @@
 {
   "schedule": "Daily around 8 AM Shenzhen time",
-  "lastSuccessfulCatalogRefresh": "2026-09-14 — sponge cloths only",
-  "lastSignalAudit": "2026-09-14",
-  "lastAttempt": "2026-09-14",
+  "lastSuccessfulCatalogRefresh": "2026-09-15 — 6 verified retailer listings; 1 existing record refreshed",
+  "lastSignalAudit": "2026-09-15",
+  "lastAttempt": "2026-09-15",
   "status": "Partial refresh completed; remaining assortment pending",
-  "notes": "Added 12 sponge-cloth listings across Target, Walmart, Amazon, Costco and Home Depot; refreshed the existing Everspring listing. All 1900 prior products retained. The catalog now has 1912 listings. This was a targeted product-type update, not a complete daily review of every retailer. Historical viral signals remain historical.",
-  "coverage": "Partial. All 27 broad cleaning categories are represented, but product types and retailer inventories are incomplete. No retailer assortment has been fully reconciled."
+  "notes": "Added six exact retailer listings across Amazon, Walmart, Home Depot and Target; refreshed the existing ACTIVE Amazon record. All 1,912 prior records were retained. Three current retailer purchase-band observations were saved, but each is a lower bound rather than audited sales or growth. Current Target checks found listings or equivalents for every investigated item, so verified Target whitespace remains zero. The 20 original viral records remain historical; no qualifying fresh viral period was found.",
+  "coverage": "Partial. All 27 broad cleaning categories remain represented, but product types and retailer inventories are incomplete. No retailer assortment has been fully reconciled. Source failures and the oldest incomplete work are recorded in the research ledger."
 }

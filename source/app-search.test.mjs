@@ -59,8 +59,9 @@ test('The actual search screen opens URL results and preserves the query while r
   await click('Target should try · 0');
   const recommendations=screen.root.findByProps({'aria-label':'Ranked Target recommendations'});
   assert.match(text(recommendations),/No confirmed missing items yet/);
-  assert.match(text(recommendations),/research candidates, not confirmed Target gaps/);
-  assert.equal(screen.root.findAllByProps({className:'recommendation-row'}).length,6);
+  assert.match(text(recommendations),/Market-supported investigations/);
+  assert.match(text(recommendations),/not ranked against one another/);
+  assert.equal(screen.root.findAllByProps({className:'recommendation-row'}).length,3);
   await act(async()=>screen.unmount());
   window.location.search='?view=recommendations';
   await act(async()=>{screen=create(React.createElement(App));});

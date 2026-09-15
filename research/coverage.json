@@ -1,5 +1,5 @@
 {
-  "scope": "All 27 cleaning categories across every listed retailer. Coverage is partial.",
+  "scope": "All 27 cleaning categories across every listed retailer. Coverage is partial; September 15 discovery attempted all category groups for priority US channels and regional international scopes, but only exact successful product checks advanced lastSuccessfulCheck.",
   "retailers": [
     {
       "name": "11Street",
@@ -454,104 +454,104 @@
           "capturedCount": 45,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 36,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 38,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
           "capturedCount": 23,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 21,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 19,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
           "capturedCount": 14,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 24,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 18,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 5,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": "2026-09-14",
-          "attemptedAt": "2026-09-14",
-          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending",
           "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
@@ -559,112 +559,112 @@
           "capturedCount": 14,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
           "capturedCount": 13,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 12,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 15,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
-          "capturedCount": 0,
+          "capturedCount": 1,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         }
       ]
     },
@@ -3560,107 +3560,107 @@
       "categories": [
         {
           "category": "Laundry Care",
-          "capturedCount": 11,
+          "capturedCount": 12,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 8,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
-          "capturedCount": 1,
+          "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": "2026-09-14",
-          "attemptedAt": "2026-09-14",
-          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending",
           "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
@@ -3668,112 +3668,112 @@
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         }
       ]
     },
@@ -4008,216 +4008,216 @@
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 14,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 14,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
           "capturedCount": 18,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
           "capturedCount": 12,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 10,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 9,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 18,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Wipes",
           "capturedCount": 11,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 5,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 5,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         }
       ]
     },
@@ -6228,104 +6228,104 @@
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 6,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 11,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 8,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": "2026-09-14",
-          "attemptedAt": "2026-09-14",
-          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending",
           "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
@@ -6333,112 +6333,112 @@
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
-          "capturedCount": 0,
+          "capturedCount": 1,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         }
       ]
     },
@@ -7561,216 +7561,216 @@
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 5,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Wipes",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery rate-limited; assortment reconciliation pending"
         }
       ]
     },
@@ -11335,104 +11335,104 @@
           "capturedCount": 13,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 25,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 14,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 5,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
-          "capturedCount": 11,
+          "capturedCount": 12,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
           "capturedCount": 18,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 8,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 6,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 16,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": "2026-09-14",
-          "attemptedAt": "2026-09-14",
-          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending",
           "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
@@ -11440,112 +11440,112 @@
           "capturedCount": 9,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
-          "capturedCount": 2,
+          "capturedCount": 3,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 5,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
-          "capturedCount": 0,
+          "capturedCount": 1,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
-          "capturedCount": 2,
+          "capturedCount": 3,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         }
       ]
     },
@@ -12446,216 +12446,216 @@
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 12,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 16,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 6,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
           "capturedCount": 10,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
-          "capturedCount": 6,
+          "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 13,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 13,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 21,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Wipes",
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         }
       ]
     },
@@ -12668,104 +12668,104 @@
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dish Care",
           "capturedCount": 20,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Surface Cleaners",
           "capturedCount": 34,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Disinfecting Sprays",
           "capturedCount": 3,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Bathroom Care",
           "capturedCount": 21,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Toilet Brushes & Plungers",
           "capturedCount": 8,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Glass Care",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Floor Care",
           "capturedCount": 14,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Manual Tools",
           "capturedCount": 10,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Brooms & Dustpans",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Dusting",
           "capturedCount": 7,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Squeegees",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Sponges",
           "capturedCount": 18,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": "2026-09-14",
-          "attemptedAt": "2026-09-14",
-          "status": "Partial sponge-cloth capture; full assortment still pending",
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending",
           "lastSuccessfulScope": "Selected sponge-cloth listings only; full category not reconciled"
         },
         {
@@ -12773,112 +12773,112 @@
           "capturedCount": 9,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Accessories",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Powered Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Appliances",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Appliance Care",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Pet Cleaning",
           "capturedCount": 4,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Odor Control",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Refill Systems",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Specialty Cleaners",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Auto Care",
-          "capturedCount": 0,
+          "capturedCount": 1,
           "knownCatalogTotal": null,
-          "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "lastSuccessfulCheck": "2026-09-15",
+          "attemptedAt": "2026-09-15",
+          "status": "Partial exact-product refresh; assortment reconciliation pending"
         },
         {
           "category": "Outdoor Cleaning Tools",
           "capturedCount": 0,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Drain & Septic Care",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Trash Bags & Waste",
           "capturedCount": 1,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         },
         {
           "category": "Cleaning Gloves",
           "capturedCount": 2,
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
-          "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "attemptedAt": "2026-09-15",
+          "status": "Broad discovery returned incomplete or off-domain results; assortment reconciliation pending"
         }
       ]
     },
@@ -13770,5 +13770,6 @@
         }
       ]
     }
-  ]
+  ],
+  "lastAttempt": "2026-09-15"
 }

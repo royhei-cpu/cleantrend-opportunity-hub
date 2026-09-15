@@ -1025,7 +1025,8 @@ function ew() {
     searchMatches = $.filter((product) => e.trim() && matchesSearch(searchIndex.get(product.id) || "", e)),
     showSearchMatches = () => { n("All"); o("All categories"); c("All retailers"); p("all"); g("all"); U("all"); T(36); },
     eH = (e) => {
-      (U(e),
+      ("recommendations" === e && a(""),
+        U(e),
         n("All"),
         o("All categories"),
         c("All retailers"),
@@ -1126,7 +1127,7 @@ function ew() {
                 className: "freshness",
                 children: [
                   (0, r.jsx)("i", {}),
-                  " Partial update · Sep 14, 2026",
+                  " Partial update · Sep 15, 2026",
                 ],
               }),
               (0, r.jsxs)("button", {

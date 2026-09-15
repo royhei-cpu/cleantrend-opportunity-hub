@@ -1,0 +1,237 @@
+{
+  "date": "2026-09-15",
+  "scope": "Partial discovery across all 27 category groups, priority US retailers and regional international retailer groups. Not a complete assortment capture.",
+  "fullAssortmentReconciled": false,
+  "priorCatalogSize": 1912,
+  "catalogSize": 1918,
+  "sourceDiscoveryQueries": 32,
+  "exactProductPageFetches": 11,
+  "exactProductPageSuccesses": 10,
+  "categoryGroups": [
+    "Laundry Care",
+    "Dish Care",
+    "Surface Cleaners",
+    "Disinfecting Sprays",
+    "Bathroom Care",
+    "Toilet Brushes & Plungers",
+    "Glass Care",
+    "Floor Care",
+    "Manual Tools",
+    "Brooms & Dustpans",
+    "Dusting",
+    "Squeegees",
+    "Sponges",
+    "Wipes",
+    "Cleaning Accessories",
+    "Powered Tools",
+    "Cleaning Appliances",
+    "Appliance Care",
+    "Pet Cleaning",
+    "Odor Control",
+    "Refill Systems",
+    "Specialty Cleaners",
+    "Auto Care",
+    "Outdoor Cleaning Tools",
+    "Drain & Septic Care",
+    "Trash Bags & Waste",
+    "Cleaning Gloves"
+  ],
+  "priorityChannels": [
+    "Target",
+    "Amazon",
+    "Walmart",
+    "TikTok Shop",
+    "Costco",
+    "CVS",
+    "Walgreens",
+    "Home Depot",
+    "Lowe's"
+  ],
+  "internationalScopes": [
+    [
+      "Coupang",
+      "Gmarket",
+      "11Street",
+      "Naver Shopping",
+      "SSG.com"
+    ],
+    [
+      "Taobao",
+      "Tmall",
+      "JD.com",
+      "Pinduoduo",
+      "Douyin Shop"
+    ],
+    [
+      "Amazon Japan",
+      "Rakuten Ichiba",
+      "Yahoo! Shopping Japan",
+      "LOHACO",
+      "Aeon"
+    ],
+    [
+      "Tesco",
+      "Amazon UK",
+      "Ocado",
+      "Boots",
+      "B&Q"
+    ],
+    [
+      "Amazon Germany",
+      "Carrefour",
+      "dm",
+      "Rossmann",
+      "Bol.com"
+    ],
+    [
+      "Amazon Canada",
+      "Canadian Tire",
+      "Walmart Canada",
+      "Woolworths",
+      "Coles"
+    ]
+  ],
+  "methodology": "Independent market discovery preceded Target checks. Current observations require both observedAt and periodEnd; checkedAt alone does not refresh demand. Purchase bands are lower bounds and were not compared across unlike categories, retailers or windows.",
+  "marketObservations": [
+    {
+      "productId": "amazon-repair-B08DVFZTTG",
+      "productIdentity": "ACTIVE Washing Machine Cleaner Tablets, 24 Pack (ASIN B08DVFZTTG)",
+      "category": "Appliance Care",
+      "retailer": "Amazon",
+      "market": "United States",
+      "sourceUrl": "https://www.amazon.com/Washing-Machine-Cleaner-Descaler-Pack/dp/B08DVFZTTG",
+      "metric": "amazon-bought-band-minimum",
+      "value": 50000,
+      "displayValue": "50K+ bought in the past month",
+      "measurementWindow": "rolling past month",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": true,
+      "context": "Amazon's platform purchase band is a lower bound and may aggregate variations. It is not audited unit sales and does not establish growth."
+    },
+    {
+      "productId": "walmart-17790510154",
+      "productIdentity": "Armor All Car Cleaning Kit, 8-Piece Bucket Set (Walmart item 17790510154)",
+      "category": "Auto Care",
+      "retailer": "Walmart",
+      "market": "United States",
+      "sourceUrl": "https://www.walmart.com/ip/Armor-All-Car-Care-Cleaning-Kit-for-Car-Detailing-8-Piece-Bucket/17790510154",
+      "metric": "walmart-bought-band-minimum",
+      "value": 100,
+      "displayValue": "100+ bought since yesterday",
+      "measurementWindow": "since yesterday",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": true,
+      "context": "Walmart's platform purchase band is a lower bound, not audited sell-through or proof of growth."
+    },
+    {
+      "productId": "amazon-B08RP8D27B",
+      "productIdentity": "Mamison Rubber Dishwashing Gloves, Green Medium, 2 Pairs (ASIN B08RP8D27B)",
+      "category": "Cleaning Gloves",
+      "retailer": "Amazon",
+      "market": "United States",
+      "sourceUrl": "https://www.amazon.com/dp/B08RP8D27B",
+      "metric": "amazon-bought-band-minimum",
+      "value": 100,
+      "displayValue": "100+ bought in the past month",
+      "measurementWindow": "rolling past month",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": true,
+      "context": "Amazon's platform purchase band is a lower bound and may aggregate variations. It is not audited unit sales and does not establish growth."
+    },
+    {
+      "productId": "homedepot-311738437",
+      "productIdentity": "RYOBI ONE+ 18V Cordless VORTEX Telescoping Power Scrubber P4500",
+      "category": "Powered Tools",
+      "retailer": "Home Depot",
+      "market": "United States",
+      "sourceUrl": "https://www.homedepot.com/p/RYOBI-ONE-18V-Cordless-Telescoping-Power-Scrubber-Tool-Only-P4500/311738437",
+      "metric": "retailer-review-count",
+      "value": 2960,
+      "displayValue": "2,960 cumulative retailer reviews",
+      "measurementWindow": "cumulative as displayed",
+      "observedAt": "2026-09-15",
+      "periodEnd": "2026-09-15",
+      "qualifiesAsCurrentDemand": false,
+      "context": "A cumulative review base is a product-history observation, not a current purchase indicator or growth measurement."
+    }
+  ],
+  "targetChecks": [
+    {
+      "productId": "amazon-repair-B08DVFZTTG",
+      "result": "Target equivalent recorded",
+      "sources": [
+        "https://www.target.com/p/active-washing-machine-appliance-cleaners-tablets-6ct/-/A-95292970"
+      ]
+    },
+    {
+      "productId": "walmart-17790510154",
+      "result": "Target equivalent recorded",
+      "sources": [
+        "https://www.target.com/p/armor-all-complete-car-care-automotive-cleaning-kit/-/A-13547819"
+      ]
+    },
+    {
+      "productId": "amazon-B08RP8D27B",
+      "result": "Target equivalents recorded, including Target-owned and Target Plus offers",
+      "sources": [
+        "https://www.target.com/p/reusable-latex-gloves-2ct-dealworthy/-/A-94686633",
+        "https://www.target.com/p/vevor-reusable-dishwashing-gloves-2-pairs-colorful-reusable-household-kitchen-cleaning-gloves-for-washing-dishes-and-cleaning-tasks-purple-blue/-/A-1009006915"
+      ]
+    },
+    {
+      "productId": "homedepot-311738437",
+      "result": "Target equivalent recorded",
+      "sources": [
+        "https://www.target.com/p/casabella-extendable-power-scrubber/-/A-89743180"
+      ]
+    }
+  ],
+  "sourceFailures": [
+    {
+      "scope": "TikTok Shop exact Cajun Sparkle page",
+      "url": "https://www.tiktok.com/shop/pdp/cajun-sparkle-cleaner-versatile-rtu-for-glass-floor-auto-scrubbing/1731326453783236791",
+      "result": "Firecrawl source unsupported; no product facts refreshed."
+    },
+    {
+      "scope": "Costco floor-care discovery",
+      "result": "Transient tool response could not be parsed; no success date advanced."
+    },
+    {
+      "scope": "Amazon drain-care discovery",
+      "result": "Transient tool response could not be parsed; no success date advanced."
+    },
+    {
+      "scope": "Home Depot all-category discovery",
+      "result": "Firecrawl HTTP 429; exact RYOBI page later succeeded, other categories remain pending."
+    },
+    {
+      "scope": "Lowe's all-category discovery",
+      "result": "Firecrawl HTTP 429; no success date advanced."
+    },
+    {
+      "scope": "Target/Amazon/Walmart/Costco/CVS/Walgreens all-category domain searches",
+      "result": "Several returned off-domain results despite domain filters; treated as failed discovery, not coverage."
+    },
+    {
+      "scope": "International regional searches",
+      "result": "Low-precision results did not yield exact current product pages for catalog ingestion; all retailer/category reconciliation remains pending."
+    },
+    {
+      "scope": "Target ACTIVE 6ct image download",
+      "result": "Image origin returned HTTP 403; the listing was used only as linked Target evidence and was not added as a standalone catalog record."
+    }
+  ],
+  "changedProductIds": [
+    "amazon-B08RP8D27B",
+    "walmart-17790510154",
+    "homedepot-311738437",
+    "target-13547819",
+    "target-89743180",
+    "target-94686633",
+    "amazon-repair-B08DVFZTTG"
+  ],
+  "nextOldestIncomplete": "Continue exact product-type reconciliation in Outdoor Cleaning Tools, then Cleaning Gloves and Squeegees across retailers with no successful category check. Use independent current market observations before selecting Target research candidates."
+}
