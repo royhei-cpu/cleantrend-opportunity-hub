@@ -8,6 +8,9 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "prepare:catalog": "node prepare-catalog.mjs",
+    "prebuild": "npm run prepare:catalog",
+    "pretest": "npm run prepare:catalog",
     "build": "node build.mjs",
     "test": "node --test logic.test.mjs checkout.test.mjs search.test.mjs app-search.test.mjs recommendations.test.mjs"
   },
