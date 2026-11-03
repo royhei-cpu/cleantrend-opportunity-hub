@@ -13,7 +13,8 @@ const {default:App}=await import(pathToFileURL(path.join(temp,'app.mjs')));
 await rm(temp,{recursive:true});
 globalThis.IS_REACT_ACT_ENVIRONMENT=true;
 const text=node=>typeof node==='string'||typeof node==='number'?String(node):(node?.children||[]).map(text).join('');
-test('The actual search screen opens URL results and preserves the query while revealing filtered Target matches',async()=>{
+test('The actual search screen opens URL results and preserves the query while revealing filtered Target matches',async(t)=>{
+ t.mock.timers.enable({apis:['Date'],now:Date.parse('2026-09-15T12:00:00Z')});
  globalThis.window={location:{search:'?q=sponge%20cloth'},localStorage:{getItem:()=>null},setInterval:()=>1,clearInterval(){},setTimeout:fn=>{fn();return 2;},clearTimeout(){}};
  globalThis.document={getElementById:()=>({scrollIntoView(){}})};
  let screen;

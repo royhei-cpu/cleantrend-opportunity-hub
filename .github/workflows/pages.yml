@@ -24,17 +24,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: source/package-lock.json
+
+      - name: Verify and build current source
+        working-directory: source
+        run: |
+          npm ci
+          npm test
+          npm run build
+
       - name: Stage complete static release
         run: |
-          cat .publish/catalog.part.* > source/catalog.json
-          cat .publish/app.part.* > assets/app-92f037de3cf0.js
-          test "$(wc -c < source/catalog.json)" -eq 4729630
-          test "$(wc -c < assets/app-92f037de3cf0.js)" -eq 4172383
-          echo "54d4c8339700d3981dd7b27096f9c22f630f39657c80ed8c9ab4ad19cead1618  source/catalog.json" | sha256sum -c -
-          echo "92f037de3cf093d0c539cdc1b41e3a71e0226b459e65ef33e489a8802a2cbeb1  assets/app-92f037de3cf0.js" | sha256sum -c -
-          node -e "const c=require('./source/catalog.json'); if(c.length!==1918||new Set(c.map(x=>x.id)).size!==1918) process.exit(1)"
           mkdir -p "${RUNNER_TEMP}/site"
-          rsync -a --exclude='.git' --exclude='.github' --exclude='.publish' ./ "${RUNNER_TEMP}/site/"
+          rsync -a --exclude='.git' --exclude='.github' --exclude='.publish' --exclude='node_modules' --exclude='.render.mjs' ./ "${RUNNER_TEMP}/site/"
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

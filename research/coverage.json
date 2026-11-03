@@ -13122,7 +13122,10 @@
           "knownCatalogTotal": null,
           "lastSuccessfulCheck": null,
           "attemptedAt": null,
-          "status": "Needs assortment reconciliation"
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
         },
         {
           "category": "Surface Cleaners",
@@ -13324,7 +13327,15 @@
           "attemptedAt": null,
           "status": "Needs assortment reconciliation"
         }
-      ]
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.woolworths.com.au/shop/productdetails/796646/ecostore-dishwashing-liquid-lemon",
+        "listingRecordsAdded": 1,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
     },
     {
       "name": "Yahoo! Shopping Japan",
@@ -13769,7 +13780,3086 @@
           "status": "Needs assortment reconciliation"
         }
       ]
+    },
+    {
+      "name": "IKEA Canada",
+      "market": "Canada",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 2,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 2,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.ikea.com/ca/en/cat/pepprig-series-57166/",
+        "listingRecordsAdded": 7,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "bigbasket",
+      "market": "India",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.bigbasket.com/pb/gala/mops-brushes-scrubs/",
+        "listingRecordsAdded": 5,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "NTUC FairPrice",
+      "market": "Singapore",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 2,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://omni.fairprice.com.sg/category/kao-magiclean",
+        "listingRecordsAdded": 5,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "ACE UAE",
+      "market": "United Arab Emirates",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 2,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.aceuae.com/en/brands/vileda",
+        "listingRecordsAdded": 5,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "Sodimac Chile",
+      "market": "Chile",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 3,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.sodimac.cl/sodimac-cl/marca/VILEDA",
+        "listingRecordsAdded": 4,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "Pick n Pay",
+      "market": "South Africa",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 4,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.pnp.co.za/c/dishwashing1641520077",
+        "listingRecordsAdded": 4,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Direct page required JavaScript; retained indexed discovery only."
+      }
+    },
+    {
+      "name": "MUJI Japan",
+      "market": "Japan",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 2,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.muji.com/jp/ja/store/search/cmdty/%E6%8E%83%E9%99%A4%E7%94%A8%E5%93%81",
+        "listingRecordsAdded": 3,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "MUJI USA",
+      "market": "United States",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.muji.us/collections/cleaning-tools/products/cleaning-system-broom",
+        "listingRecordsAdded": 1,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "Daiso Singapore",
+      "market": "Singapore",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://shop.daisosingapore.com.sg/products/4549131973174",
+        "listingRecordsAdded": 1,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "Daiso UAE",
+      "market": "United Arab Emirates",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.daisojapanme.com/soft-cleaning-brush-%E2%80%93-gentle-bristle-multi-purpose-brush/5637163837.p",
+        "listingRecordsAdded": 1,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "myAEON2go",
+      "market": "Malaysia",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://myaeon2go.com/product/46223/daiso-washing-machine-tub-cleaning-brush-1-pcs",
+        "listingRecordsAdded": 1,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "Walmart Mexico",
+      "market": "Mexico",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 2,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.walmart.com.mx/browse/pinol/cat3780176_cat3940001_cat4220123/YnJhbmQ6UGlub2wie",
+        "listingRecordsAdded": 2,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
+    },
+    {
+      "name": "Pão de Açúcar",
+      "market": "Brazil",
+      "categories": [
+        {
+          "category": "Appliance Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Auto Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Bathroom Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Brooms & Dustpans",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Accessories",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Appliances",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Cleaning Gloves",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dish Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Disinfecting Sprays",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Drain & Septic Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Dusting",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Floor Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Glass Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Laundry Care",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Manual Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Odor Control",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Outdoor Cleaning Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Pet Cleaning",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Powered Tools",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Refill Systems",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Specialty Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Sponges",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Squeegees",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Surface Cleaners",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Indexed source discovery; exact offer and assortment reconciliation pending",
+          "discoveryAttemptedAt": "2026-11-04",
+          "newDiscoveryCount": 1,
+          "outstandingWork": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment."
+        },
+        {
+          "category": "Toilet Brushes & Plungers",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Trash Bags & Waste",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        },
+        {
+          "category": "Wipes",
+          "capturedCount": 0,
+          "knownCatalogTotal": null,
+          "lastSuccessfulCheck": null,
+          "attemptedAt": null,
+          "status": "Needs assortment reconciliation"
+        }
+      ],
+      "globalDiscovery": {
+        "reviewedAt": "2026-11-04",
+        "sourceUrl": "https://www.paodeacucar.com/especial/ofertasdodia_especial",
+        "listingRecordsAdded": 1,
+        "fullAssortmentReconciled": false,
+        "liveOfferCheckSucceeded": false,
+        "accessNote": "Indexed source content available; live stock not validated"
+      }
     }
   ],
-  "lastAttempt": "2026-09-15"
+  "lastAttempt": "2026-09-15",
+  "lastGlobalDiscovery": "2026-11-04",
+  "globalExpansionScope": "41 added listing records across 14 retailer-market sources; no complete assortment or live stock verification."
 }

@@ -1,0 +1,793 @@
+{
+  "updatedAt": "2026-11-04",
+  "scope": "Partial global benchmark expansion; not an exhaustive inventory or verified Target absence audit.",
+  "retailers": [
+    {
+      "id": "market-0",
+      "name": "IKEA Canada",
+      "market": "Canada",
+      "region": "North America",
+      "url": "https://www.ikea.com/ca/en/cat/pepprig-series-57166/",
+      "productIds": [
+        "global-20261104-00-00",
+        "global-20261104-00-01",
+        "global-20261104-00-02",
+        "global-20261104-00-03",
+        "global-20261104-00-04",
+        "global-20261104-00-05",
+        "global-20261104-00-06"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-1",
+      "name": "bigbasket",
+      "market": "India",
+      "region": "Asia",
+      "url": "https://www.bigbasket.com/pb/gala/mops-brushes-scrubs/",
+      "productIds": [
+        "global-20261104-01-00",
+        "global-20261104-01-01",
+        "global-20261104-01-02",
+        "global-20261104-01-03",
+        "global-20261104-01-04"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-2",
+      "name": "NTUC FairPrice",
+      "market": "Singapore",
+      "region": "Asia",
+      "url": "https://omni.fairprice.com.sg/category/kao-magiclean",
+      "productIds": [
+        "global-20261104-02-00",
+        "global-20261104-02-01",
+        "global-20261104-02-02",
+        "global-20261104-02-03",
+        "global-20261104-02-04"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-3",
+      "name": "ACE UAE",
+      "market": "United Arab Emirates",
+      "region": "Middle East",
+      "url": "https://www.aceuae.com/en/brands/vileda",
+      "productIds": [
+        "global-20261104-03-00",
+        "global-20261104-03-01",
+        "global-20261104-03-02",
+        "global-20261104-03-03",
+        "global-20261104-03-04"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-4",
+      "name": "Sodimac Chile",
+      "market": "Chile",
+      "region": "South America",
+      "url": "https://www.sodimac.cl/sodimac-cl/marca/VILEDA",
+      "productIds": [
+        "global-20261104-04-00",
+        "global-20261104-04-01",
+        "global-20261104-04-02",
+        "global-20261104-04-03"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-5",
+      "name": "Pick n Pay",
+      "market": "South Africa",
+      "region": "Africa",
+      "url": "https://www.pnp.co.za/c/dishwashing1641520077",
+      "productIds": [
+        "global-20261104-05-00",
+        "global-20261104-05-01",
+        "global-20261104-05-02",
+        "global-20261104-05-03"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-6",
+      "name": "MUJI Japan",
+      "market": "Japan",
+      "region": "Asia",
+      "url": "https://www.muji.com/jp/ja/store/search/cmdty/%E6%8E%83%E9%99%A4%E7%94%A8%E5%93%81",
+      "productIds": [
+        "global-20261104-06-00",
+        "global-20261104-06-01",
+        "global-20261104-06-02"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-7",
+      "name": "MUJI USA",
+      "market": "United States",
+      "region": "North America",
+      "url": "https://www.muji.us/collections/cleaning-tools/products/cleaning-system-broom",
+      "productIds": [
+        "global-20261104-07-00"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-8",
+      "name": "Daiso Singapore",
+      "market": "Singapore",
+      "region": "Asia",
+      "url": "https://shop.daisosingapore.com.sg/products/4549131973174",
+      "productIds": [
+        "global-20261104-08-00"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-9",
+      "name": "Daiso UAE",
+      "market": "United Arab Emirates",
+      "region": "Middle East",
+      "url": "https://www.daisojapanme.com/soft-cleaning-brush-%E2%80%93-gentle-bristle-multi-purpose-brush/5637163837.p",
+      "productIds": [
+        "global-20261104-09-00"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-10",
+      "name": "myAEON2go",
+      "market": "Malaysia",
+      "region": "Asia",
+      "url": "https://myaeon2go.com/product/46223/daiso-washing-machine-tub-cleaning-brush-1-pcs",
+      "productIds": [
+        "global-20261104-10-00"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-11",
+      "name": "Walmart Mexico",
+      "market": "Mexico",
+      "region": "North America",
+      "url": "https://www.walmart.com.mx/browse/pinol/cat3780176_cat3940001_cat4220123/YnJhbmQ6UGlub2wie",
+      "productIds": [
+        "global-20261104-11-00",
+        "global-20261104-11-01"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-12",
+      "name": "Pão de Açúcar",
+      "market": "Brazil",
+      "region": "South America",
+      "url": "https://www.paodeacucar.com/especial/ofertasdodia_especial",
+      "productIds": [
+        "global-20261104-12-00"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    },
+    {
+      "id": "market-13",
+      "name": "Woolworths",
+      "market": "Australia",
+      "region": "Oceania",
+      "url": "https://www.woolworths.com.au/shop/productdetails/796646/ecostore-dishwashing-liquid-lemon",
+      "productIds": [
+        "global-20261104-13-00"
+      ],
+      "checkedAt": "2026-11-04",
+      "status": "Partial discovery",
+      "denominator": null,
+      "next": "Check exact SKUs, sellers, images, local prices and stock; reconcile against the retailer assortment.",
+      "access": "Indexed source content available; live stock not validated"
+    }
+  ],
+  "sources": [
+    {
+      "id": "aarp",
+      "title": "AARP Home and Community Preferences, 2024",
+      "url": "https://www.aarp.org/pri/topics/livable-communities/housing/2024-home-community-preferences/",
+      "metric": "75%",
+      "context": "Share of US adults 50+ who want to remain in their current home as long as possible.",
+      "period": "2024 survey, over 3,000 adults 18+",
+      "limitation": "Preference for aging at home does not measure cleaning-tool demand or willingness to pay."
+    },
+    {
+      "id": "bls",
+      "title": "BLS American Time Use Survey, 2024",
+      "url": "https://www.bls.gov/news.release/archives/atus_06262025.htm",
+      "metric": "2.01 hours/day",
+      "context": "Average household-activity time for the US civilian population age 15+.",
+      "period": "2024 annual average; released June 26, 2025",
+      "limitation": "Includes cooking, maintenance and other household work; it is not cleaning time alone."
+    },
+    {
+      "id": "epa",
+      "title": "US EPA containers and packaging data",
+      "url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/containers-and-packaging-product-specific",
+      "metric": "82.2M tons",
+      "context": "US containers and packaging waste generated in 2018, across all product categories.",
+      "period": "2018 baseline, not a 2026 estimate",
+      "limitation": "Not a cleaning packaging market size or proof of consumer willingness to pay."
+    },
+    {
+      "id": "avma",
+      "title": "AVMA US Pet Ownership Statistics, 2026",
+      "url": "https://www.avma.org/resources-tools/reports-statistics/us-pet-ownership-statistics",
+      "metric": "58.9M households",
+      "context": "Estimated US dog-owning households; cat-owning households estimated at 46.0M.",
+      "period": "2026 sourcebook; opt-in weighted survey of 7,547 people",
+      "limitation": "Dog and cat households overlap. Ownership does not measure cleaning demand."
+    },
+    {
+      "id": "hardness",
+      "title": "USGS water hardness classification",
+      "url": "https://pubs.usgs.gov/wri/wri024045/htms/table3.htm",
+      "metric": "121–180 mg/L",
+      "context": "Classification range for hard water, expressed as calcium carbonate.",
+      "period": "Published USGS classification, historical technical reference",
+      "limitation": "This is a classification, not the percentage of US homes with hard water."
+    },
+    {
+      "id": "target",
+      "title": "Target Everspring assortment",
+      "url": "https://www.target.com/b/everspring/-/N-gl7n0",
+      "metric": "Existing Target range",
+      "context": "Refills, concentrates and Free & Clear products already appear in Target sources.",
+      "period": "Indexed assortment reviewed November 4, 2026",
+      "limitation": "Partial page review; no complete Target absence review was performed."
+    },
+    {
+      "id": "target-refill",
+      "title": "Target 2025 sustainability report",
+      "url": "https://corporate.target.com/getmedia/391e0902-54da-4a88-9325-4fa0098c2665/2025-Sustainability-and-Governance-Report.pdf",
+      "metric": "Refills already expanded",
+      "context": "Target reports expanding Everspring concentrate and refill offerings in 2024.",
+      "period": "2025 report covering FY2024 progress",
+      "limitation": "Corporate historical disclosure; not a current SKU or performance audit."
+    },
+    {
+      "id": "target-pet",
+      "title": "Target up&up pet stain and odor cleaner",
+      "url": "https://www.target.com/p/-/A-50631447",
+      "metric": "32 fl oz",
+      "context": "Target lists an existing up&up enzymatic pet stain and odor product.",
+      "period": "Indexed product page reviewed November 4, 2026",
+      "limitation": "Do not present basic pet stain spray as an absent Target category."
+    },
+    {
+      "id": "muji",
+      "title": "MUJI Cleaning System broom",
+      "url": "https://www.muji.us/collections/cleaning-tools/products/cleaning-system-broom",
+      "metric": "Interchangeable heads",
+      "context": "Broom head is compatible with multiple MUJI poles.",
+      "period": "Indexed product page reviewed November 4, 2026",
+      "limitation": "Format evidence only; compatibility with other brands is not established."
+    },
+    {
+      "id": "ikea",
+      "title": "IKEA Canada PEPPRIG range",
+      "url": "https://www.ikea.com/ca/en/cat/pepprig-series-57166/",
+      "metric": "CAD 29.99",
+      "context": "Reference listing price for the cleaning set; replacement parts and textiles listed separately.",
+      "period": "Indexed Canadian range reviewed November 4, 2026",
+      "limitation": "Local reference price; no US landed-cost comparison or complete assortment claim."
+    },
+    {
+      "id": "fairprice",
+      "title": "FairPrice Magiclean range",
+      "url": "https://omni.fairprice.com.sg/category/kao-magiclean",
+      "metric": "SGD 2.04 vs 3.26",
+      "context": "500 ml glass cleaner refill and 500 ml bottle reference prices.",
+      "period": "Indexed range reviewed November 4, 2026",
+      "limitation": "Same retailer/currency/volume; dated references. Formula equivalence and promotions need checking."
+    },
+    {
+      "id": "kao",
+      "title": "Kao Singapore Magiclean range",
+      "url": "https://www.kao.com/sg/products/magiclean/",
+      "metric": "Additive-free wet sheets",
+      "context": "Kao lists an additive-free wiper-sheet variant dated September 1, 2026.",
+      "period": "Manufacturer catalog reviewed November 4, 2026",
+      "limitation": "Manufacturer listing and feature claim; not proven superior performance or shopper demand."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "compact",
+      "title": "One handle. A complete small-home system.",
+      "category": "Manual Tools",
+      "priority": "Investigate first",
+      "shopper": "Apartment residents who have little room for tools.",
+      "why": "MUJI and IKEA demonstrate modular systems. The open question is whether a Target version can reduce stored volume and make replacements simpler.",
+      "evidenceIds": [
+        "muji",
+        "ikea"
+      ],
+      "changes": [
+        "One telescopic handle with mop, duster and squeegee heads.",
+        "A ventilated rail that fits a cabinet door.",
+        "Sell each wear part separately with a visible compatibility code."
+      ],
+      "difference": "Make storage footprint and long-term replacement availability the promise, with a distinct connection design.",
+      "proposedPrice": "USD 24.99–29.99 starter · proposed",
+      "pilot": "Compare two working prototypes with 30 small-home households for four weeks.",
+      "successMetric": "Proposed gate: at least 20% less storage volume than the selected Target benchmark, with no cleaning-performance loss.",
+      "killCriterion": "Stop if the connector fails the durability protocol or spare heads cannot meet cost targets.",
+      "benchmarkRetailers": [
+        "MUJI Japan",
+        "IKEA Canada"
+      ],
+      "targetBaseline": "A full review of Target modular tools and Target Plus equivalents is still required.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "easy-grip",
+      "title": "Easy-grip cleaning, without the clinical look.",
+      "category": "Manual Tools",
+      "priority": "Investigate first",
+      "shopper": "Older adults and anyone who finds squeezing and wringing difficult.",
+      "why": "AARP reports strong preference for remaining at home. This supports investigating usability, not claiming measured tool demand.",
+      "evidenceIds": [
+        "aarp",
+        "muji"
+      ],
+      "changes": [
+        "Large grip zones and a lighter adjustable shaft.",
+        "Tool changes that do not require pinching small clips.",
+        "A self-standing base and high-contrast labels."
+      ],
+      "difference": "Design for broad usability in a coordinated home palette; validate force and reach with users.",
+      "proposedPrice": "USD 19.99–24.99 kit · proposed",
+      "pilot": "Usability sessions with 24 adults across hand-strength and mobility ranges.",
+      "successMetric": "Proposed gate: 20% lower measured operating force, with no higher error rate than the comparator.",
+      "killCriterion": "Stop if weight or grip size excludes intended users, or wet-grip safety is worse.",
+      "benchmarkRetailers": [
+        "MUJI Japan",
+        "Sodimac Chile"
+      ],
+      "targetBaseline": "Existing ergonomic and long-handle Target items must be checked. This is a feature-improvement hypothesis.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "refill",
+      "title": "A refill that wins on cost per clean.",
+      "category": "Refill Systems",
+      "priority": "Investigate first",
+      "shopper": "Value shoppers who want reuse to be easy and economical.",
+      "why": "FairPrice provides a same-volume refill/bottle comparison. Target already has refills, so another pouch alone is insufficient.",
+      "evidenceIds": [
+        "fairprice",
+        "target",
+        "target-refill",
+        "epa"
+      ],
+      "changes": [
+        "A durable trigger with replacement spare parts.",
+        "Clearly marked fill line and measured dosing.",
+        "Display cost per prepared bottle using verified dilution instructions."
+      ],
+      "difference": "Combine repeat-use economics, dosing accuracy and durability; substantiate packaging reductions by weight.",
+      "proposedPrice": "USD 4.99–6.99 starter · proposed",
+      "pilot": "Run an eight-week repeat-use study and packaging-weight comparison.",
+      "successMetric": "Proposed gate: at least 15% lower cost per equivalent clean after the second refill.",
+      "killCriterion": "Stop if added water, dosing errors or sprayer failures remove the cost advantage.",
+      "benchmarkRetailers": [
+        "NTUC FairPrice",
+        "Woolworths"
+      ],
+      "targetBaseline": "Everspring reusable bottles, concentrates and refill offers are already documented.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "pet",
+      "title": "A complete pet-mess reset station.",
+      "category": "Pet Cleaning",
+      "priority": "Investigate first",
+      "shopper": "Pet households dealing with hair, spills and fabric accidents.",
+      "why": "AVMA documents a large pet-owning base. Target already carries pet stain spray; the hypothesis is a better cleanup routine.",
+      "evidenceIds": [
+        "avma",
+        "target-pet"
+      ],
+      "changes": [
+        "Bundle a reusable hair pickup tool, washable pad and labeled cleaner.",
+        "Separate hair removal from stain treatment with simple steps.",
+        "Include a draining holder and clearly stated surface exclusions."
+      ],
+      "difference": "A coordinated dry-to-wet routine with tested fabric compatibility, rather than a generic spray.",
+      "proposedPrice": "USD 14.99–19.99 kit · proposed",
+      "pilot": "In-home comparison with 30 dog/cat households on specified mess types.",
+      "successMetric": "Proposed gate: 20% shorter total cleanup time with equivalent residue and odor results.",
+      "killCriterion": "Stop if bundling adds cost without improving time, or material compatibility fails.",
+      "benchmarkRetailers": [
+        "Daiso Singapore",
+        "IKEA Canada"
+      ],
+      "targetBaseline": "up&up enzymatic pet stain and odor cleaner is an existing Target benchmark.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "quiet-scent",
+      "title": "A consistent fragrance-free cleaning routine.",
+      "category": "Surface Cleaners",
+      "priority": "Validate demand",
+      "shopper": "Shoppers who prefer minimal added scent across rooms.",
+      "why": "Target Free & Clear products already exist. The possible improvement is consistent navigation, dosing and labeling across the routine.",
+      "evidenceIds": [
+        "target",
+        "kao"
+      ],
+      "changes": [
+        "Use plain fragrance-free labeling across compatible products.",
+        "Make directions consistent and show surface restrictions.",
+        "Offer a room-by-room starter and replenishment choices."
+      ],
+      "difference": "Make selecting a coordinated routine easier; do not claim allergy prevention or universal safety.",
+      "proposedPrice": "USD 9.99–12.99 bundle · proposed",
+      "pilot": "Test navigation and routine completion against separate existing products.",
+      "successMetric": "Proposed gate: 25% fewer product-selection errors in a structured user task.",
+      "killCriterion": "Stop if users prefer existing individual items or the bundle duplicates the current offer.",
+      "benchmarkRetailers": [
+        "NTUC FairPrice",
+        "Woolworths"
+      ],
+      "targetBaseline": "Target already lists Free & Clear laundry, dish and surface cleaners.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "hard-water",
+      "title": "Surface-safe care for mineral buildup.",
+      "category": "Bathroom Care",
+      "priority": "Validate demand",
+      "shopper": "Households with documented hard-water deposits.",
+      "why": "USGS defines water hardness; local prevalence and purchase intent still need measurement. Pair a targeted cleaner with surface guidance.",
+      "evidenceIds": [
+        "hardness",
+        "target"
+      ],
+      "changes": [
+        "A surface compatibility chart with clear exclusions.",
+        "A small detail brush for taps and seams.",
+        "Measured application and rinse guidance based on the tested formula."
+      ],
+      "difference": "Sell a specific maintenance task with proven surface compatibility and residue removal.",
+      "proposedPrice": "USD 7.99–9.99 kit · proposed",
+      "pilot": "Bench tests on hard-water deposits plus 20 household trials.",
+      "successMetric": "Proposed gate: match the selected remover on deposit removal with no damage on claimed surfaces.",
+      "killCriterion": "Stop if finish damage occurs or the benefit is indistinguishable from existing Target products.",
+      "benchmarkRetailers": [
+        "bigbasket",
+        "NTUC FairPrice"
+      ],
+      "targetBaseline": "Check CLR, Lime-A-Way, specialty bathroom products and Target Plus before classifying any gap.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "repair",
+      "title": "Replace the worn part. Keep the tool.",
+      "category": "Cleaning Accessories",
+      "priority": "Investigate first",
+      "shopper": "Shoppers replacing an entire tool because one component wears out.",
+      "why": "MUJI lists a replacement pole button; IKEA lists bristle and textile refills. These support a serviceability concept.",
+      "evidenceIds": [
+        "muji",
+        "ikea",
+        "epa"
+      ],
+      "changes": [
+        "Publish a compatibility identifier on every tool and refill.",
+        "Offer spare triggers, connector parts and pads.",
+        "Use a QR page with repair instructions and current spare links."
+      ],
+      "difference": "Make repair discoverable at the shelf and sustainable to supply, with tested durability.",
+      "proposedPrice": "USD 2.99–5.99 spare parts · proposed",
+      "pilot": "Run a tool-repair task and supplier spare-part cost review.",
+      "successMetric": "Proposed gate: 80% of participants identify and fit the correct spare without assistance.",
+      "killCriterion": "Stop if spare availability or shipping cost makes repair impractical.",
+      "benchmarkRetailers": [
+        "MUJI Japan",
+        "IKEA Canada",
+        "ACE UAE"
+      ],
+      "targetBaseline": "Existing Target replacement heads remain benchmarks; catalog absence does not prove a gap.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "washable",
+      "title": "Room-coded washable cloths with a drying home.",
+      "category": "Wipes",
+      "priority": "Validate demand",
+      "shopper": "Shared households trying to keep kitchen and bathroom tools separate.",
+      "why": "IKEA offers differentiated cloth colors and replacement pads. The hypothesis is better household organization, not a new cloth category.",
+      "evidenceIds": [
+        "ikea",
+        "bls"
+      ],
+      "changes": [
+        "Use colors plus stitched room icons for accessibility.",
+        "Add a ventilated divided holder.",
+        "Specify and test a wash-life protocol."
+      ],
+      "difference": "Build a repeatable storage and care routine; avoid unsupported hygiene or germ-kill claims.",
+      "proposedPrice": "USD 7.99–9.99 set · proposed",
+      "pilot": "Four-week trial in 24 shared households and repeated wash testing.",
+      "successMetric": "Proposed gate: 25% fewer room-mixup errors in diary tasks after two weeks.",
+      "killCriterion": "Stop if users ignore the coding or absorbency falls below the comparator after washing.",
+      "benchmarkRetailers": [
+        "IKEA Canada",
+        "ACE UAE"
+      ],
+      "targetBaseline": "Target cloths and sponge cloths already exist; only a validated system difference is relevant.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "kitchen",
+      "title": "The two-minute sink reset.",
+      "category": "Dish Care",
+      "priority": "Validate demand",
+      "shopper": "Busy households wanting a simple end-of-meal routine.",
+      "why": "BLS records substantial household work time but does not isolate sink cleaning. Cross-market brush and refill formats offer test inputs.",
+      "evidenceIds": [
+        "bls",
+        "fairprice"
+      ],
+      "changes": [
+        "A replaceable-head sink brush and draining dock.",
+        "Measured dish-soap dispensing beside the brush.",
+        "A compact wipe-down textile and clear care instructions."
+      ],
+      "difference": "Focus on less mess and faster finishing; demonstrate the time claim with a defined task.",
+      "proposedPrice": "USD 9.99–14.99 set · proposed",
+      "pilot": "Timed matched-task study with 30 households.",
+      "successMetric": "Proposed gate: 20% less reset time at equal cleaning result.",
+      "killCriterion": "Stop if the dock traps water or participants prefer their existing setup.",
+      "benchmarkRetailers": [
+        "bigbasket",
+        "Pick n Pay"
+      ],
+      "targetBaseline": "Existing Target dish brushes, dispensers and sink organizers need equivalent checks.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "renter",
+      "title": "A move-in kit organized by task.",
+      "category": "Cleaning Accessories",
+      "priority": "Validate demand",
+      "shopper": "First-home and dorm shoppers buying essentials with limited space.",
+      "why": "IKEA shows coordinated tools and caddies. The hypothesis is clearer task coverage and replenishment, not an unprecedented kit.",
+      "evidenceIds": [
+        "ikea",
+        "bls"
+      ],
+      "changes": [
+        "Bundle only tools for three clearly defined tasks.",
+        "Nested caddy with a drying section.",
+        "Show replacement part codes and a total first-month budget."
+      ],
+      "difference": "A transparent task-and-cost starter with no redundant items.",
+      "proposedPrice": "USD 19.99–24.99 kit · proposed",
+      "pilot": "Test two bundles against a shop-your-own-items control with 30 new-home shoppers.",
+      "successMetric": "Proposed gate: 20% less selection time and no higher total equivalent-task cost.",
+      "killCriterion": "Stop if the bundle contains items most households will not use.",
+      "benchmarkRetailers": [
+        "IKEA Canada",
+        "Daiso Singapore"
+      ],
+      "targetBaseline": "Review Target student kits, caddies and existing starter bundles.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "wet-floor",
+      "title": "Dry the shower floor with less effort.",
+      "category": "Squeegees",
+      "priority": "Validate demand",
+      "shopper": "Households cleaning wet bathroom floors and shower walls.",
+      "why": "UAE and Chile ranges show wipers and long-handle tools. Their presence supports format discovery, not US demand size.",
+      "evidenceIds": [
+        "muji",
+        "aarp"
+      ],
+      "changes": [
+        "Light adjustable handle and replaceable rubber blade.",
+        "Narrow head option for corners.",
+        "Ventilated storage and tested wet-grip handle."
+      ],
+      "difference": "A replaceable blade and controlled reach, with measured water-removal performance.",
+      "proposedPrice": "USD 12.99–17.99 kit · proposed",
+      "pilot": "Controlled wet-tile comparison plus reach usability sessions.",
+      "successMetric": "Proposed gate: equal water pickup with fewer strokes on the defined test area.",
+      "killCriterion": "Stop if the head chatters, scratches claimed surfaces or stores poorly.",
+      "benchmarkRetailers": [
+        "ACE UAE",
+        "Sodimac Chile",
+        "MUJI Japan"
+      ],
+      "targetBaseline": "Target shower squeegees and long-handle equivalents need review.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    },
+    {
+      "id": "appliance",
+      "title": "Precision tools for neglected appliance gaps.",
+      "category": "Appliance Care",
+      "priority": "Validate demand",
+      "shopper": "Shoppers cleaning accessible seals, edges and exterior crevices.",
+      "why": "AEON lists a washing-machine brush and Gala lists task-specific tools. Investigate whether a small kit improves access.",
+      "evidenceIds": [
+        "bls"
+      ],
+      "changes": [
+        "Two brush shapes for accessible seals and crevices.",
+        "A removable washable cover and ventilated holder.",
+        "Machine-specific exclusions and instructions to follow the appliance manual."
+      ],
+      "difference": "Precise task guidance and easy tool cleaning; avoid unsupported maintenance or lifespan claims.",
+      "proposedPrice": "USD 5.99–8.99 kit · proposed",
+      "pilot": "Fit checks across selected appliance models and controlled residue tests.",
+      "successMetric": "Proposed gate: reach 90% of defined accessible test locations without visible damage.",
+      "killCriterion": "Stop if safe use requires appliance disassembly or users cannot follow exclusions.",
+      "benchmarkRetailers": [
+        "myAEON2go",
+        "bigbasket"
+      ],
+      "targetBaseline": "Review existing Target appliance brushes and maintenance kits including marketplace sellers.",
+      "status": "Concept hypothesis · Target check needed",
+      "checks": {
+        "target": false,
+        "demand": false,
+        "price": false,
+        "feasibility": false
+      }
+    }
+  ],
+  "coverageQueue": [
+    {
+      "region": "Asia",
+      "next": "Expand China and South Korea with accessible original retailer pages and exact sellers."
+    },
+    {
+      "region": "Europe",
+      "next": "Refresh Germany, France and UK prices and add Nordics, Spain and Italy."
+    },
+    {
+      "region": "Africa",
+      "next": "Extend beyond South Africa; research Kenya, Nigeria and Egypt."
+    },
+    {
+      "region": "Middle East",
+      "next": "Add Saudi Arabia and compare local seller/pack conditions."
+    },
+    {
+      "region": "South America",
+      "next": "Extend beyond Brazil and Chile; research Colombia, Peru and Argentina."
+    },
+    {
+      "region": "Oceania",
+      "next": "Add New Zealand and reconcile Australia category coverage."
+    }
+  ]
+}

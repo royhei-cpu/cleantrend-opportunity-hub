@@ -1,5 +1,15 @@
 # CleanTrend maintenance
 
+## November 4 global workspace
+
+The application combines the verified 1,918-record base in `source/catalog.json` with 41 supplementary listing records in `source/global-products.json`. Preserve both datasets and all original IDs. `source/global-research.json` stores 14 retailer-market discovery sources, 12 product-development hypotheses and their evidence references. These hypotheses are never verified Target whitespace. Foreign prices are local-currency reference observations, with no inferred exchange rates or fabricated current offers. An indexed source review date does not refresh the date of an older offer or establish current stock. Exact images remain pending where not sourced.
+
+GitHub Pages now runs `npm ci`, `npm test` and `npm run build` in `source/` before staging the site. Publish source changes together; CI generates the matching `index.html` and hashed assets as part of its release artifact. It no longer relies on `.publish/app.part.*`. Preserve the existing `.publish/catalog.part.*` and base catalog hash reconstruction. The tracked base catalog can be reconstructed by `prepare-catalog.mjs`; global additions belong in the supplementary dataset unless the base catalog and its hash/parts are deliberately migrated together.
+
+New verification covers combined catalog IDs, global filters, unverified Target status, nonconverted currency data, calculator input handling and CSV formula escaping. Browser checks cover desktop and mobile, concept comparison, region/search filters, item dialogs and downloads. The damaged source application from the September 15 default-view commit was recovered from the preceding intact commit, then its default recommendations view was reapplied. The existing search-screen test now freezes its clock at its fixture evidence date instead of assuming those September demand observations stay fresh forever.
+
+This expansion is a partial source-discovery exercise. No complete retailer assortment reconciliation, fresh viral qualification, supplier approval or complete Target absence review occurred. Use the coverage queue to continue research; do not call this a comprehensive live feed.
+
 Canonical public site: https://royhei-cpu.github.io/cleantrend-opportunity-hub/
 
 The source folder now builds the active page. Do not roll back to the older 636-product Sites copy. `source/catalog.json` is the authoritative normalized catalog (1,900 products at migration; 1,918 after the September 15 refresh). `catalog-app.js` preserves existing filtering, pack comparison and checkout behavior from the audited release. The verified September 15 catalog is mirrored in ordered `.publish/catalog.part.*` files because the connected GitHub transport caps individual writes; `npm test` and `npm run build` verify or reconstruct `source/catalog.json` before use. Keep those parts together until the repository can consolidate the full file in one write. Update catalog.json for product and retailer-offer changes, then regenerate the ordered parts and hash check whenever its content changes.
