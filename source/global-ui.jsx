@@ -15,19 +15,26 @@ function download(name, content, type) {
 function exportProducts(rows) {
   const fields = ['Brand','Product','Retailer','Market','Category','Pack','Reference price','Currency','Source scope','Source reviewed','Evidence URL','Target status'];
   const data = rows.map(p => [p.brand,p.name,p.retailer,p.market,p.category,p.packLabel,p.referencePrice.amount,p.referencePrice.currency,p.sourceScope,p.sourceDiscoveredAt,p.link,'Needs Target check']);
-  download('cleantrend-global-benchmarks.csv', '\uFEFF' + [fields,...data].map(row=>row.map(csvCell).join(',')).join('\r\n'), 'text/csv;charset=utf-8');
+  download('homecare-atlas-global-benchmarks.csv', '\uFEFF' + [fields,...data].map(row=>row.map(csvCell).join(',')).join('\r\n'), 'text/csv;charset=utf-8');
 }
 function exportBrief(brief) {
   const content = [brief.title,brief.status,`Research reviewed: ${research.updatedAt}`,`Shopper: ${brief.shopper}`,`Why investigate: ${brief.why}`,`Target baseline: ${brief.targetBaseline}`,'Product changes:',...brief.changes.map(change=>`- ${change}`),`Point of difference: ${brief.difference}`,`Proposed price (unvalidated): ${brief.proposedPrice}`,`Pilot: ${brief.pilot}`,`Proposed success gate: ${brief.successMetric}`,`Stop condition: ${brief.killCriterion}`,'Evidence:',...brief.evidenceIds.map(id=>{const s=sources.get(id);return `${s.title}: ${s.metric}. ${s.context} ${s.period}. Limit: ${s.limitation} ${s.url}`;}),'Required before launch: current Target absence/equivalent/Target Plus review, product-specific shopper demand, comparable current price, supplier quotation and sample feasibility review.'].join('\n\n');
-  download(`cleantrend-${brief.id}-concept.txt`, content, 'text/plain;charset=utf-8');
+  download(`homecare-atlas-${brief.id}-concept.txt`, content, 'text/plain;charset=utf-8');
 }
 
 function Evidence({ ids }) {
   return <div className="world-evidence">{ids.map(id=>{const s=sources.get(id);return <div key={id}><a href={s.url} {...external}>{s.title} ↗</a><p><b>{s.metric}</b> · {s.context}</p><small>{s.period}. {s.limitation}</small></div>;})}</div>;
 }
 
-function OpportunityCard({ brief, selected, onToggle, full }) {
+function ConceptArt({ kind }) {
+  const viewBox=kind==='compact'?'0 594 627 660':'627 594 627 660';
+  return <figure className="calm-concept-art"><svg viewBox={viewBox} preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustrative product development concept"><image href="/cleantrend-opportunity-hub/assets/calm-still-life.jpg" width="1254" height="1254"/></svg><figcaption>Concept illustration</figcaption></figure>;
+}
+
+function OpportunityCard({ brief, selected, onToggle, full, index }) {
   return <article className="world-opportunity">
+    {['compact','easy-grip'].includes(brief.id)?<ConceptArt kind={brief.id}/>:<div className="calm-concept-number" aria-hidden="true"><b>{String(index+1).padStart(2,'0')}</b><span>{brief.category}</span></div>}
+    <div className="calm-opportunity-content">
     <div className="world-card-top"><span>{brief.category}</span><span className={brief.priority==='Investigate first'?'world-priority':'world-stage'}>{brief.priority}</span></div>
     <h3>{brief.title}</h3><p>{brief.shopper}</p>
     <div className="world-why"><b>Why this deserves a closer look</b><p>{brief.why}</p></div>
@@ -42,6 +49,7 @@ function OpportunityCard({ brief, selected, onToggle, full }) {
       <button className="world-link-button" onClick={()=>exportBrief(brief)}>Download this concept brief ↓</button>
     </details>
     <div className="world-card-footer"><span>Concept hypothesis · Target check needed</span><button aria-pressed={selected} onClick={()=>onToggle(brief.id)}>{selected?'Remove from comparison':'Compare concept +'}</button></div>
+    </div>
   </article>;
 }
 
@@ -81,20 +89,21 @@ function GlobalRetailers({ onOpen, onCompare, selected }) {
   </section>;
 }
 
-export function GlobalOpportunityHub({ catalog, onOpen, onCompare, selected, imagePath }) {
-  const [view,setView]=useState('opportunities');const [category,setCategory]=useState('All opportunities');const [concepts,setConcepts]=useState([]);const [message,setMessage]=useState('');const [full,setFull]=useState(false);
+export function GlobalOpportunityHub({ catalog, onOpen, onCompare, selected, view, setView, onBrowseCatalog }) {
+  const [category,setCategory]=useState('All opportunities');const [concepts,setConcepts]=useState([]);const [message,setMessage]=useState('');const [full,setFull]=useState(false);const [briefLimit,setBriefLimit]=useState(6);
   const summary=useMemo(()=>coverageSummary(catalog),[catalog]);
   const categories=[...new Set(research.opportunities.map(o=>o.category))];
   const briefs=research.opportunities.filter(o=>category==='All opportunities'||o.category===category);
   function toggle(id){if(concepts.includes(id)){setConcepts(ids=>ids.filter(v=>v!==id));setMessage('');}else if(concepts.length<3){setConcepts(ids=>[...ids,id]);setMessage('');}else setMessage('Compare up to three concepts. Remove one to add another.');}
+  function tabKey(event){const ids=['opportunities','retailers','evidence'];const current=ids.indexOf(view);const next=event.key==='ArrowRight'?(current+1)%3:event.key==='ArrowLeft'?(current+2)%3:event.key==='Home'?0:event.key==='End'?2:null;if(next===null)return;event.preventDefault();setView(ids[next]);event.currentTarget.parentElement.querySelector(`#world-tab-${ids[next]}`)?.focus();}
   return <section className="world-hub" id="global-intelligence" aria-label="Global opportunity workspace">
-    <div className="world-hero"><div><p className="eyebrow">The global homecare opportunity desk · research edition</p><h1>Global ideas.<br/><em>A sharper difference</em><br/>for Target.</h1><p>Explore the products, understand the evidence, and turn a promising idea into a distinctive product worth testing.</p><div className="world-hero-actions"><a href="#world-workspace">Explore 12 opportunity briefs ↗</a><a href="#directory">Browse the full catalog ↓</a></div></div><aside><span>FROM BENCHMARK TO BETTER PRODUCT</span><ol><li><b>01</b><div>See what exists.<small>Products, retailers, markets and original sources.</small></div></li><li><b>02</b><div>Find a useful difference.<small>Shopper need, Target baseline and proposed changes.</small></div></li><li><b>03</b><div>Define the proof.<small>Economics, prototype tests and stop conditions.</small></div></li></ol><p>Updated November 4, 2026<br/>Partial research · completeness is still a goal</p></aside></div>
+    <div className="world-hero"><div className="calm-hero-copy"><h1>Global homecare.<br/>Thoughtful opportunities for Target.</h1><p>Explore global products for everyday care at home—and turn well-supported ideas into distinctive opportunities for Target.</p><div className="world-hero-actions"><a href="#world-workspace" onClick={()=>setView('opportunities')}>Explore 12 opportunity briefs <span aria-hidden="true">↗</span></a><button onClick={onBrowseCatalog}>Browse all products <span aria-hidden="true">↓</span></button></div></div><figure className="calm-hero-art"><img src="/cleantrend-opportunity-hub/assets/homecare-living.jpg" alt="Illustrative homecare still life with laundry linens, towels and an organized household caddy" fetchPriority="high"/><figcaption>Homecare, considered as a whole. Illustrative lifestyle image.</figcaption></figure></div>
     <div className="world-stats"><div><b>{summary.records.toLocaleString()}</b><span>catalog listing records</span></div><div><b>{summary.countries}</b><span>countries represented*</span></div><div><b>{summary.retailers}</b><span>retailer labels*</span></div><div><b>{products.length}</b><span>new global benchmarks</span></div><div><b>{research.opportunities.length}</b><span>development hypotheses</span></div></div>
-    <p className="world-small">*Derived from recorded offers. Retailer labels can include national storefronts and DTC brands. Coverage is partial; these counts do not represent market share or complete current assortments.</p>
+    <p className="world-small calm-scope">Current catalog focus: cleaning, laundry and household tools. Broader homecare coverage is developing. Counts come from recorded offers and do not represent complete current assortments.</p>
     <div className="world-boundary"><strong>A promising concept still needs proof.</strong><p>These 12 briefs are product-development hypotheses. They do not count as verified Target whitespace. Current Target absence, product-specific demand, comparable price and supplier feasibility must be checked before a launch recommendation.</p></div>
-    <div id="world-workspace" className="world-workspace"><div className="world-tabs" role="tablist" aria-label="Global intelligence sections">{[['opportunities','Opportunity briefs'],['retailers','Global retailers & items'],['evidence','Data & economics']].map(([id,label])=><button key={id} id={`world-tab-${id}`} role="tab" aria-selected={view===id} aria-controls="world-panel" onClick={()=>setView(id)}>{label}</button>)}</div>
+    <div id="world-workspace" className="world-workspace"><div className="world-tabs" role="tablist" aria-label="Global intelligence sections">{[['opportunities','Opportunity briefs'],['retailers','Global retailers & items'],['evidence','Data & economics']].map(([id,label])=><button key={id} id={`world-tab-${id}`} role="tab" tabIndex={view===id?0:-1} aria-selected={view===id} aria-controls="world-panel" onKeyDown={tabKey} onClick={()=>setView(id)}>{label}</button>)}</div>
       <div role="tabpanel" id="world-panel" aria-labelledby={`world-tab-${view}`}>
-      {view==='opportunities'&&<><div className="world-section-title"><div><p className="eyebrow">A clear reason to be different</p><h2>What should we change—and why?</h2><p>Investigation order is editorial judgment, not a validated commercial score. Each brief shows its evidence limits.</p></div><label>Focus area<select value={category} onChange={e=>setCategory(e.target.value)}><option>All opportunities</option>{categories.map(c=><option key={c}>{c}</option>)}</select></label></div><div className="world-toolbar"><button aria-pressed={full} onClick={()=>setFull(v=>!v)}>{full?'Collapse all briefs':'Expand all evidence & test plans'}</button><span>{briefs.length} concepts · {concepts.length}/3 in concept comparison</span></div><p role="status">{message}</p><ConceptComparison selected={concepts} onRemove={toggle} onClear={()=>{setConcepts([]);setMessage('');}}/><div className="world-opportunity-grid">{briefs.map(brief=><OpportunityCard key={`${brief.id}-${full}`} brief={brief} full={full} selected={concepts.includes(brief.id)} onToggle={toggle}/>)}</div></>}
+      {view==='opportunities'&&<><div className="world-section-title"><div><h2>What should we change—and why?</h2><p>Each concept connects a shopper need with evidence, product changes and a test plan.</p></div><label>Focus area<select value={category} onChange={e=>{setCategory(e.target.value);setBriefLimit(6);}}><option>All opportunities</option>{categories.map(c=><option key={c}>{c}</option>)}</select></label></div><div className="world-toolbar"><button aria-pressed={full} onClick={()=>setFull(v=>!v)}>{full?'Collapse all briefs':'Expand all evidence & test plans'}</button><span>{Math.min(briefLimit,briefs.length)} of {briefs.length} concepts · {concepts.length}/3 in comparison</span></div><p role="status">{message}</p><ConceptComparison selected={concepts} onRemove={toggle} onClear={()=>{setConcepts([]);setMessage('');}}/><div className="world-opportunity-grid">{briefs.slice(0,briefLimit).map((brief,index)=><OpportunityCard key={`${brief.id}-${full}`} brief={brief} full={full} index={index} selected={concepts.includes(brief.id)} onToggle={toggle}/>)}</div>{briefs.length>briefLimit&&<button className="world-load-more" onClick={()=>setBriefLimit(briefs.length)}>Show {briefs.length-briefLimit} more opportunities ↓</button>}<p className="world-small">Investigation order is editorial judgment, not a validated commercial ranking.</p></>}
       {view==='retailers'&&<GlobalRetailers onOpen={onOpen} onCompare={onCompare} selected={selected}/>}
       {view==='evidence'&&<><div className="world-section-title"><div><p className="eyebrow">Evidence you can inspect</p><h2>Data first. Assumptions visible.</h2><p>Macro statistics establish context. They do not establish product demand, Target absence, or a sales forecast.</p></div></div><div className="world-source-grid">{research.sources.map(s=><article key={s.id}><b>{s.metric}</b><h3><a href={s.url} {...external}>{s.title} ↗</a></h3><p>{s.context}</p><small>{s.period}</small><p className="world-source-limit">Limit: {s.limitation}</p></article>)}</div><Economics/><section className="world-roadmap"><h3>Where coverage needs to go next</h3><p>No retailer has been fully reconciled in this expansion. Prioritize unknown markets and the oldest evidence before adding more undated records.</p><div>{research.coverageQueue.map(r=><article key={r.region}><b>{r.region}</b><p>{r.next}</p></article>)}</div></section></>}
       </div>

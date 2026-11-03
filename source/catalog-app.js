@@ -1,6 +1,7 @@
 import catalogData from "./catalog.json" with { type: "json" };
 import globalProducts from "./global-products.json" with { type: "json" };
 import { GlobalOpportunityHub } from "./global-ui.jsx";
+import { AudioControls } from "./audio-ui.jsx";
 import {
   AssessmentGuide,
   ItemDecision,
@@ -820,6 +821,14 @@ let eh = () => ({
   ef = (e) => (e.startsWith("/") ? `/cleantrend-opportunity-hub${e}` : e),
   eb = "cleantrend-checkout-records";
 function ew() {
+  const [workspaceView, setWorkspaceView] = (0, i.useState)("opportunities");
+  const [catalogOpen, setCatalogOpen] = (0, i.useState)(false);
+  const scrollToSection = id => {
+    const scroll = () => document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"});
+    if (window.requestAnimationFrame) window.requestAnimationFrame(scroll); else scroll();
+  };
+  const browseCatalog = () => { setCatalogOpen(true); U("all"); scrollToSection("directory"); };
+  const navigateWorkspace = view => { setCatalogOpen(false); setWorkspaceView(view); scrollToSection("world-workspace"); };
   let [e, a] = (0, i.useState)(""),
     [t, n] = (0, i.useState)("All"),
     [s, o] = (0, i.useState)("All categories"),
@@ -831,7 +840,7 @@ function ew() {
     [y, v] = (0, i.useState)(!1),
     [S, k] = (0, i.useState)(null),
     [C, T] = (0, i.useState)(36),
-    [R, U] = (0, i.useState)("recommendations"),
+    [R, U] = (0, i.useState)("all"),
     [P, z] = (0, i.useState)(!1),
     [B, x] = (0, i.useState)([]),
     [L, N] = (0, i.useState)(""),
@@ -839,7 +848,7 @@ function ew() {
     [G, j] = (0, i.useState)("All captured retailers"),
     [clock, setClock] = (0, i.useState)(0);
   (0, i.useEffect)(() => { const timer = window.setInterval(() => setClock(Date.now()), 60000); return () => window.clearInterval(timer); }, []);
-  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); const view = params.get("view"); if(query)a(query); if(["priority","research","all","viral","history","recommendations"].includes(view)){U(view);document.getElementById("directory")?.scrollIntoView({behavior:"auto"});} else if(query){U("all");document.getElementById("directory")?.scrollIntoView({behavior:"auto"});} }, []);
+  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); const view = params.get("view"); if(query)a(query); if(["priority","research","all","viral","history","recommendations"].includes(view)){setCatalogOpen(true);U(view);scrollToSection("directory");} else if(query){setCatalogOpen(true);U("all");scrollToSection("directory");} }, []);
   (0, i.useEffect)(() => {
     let e = window.setTimeout(() => {
       try {
@@ -1107,17 +1116,17 @@ function ew() {
           (0, r.jsxs)("a", {
             className: "brand",
             href: "#top",
-            "aria-label": "CleanTrend Opportunity Hub home",
+            "aria-label": "Homecare Atlas home",
             children: [
               (0, r.jsx)("span", {
                 className: "brand-mark",
                 "aria-hidden": "true",
-                children: "CT",
+                children: "HA",
               }),
               (0, r.jsxs)("span", {
                 children: [
-                  (0, r.jsx)("strong", { children: "CleanTrend" }),
-                  (0, r.jsx)("small", { children: "Opportunity Hub" }),
+                  (0, r.jsx)("strong", { children: "Homecare Atlas" }),
+                  (0, r.jsx)("small", { children: "Global retail intelligence" }),
                 ],
               }),
             ],
@@ -1126,8 +1135,9 @@ function ew() {
             className: "topbar-actions",
             children: [
               (0, r.jsxs)("nav", { className: "world-nav", "aria-label": "Main navigation", children: [
-                (0, r.jsx)("a", { href: "#global-intelligence", children: "Global opportunities" }),
-                (0, r.jsx)("a", { href: "#directory", children: "Full catalog" }),
+                (0, r.jsx)("button", { onClick: () => navigateWorkspace("opportunities"), "aria-pressed": workspaceView === "opportunities" && !catalogOpen, children: "Opportunities" }),
+                (0, r.jsx)("button", { onClick: () => navigateWorkspace("retailers"), "aria-pressed": workspaceView === "retailers" && !catalogOpen, children: "Retailers" }),
+                (0, r.jsx)("button", { onClick: browseCatalog, "aria-controls": "catalog-library", "aria-expanded": catalogOpen, children: "All products" }),
               ]}),
               (0, r.jsxs)("span", {
                 className: "freshness",
@@ -1153,7 +1163,9 @@ function ew() {
         className: "page-shell",
         id: "top",
         children: [
-          (0, r.jsx)(GlobalOpportunityHub, { catalog: $, selected: b, onOpen: k, onCompare: id => w(ids => ids.includes(id) ? ids.filter(value => value !== id) : ids.length < 6 ? [...ids, id] : ids), imagePath: ef }),
+          (0, r.jsx)(GlobalOpportunityHub, { catalog: $, selected: b, onOpen: k, onCompare: id => w(ids => ids.includes(id) ? ids.filter(value => value !== id) : ids.length < 6 ? [...ids, id] : ids), imagePath: ef, view: workspaceView, setView: setWorkspaceView, onBrowseCatalog: browseCatalog }),
+          (0, r.jsxs)("details", {className: "catalog-library", id: "catalog-library", open: catalogOpen, onToggle: event => setCatalogOpen(event.currentTarget.open), children: [
+          (0, r.jsx)("summary", {children: `All product research · ${$.length.toLocaleString()} records`}),
           (0, r.jsxs)("section", {
             className: "intro-row",
             children: [
@@ -1161,11 +1173,11 @@ function ew() {
                 children: [
                   (0, r.jsx)("p", {
                     className: "eyebrow",
-                    children: "CleanTrend · retailer intelligence",
+                    children: "Homecare · product research",
                   }),
                   (0, r.jsx)("h2", {
                     className: "world-legacy-title",
-                    children: "Explore the complete research catalog.",
+                    children: "Explore the product library.",
                   }),
                   (0, r.jsx)("p", {
                     className: "intro-copy",
@@ -1588,7 +1600,7 @@ function ew() {
                         children: "Opportunity library",
                       }),
                       (0, r.jsx)("h2", {
-                        children: R === "priority" ? "Verified Target whitespace" : R === "research" ? "Products needing a Target check" : R === "history" ? "Viral history" : R === "viral" ? "Fresh viral products" : "Explore cleaning products",
+                        children: R === "priority" ? "Verified Target whitespace" : R === "research" ? "Products needing a Target check" : R === "history" ? "Viral history" : R === "viral" ? "Fresh viral products" : "Explore homecare products",
                       }),
                     ],
                   }),
@@ -2235,8 +2247,10 @@ function ew() {
               }),
             ],
           }),
+          ]}),
         ],
       }),
+      (0, r.jsx)(AudioControls, {}),
       b.length > 0 &&
         (0, r.jsxs)("div", {
           className: "compare-dock",

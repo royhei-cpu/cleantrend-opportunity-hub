@@ -1,4 +1,6 @@
-# White Space — CleanTrend Opportunity Hub
+# Homecare Atlas — Global Retail Intelligence
+
+The user's latest direction is whole-home care with a simple, organized interface. The public site is branded Homecare Atlas. Opportunities, Retailers and All products are the three main routes. Optional ambient music, button sounds, volume and mute controls are available in the corner; music starts only after Play. Keep the existing public URL and browser-local saved records. See source/design-notes.md and MAINTENANCE.md for source coverage and verification limits.
 
 This is the project to open in Codex on Ryan's laptop.
 

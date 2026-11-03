@@ -1,5 +1,17 @@
 # CleanTrend maintenance
 
+## Homecare Atlas interface and audio
+
+The public identity is now **Homecare Atlas**, reflecting the user's whole-home care scope. Preserve the existing GitHub Pages address and catalog IDs. The recorded catalog still focuses on cleaning, laundry and household tools; broader homecare coverage is developing. Do not imply that the new lifestyle art is a verified retailer product photo or that storage, organization and maintenance assortments are already comprehensive.
+
+The three primary routes are Opportunities, Retailers and All products. The catalog and older coverage reports are under a collapsible library; direct `?q=` and `?view=` links open it. Six concept briefs show initially, with a control to reveal the remaining six. Category filtering, comparison, sources and browser-local saved records remain available.
+
+`source/calm.css` defines the ivory/sage editorial theme. `assets/homecare-living.jpg` is AI-generated illustrative lifestyle art; `assets/calm-still-life.jpg` supplies labeled concept illustrations. These never replace exact catalog images. Both were created with the built-in image tool and converted to JPEG for delivery.
+
+`source/audio-engine.js` synthesizes original, sparse ambient chords and bell tones with the Web Audio API; no remote recording or music request is used. Background music is off until Play is pressed, button sounds are initially enabled, and settings offer volume, effect toggle and mute-all. Preferences are stored under `cleantrend-sound-settings-v1`, excluding playback state, so revisiting never starts music automatically. The scheduler stops on pause, tab hiding and unmount. Preserve the existing checkout storage key independently.
+
+Automated verification covers navigation, progressive disclosure, audio graph scheduling, pending-start cancellation, mute, volume, preferences and no autoplay after remount. At this update the in-app browser twice refused preview because its admin-enforced security policy could not be verified. No alternative browser route was used to bypass that refusal; visual and audible browser QA remain unverified.
+
 ## November 4 global workspace
 
 The application combines the verified 1,918-record base in `source/catalog.json` with 41 supplementary listing records in `source/global-products.json`. Preserve both datasets and all original IDs. `source/global-research.json` stores 14 retailer-market discovery sources, 12 product-development hypotheses and their evidence references. These hypotheses are never verified Target whitespace. Foreign prices are local-currency reference observations, with no inferred exchange rates or fabricated current offers. An indexed source review date does not refresh the date of an older offer or establish current stock. Exact images remain pending where not sourced.
