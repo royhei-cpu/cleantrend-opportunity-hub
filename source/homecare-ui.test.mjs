@@ -13,6 +13,61 @@ const {default:App}=await import(pathToFileURL(path.join(temp,'app.mjs')));await
 globalThis.IS_REACT_ACT_ENVIRONMENT=true;
 const text=node=>typeof node==='string'||typeof node==='number'?String(node):(node?.children||[]).map(text).join('');
 
+function mockListingBrowser(search=''){
+ const activity=[];
+ globalThis.window={location:{search},localStorage:{getItem:()=>null,setItem(){}},setInterval:()=>1,clearInterval(){},setTimeout:fn=>{fn();return 2;},clearTimeout(){},requestAnimationFrame:fn=>fn()};
+ globalThis.document={hidden:false,getElementById:id=>({scrollIntoView(){activity.push(id);}}),addEventListener(){},removeEventListener(){}};
+ return activity;
+}
+
+test('Retailers shows real full-catalog listings before the directory, with visible China and source photos',async()=>{
+ mockListingBrowser();let screen;
+ const click=async label=>{const b=screen.root.findAllByType('button').find(b=>text(b)===label);assert.ok(b,label);await act(async()=>b.props.onClick());};
+ const cards=()=>screen.root.findAllByProps({className:'world-listing-card'});
+ try{
+  await act(async()=>{screen=create(React.createElement(App));});
+  await click('Retailers');assert.equal(cards().length,18);
+  assert.match(text(screen.root.findByProps({'aria-label':'Global retailer discovery'})),/All 1,959 catalog records/);
+  const content=screen.root.findByProps({'aria-label':'Global retailer discovery'}).children;
+  assert.ok(content.findIndex(n=>n.props?.id==='retailer-listing-results')<content.findIndex(n=>n.props?.className==='world-retailer-directory'));
+  assert.equal(screen.root.findByProps({className:'world-retailer-directory'}).props.open,undefined);
+  await act(async()=>screen.root.findByProps({'aria-label':'Browse China listings'}).props.onClick());
+  assert.equal(cards().length,11);assert.match(text(screen.root.findByProps({className:'world-listing-result-heading'})),/China product listings/);
+  assert.match(text(screen.root.findByProps({className:'world-result-count'})),/11 matching listings/);
+  assert.ok(cards().some(c=>text(c).includes('Plant-Based Laundry Detergent')));
+  for(const c of cards()){
+   assert.ok(c.props['data-record-id']);
+   assert.match(c.findByType('img').props.src,/\/cleantrend-opportunity-hub\//);
+   assert.ok(!c.findByType('img').props.src.includes('photo-pending'));
+   assert.ok(c.findAllByType('a').some(a=>text(a)==='Source listing ↗'&&a.props.href.startsWith('https://')));
+   assert.match(text(c),/Recorded 2026-09-11|Source date not recorded/);
+  }
+  await act(async()=>screen.root.findByProps({'aria-label':'Filter retailer listings'}).props.onChange({target:{value:'JD.com'}}));
+  assert.equal(cards().length,9);
+  await click('Clear filters');assert.equal(cards().length,18);
+  await act(async()=>screen.root.findByProps({'aria-label':'Search retailer listings'}).props.onChange({target:{value:'中国'}}));
+  assert.equal(cards().length,11);
+ }finally{if(screen)await act(async()=>screen.unmount());delete globalThis.window;delete globalThis.document;}
+});
+
+test('China deep links open its listings and retailer selection focuses results while preserving reviews and comparisons',async()=>{
+ const activity=mockListingBrowser('?view=retailers&country=China');let screen;
+ const cards=()=>screen.root.findAllByProps({className:'world-listing-card'});
+ try{
+  await act(async()=>{screen=create(React.createElement(App),{createNodeMock:element=>element.props.id==='retailer-listing-results'?{scrollIntoView(){activity.push('results-scroll');},focus(){activity.push('results-focus');}}:null});});
+  assert.equal(screen.root.findByProps({className:'catalog-library'}).props.open,false);
+  assert.equal(cards().length,11);assert.ok(activity.includes('world-workspace'));
+  await act(async()=>screen.root.findByProps({'aria-label':'Show Taobao listings'}).props.onClick());
+  assert.equal(cards().length,1);assert.ok(activity.includes('results-scroll'));assert.ok(activity.includes('results-focus'));
+  assert.equal(cards()[0].props['data-record-id'],'intl-taobao-david-p12-flat-mop');
+  await act(async()=>cards()[0].findAllByType('button').find(b=>text(b)==='Compare item +').props.onClick());
+  assert.equal(cards()[0].findAllByType('button').find(b=>text(b)==='Remove item').props['aria-pressed'],true);
+  assert.match(text(screen.root.findByProps({className:'compare-dock'})),/1\/6 selectedDavid/);
+  await act(async()=>cards()[0].findAllByType('button').find(b=>text(b)==='Review item').props.onClick());
+  assert.match(text(screen.root.findByProps({className:'detail-modal'})),/P12 40cm Hands-Free Flat Mop/);
+ }finally{if(screen)await act(async()=>screen.unmount());delete globalThis.window;delete globalThis.document;}
+});
+
 test('The Homecare interface has three direct routes, progressive disclosure and preserved catalog access',async()=>{
  const saved=new Map();
  globalThis.window={location:{search:''},localStorage:{getItem:k=>saved.get(k)||null,setItem:(k,v)=>saved.set(k,v)},setInterval:()=>1,clearInterval(){},setTimeout:fn=>{fn();return 2;},clearTimeout(){},requestAnimationFrame:fn=>fn()};

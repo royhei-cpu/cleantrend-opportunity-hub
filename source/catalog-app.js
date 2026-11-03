@@ -848,7 +848,7 @@ function ew() {
     [G, j] = (0, i.useState)("All captured retailers"),
     [clock, setClock] = (0, i.useState)(0);
   (0, i.useEffect)(() => { const timer = window.setInterval(() => setClock(Date.now()), 60000); return () => window.clearInterval(timer); }, []);
-  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); const view = params.get("view"); if(query)a(query); if(["priority","research","all","viral","history","recommendations"].includes(view)){setCatalogOpen(true);U(view);scrollToSection("directory");} else if(query){setCatalogOpen(true);U("all");scrollToSection("directory");} }, []);
+  (0, i.useEffect)(() => { const params = new URLSearchParams(window.location.search); const query = params.get("q"); const view = params.get("view"); if(query)a(query); if(["opportunities","retailers","evidence"].includes(view)){navigateWorkspace(view);} else if(["priority","research","all","viral","history","recommendations"].includes(view)){setCatalogOpen(true);U(view);scrollToSection("directory");} else if(query){setCatalogOpen(true);U("all");scrollToSection("directory");} }, []);
   (0, i.useEffect)(() => {
     let e = window.setTimeout(() => {
       try {

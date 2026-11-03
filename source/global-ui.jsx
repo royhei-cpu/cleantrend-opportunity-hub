@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import research from './global-research.json';
 import products from './global-products.json';
-import { coverageSummary, filterGlobalProducts, unitEconomics, csvCell } from './global-logic.js';
+import { coverageSummary, filterGlobalProducts, buildRetailListings, retailDirectory, unitEconomics, csvCell } from './global-logic.js';
+import { atTarget } from './logic.js';
 
 const sources = new Map(research.sources.map(source => [source.id, source]));
-const regions = [...new Set(research.retailers.map(row => row.region))];
 const external = { target: '_blank', rel: 'noreferrer' };
 function download(name, content, type) {
   const url = URL.createObjectURL(new Blob([content], { type }));
@@ -13,8 +13,8 @@ function download(name, content, type) {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 function exportProducts(rows) {
-  const fields = ['Brand','Product','Retailer','Market','Category','Pack','Reference price','Currency','Source scope','Source reviewed','Evidence URL','Target status'];
-  const data = rows.map(p => [p.brand,p.name,p.retailer,p.market,p.category,p.packLabel,p.referencePrice.amount,p.referencePrice.currency,p.sourceScope,p.sourceDiscoveredAt,p.link,'Needs Target check']);
+  const fields = ['Record ID','Brand','Product','Retailer','Market','Category','Pack','Recorded price','Currency','Source scope','Source date','Evidence URL','Target status'];
+  const data = rows.map(p => [p.id,p.brand,p.name,p.retailer,p.market,p.category,p.packLabel,p.priceLabel,p.referencePrice?.currency||'Not recorded',p.sourceScope,p.sourceDate||'Not recorded',p.link,atTarget(p.product||p)?'Target listing recorded':'Needs Target check']);
   download('homecare-atlas-global-benchmarks.csv', '\uFEFF' + [fields,...data].map(row=>row.map(csvCell).join(',')).join('\r\n'), 'text/csv;charset=utf-8');
 }
 function exportBrief(brief) {
@@ -74,22 +74,42 @@ function Economics() {
   <article><p className="eyebrow">Feasibility planning</p><h3>Work back from a proposed shelf price.</h3><p>A simple scenario to frame a supplier discussion. This is not an approved Target margin or cost specification.</p><div className="world-calc-fields">{field('Proposed retail price',srp,setSrp)}{field('Assumed gross margin %',margin,setMargin)}{field('Other cost per unit',other,setOther)}</div><output aria-live="polite">{ceiling===null?<span>Enter a positive price, a margin from 0 to below 100, and nonnegative other costs.</span>:<><b>{ceiling.toFixed(2)}</b><span>maximum remaining product cost in your currency</span><strong>{ceiling<0?'Scenario is not feasible at these assumptions':'Obtain a real quote and confirm all cost definitions.'}</strong></>}</output><small>Formula: retail price × (1 − gross margin) − other cost. Excludes markdowns, returns, vendor terms and taxes unless modeled in your inputs.</small></article></div>;
 }
 
-function GlobalRetailers({ onOpen, onCompare, selected }) {
-  const [region,setRegion]=useState('All regions');const [retailer,setRetailer]=useState('All retailers');const [query,setQuery]=useState('');const [limit,setLimit]=useState(18);
-  const shown=useMemo(()=>filterGlobalProducts(products,{region,retailer,query}),[region,retailer,query]);
-  const inRegion=research.retailers.filter(r=>region==='All regions'||r.region===region);
-  return <section aria-label="Global retailer discovery"><div className="world-section-title"><div><h3>Explore the new global benchmarks.</h3><p>{products.length} added listing records across {research.retailers.length} retailer-market sources. The full catalog remains below.</p></div><button onClick={()=>exportProducts(shown)}>Export {shown.length} listings ↓</button></div>
-    <div className="world-region-buttons" aria-label="Filter by world region">{['All regions',...regions].map(r=><button key={r} aria-pressed={region===r} onClick={()=>{setRegion(r);setRetailer('All retailers');setLimit(18);}}>{r}</button>)}</div>
-    <div className="world-discovery-filters"><label>Search global benchmarks<input type="search" placeholder="Try brush, refill, India…" value={query} onChange={e=>{setQuery(e.target.value);setLimit(18);}}/></label><label>Retailer<select value={retailer} onChange={e=>{setRetailer(e.target.value);setLimit(18);}}><option>All retailers</option>{inRegion.map(r=><option key={r.id}>{r.name}</option>)}</select></label></div>
-    <div className="world-retailer-grid">{inRegion.map(r=><article key={r.id}><div><h4>{r.name}</h4><span>{r.market}</span></div><p>{r.productIds.length} added records · partial discovery</p><a href={r.url} {...external}>Retailer source ↗</a><small>Source reviewed {r.checkedAt}. Assortment total unknown. Live price and stock need checking.</small><button onClick={()=>{setRetailer(r.name);setQuery('');setLimit(18);}}>Show these listings</button></article>)}</div>
-    <p role="status" className="world-result-count">{shown.length} matching records · local currency references · photos pending</p>
-    {shown.length===0?<div className="world-empty"><h4>No matching benchmarks.</h4><button onClick={()=>{setRegion('All regions');setRetailer('All retailers');setQuery('');}}>Reset global filters</button></div>:<div className="world-benchmark-grid">{shown.slice(0,limit).map(p=><article key={p.id}><span>{p.market} · {p.retailer}</span><h4>{p.brand} — {p.name}</h4><p>{p.description}</p><b>{p.priceLabel}</b><small>{p.packLabel} · {p.sourceScope}<br/>Reviewed {p.sourceDiscoveredAt}. Live price/stock unverified.</small><div><a href={p.link} {...external}>Original source ↗</a><button onClick={()=>onOpen(p)}>Review item</button><button disabled={!selected.includes(p.id)&&selected.length>=6} aria-pressed={selected.includes(p.id)} onClick={()=>onCompare(p.id)}>{selected.includes(p.id)?'Remove item':'Compare item +'}</button></div></article>)}</div>}
-    {shown.length>limit&&<button className="world-load-more" onClick={()=>setLimit(v=>v+18)}>Show more global items</button>}
-    <p className="world-small">Listing records describe local offers; the same brand may appear in several markets. Prices are dated reference observations from indexed sources. Local pack, promotions, tax and currency differ. No foreign price has been converted to USD.</p>
+function GlobalRetailers({ catalog, onOpen, onCompare, selected, imagePath }) {
+  const [region,setRegion]=useState('All regions');const [country,setCountry]=useState('All countries');const [retailer,setRetailer]=useState('All retailers');const [query,setQuery]=useState('');const [limit,setLimit]=useState(18);
+  const results=useRef(null);
+  const rows=useMemo(()=>buildRetailListings(catalog),[catalog]);
+  const regions=useMemo(()=>['Asia','Europe','North America','Oceania','Middle East','South America','Africa'].filter(r=>rows.some(p=>p.regions.includes(r))),[rows]);
+  const countries=useMemo(()=>[...new Set(rows.flatMap(p=>p.countries))].sort(),[rows]);
+  const regionRows=useMemo(()=>filterGlobalProducts(rows,{region,country}),[rows,region,country]);
+  const directory=useMemo(()=>retailDirectory(regionRows),[regionRows]);
+  const allRetailers=useMemo(()=>retailDirectory(rows),[rows]);
+  const shown=useMemo(()=>filterGlobalProducts(rows,{region,country,retailer,query}),[rows,region,country,retailer,query]);
+  const countryCounts=useMemo(()=>new Map(countries.map(c=>[c,rows.filter(p=>p.countries.includes(c)).length])),[rows,countries]);
+  const path=imagePath||(value=>value.startsWith('/')?`/cleantrend-opportunity-hub${value}`:value);
+  function revealResults(){results.current?.scrollIntoView({behavior:'smooth',block:'start'});results.current?.focus({preventScroll:true});}
+  function chooseCountry(value){setCountry(value);setRetailer('All retailers');setQuery('');setLimit(18);if(value!=='All countries'&&!filterGlobalProducts(rows,{region,country:value}).length)setRegion('All regions');}
+  function chooseRetailer(value){setRetailer(value);setLimit(18);revealResults();}
+  function reset(){setRegion('All regions');setCountry('All countries');setRetailer('All retailers');setQuery('');setLimit(18);}
+  useEffect(()=>{const value=new URLSearchParams(window.location.search).get('country');if(value&&countries.includes(value))chooseCountry(value);},[countries]);
+  return <section aria-label="Global retailer discovery"><div className="world-section-title"><div><h3>Find products by country and retailer.</h3><p>All {catalog.length.toLocaleString()} catalog records are included here, across {countries.length} countries and {allRetailers.length} retailer labels.</p></div><button onClick={()=>exportProducts(shown)}>Export {shown.length.toLocaleString()} listings ↓</button></div>
+    <div className="world-country-shortcuts" aria-label="Quick country choices"><button aria-pressed={country==='All countries'} onClick={()=>chooseCountry('All countries')}>All countries</button>{['China','Japan','South Korea'].filter(c=>countryCounts.has(c)).map(c=><button key={c} aria-label={`Browse ${c} listings`} aria-pressed={country===c} onClick={()=>chooseCountry(c)}>{c}<span>{countryCounts.get(c)}</span></button>)}</div>
+    <div className="world-region-buttons" aria-label="Filter by world region">{['All regions',...regions].map(r=><button key={r} aria-pressed={region===r} onClick={()=>{setRegion(r);setCountry('All countries');setRetailer('All retailers');setLimit(18);}}>{r}</button>)}</div>
+    <div className="world-discovery-filters world-all-listing-filters"><label>Search retailer listings<input aria-label="Search retailer listings" type="search" placeholder="Product, brand or keyword…" value={query} onChange={e=>{setQuery(e.target.value);setLimit(18);}}/></label><label>Country / market<select aria-label="Country / market" value={country} onChange={e=>chooseCountry(e.target.value)}><option>All countries</option>{countries.map(c=><option key={c} value={c}>{c} ({countryCounts.get(c)})</option>)}</select></label><label>Retailer<select aria-label="Filter retailer listings" value={retailer} onChange={e=>{setRetailer(e.target.value);setLimit(18);}}><option>All retailers</option>{directory.map(r=><option key={r.name} value={r.name}>{r.name} ({r.count})</option>)}</select></label></div>
+    <div className="world-listing-results" id="retailer-listing-results" ref={results} tabIndex={-1}>
+      <div className="world-listing-result-heading"><h4>{country==='All countries'?'Product listings':`${country} product listings`}</h4><button onClick={reset}>Clear filters</button></div>
+      <p role="status" className="world-result-count">{shown.length.toLocaleString()} matching listings · {retailer}{region!=='All regions'?` · ${region}`:''}</p>
+      {shown.length===0?<div className="world-empty"><h4>No recorded listings match these filters.</h4><p>Clear the filters to browse the full recorded catalog.</p><button onClick={reset}>Reset global filters</button></div>:<div className="world-benchmark-grid">{shown.slice(0,limit).map(p=><article className="world-listing-card" key={p.listingKey} data-record-id={p.id}>
+        <figure className="world-listing-photo"><img src={path(p.image||'/assets/photo-pending.svg')} alt={`${p.brand} ${p.name}`} loading="lazy" width="300" height="180" onError={event=>{if(event.currentTarget.dataset.fallback)return;event.currentTarget.dataset.fallback='true';event.currentTarget.src=path('/assets/photo-pending.svg');event.currentTarget.alt='Exact product photo unavailable';}}/></figure>
+        <span>{p.market} · {p.retailer}</span><h4>{p.brand} — {p.name}</h4><p>{p.description}</p><b>{p.priceLabel}</b><small>{p.packLabel} · {p.sourceScope}<br/>{p.sourceDate?`${p.sourceDateKind} ${p.sourceDate}`:'Source date not recorded'}. Current price and stock need checking.</small><div>{/^https?:\/\//i.test(p.link)&&<a href={p.link} {...external}>Source listing ↗</a>}<button onClick={()=>onOpen(p.product)}>Review item</button><button disabled={!selected.includes(p.id)&&selected.length>=6} aria-pressed={selected.includes(p.id)} onClick={()=>onCompare(p.id)}>{selected.includes(p.id)?'Remove item':'Compare item +'}</button></div>
+      </article>)}</div>}
+      {shown.length>limit&&<button className="world-load-more" onClick={()=>setLimit(v=>v+18)}>Show more products ({Math.min(limit,shown.length)} of {shown.length.toLocaleString()} shown) ↓</button>}
+    </div>
+    <details className="world-retailer-directory"><summary>Browse {directory.length} retailers in this selection</summary><div className="world-retailer-directory-list">{directory.map(r=><button key={r.name} aria-label={`Show ${r.name} listings`} onClick={()=>chooseRetailer(r.name)} aria-pressed={retailer===r.name}><span><b>{r.name}</b><small>{r.markets.join(' · ')}</small></span><strong>{r.count} listings <span aria-hidden="true">↗</span></strong></button>)}</div></details>
+    <p className="world-small">Each listing is a recorded retailer offer, so the same product can appear at more than one retailer. Coverage remains partial. Dates and prices retain their original evidence; this repair does not establish current stock, a fresh source check or a verified Target gap.</p>
   </section>;
 }
 
-export function GlobalOpportunityHub({ catalog, onOpen, onCompare, selected, view, setView, onBrowseCatalog }) {
+export function GlobalOpportunityHub({ catalog, onOpen, onCompare, selected, view, setView, onBrowseCatalog, imagePath }) {
   const [category,setCategory]=useState('All opportunities');const [concepts,setConcepts]=useState([]);const [message,setMessage]=useState('');const [full,setFull]=useState(false);const [briefLimit,setBriefLimit]=useState(6);
   const summary=useMemo(()=>coverageSummary(catalog),[catalog]);
   const categories=[...new Set(research.opportunities.map(o=>o.category))];
@@ -104,7 +124,7 @@ export function GlobalOpportunityHub({ catalog, onOpen, onCompare, selected, vie
     <div id="world-workspace" className="world-workspace"><div className="world-tabs" role="tablist" aria-label="Global intelligence sections">{[['opportunities','Opportunity briefs'],['retailers','Global retailers & items'],['evidence','Data & economics']].map(([id,label])=><button key={id} id={`world-tab-${id}`} role="tab" tabIndex={view===id?0:-1} aria-selected={view===id} aria-controls="world-panel" onKeyDown={tabKey} onClick={()=>setView(id)}>{label}</button>)}</div>
       <div role="tabpanel" id="world-panel" aria-labelledby={`world-tab-${view}`}>
       {view==='opportunities'&&<><div className="world-section-title"><div><h2>What should we change—and why?</h2><p>Each concept connects a shopper need with evidence, product changes and a test plan.</p></div><label>Focus area<select value={category} onChange={e=>{setCategory(e.target.value);setBriefLimit(6);}}><option>All opportunities</option>{categories.map(c=><option key={c}>{c}</option>)}</select></label></div><div className="world-toolbar"><button aria-pressed={full} onClick={()=>setFull(v=>!v)}>{full?'Collapse all briefs':'Expand all evidence & test plans'}</button><span>{Math.min(briefLimit,briefs.length)} of {briefs.length} concepts · {concepts.length}/3 in comparison</span></div><p role="status">{message}</p><ConceptComparison selected={concepts} onRemove={toggle} onClear={()=>{setConcepts([]);setMessage('');}}/><div className="world-opportunity-grid">{briefs.slice(0,briefLimit).map((brief,index)=><OpportunityCard key={`${brief.id}-${full}`} brief={brief} full={full} index={index} selected={concepts.includes(brief.id)} onToggle={toggle}/>)}</div>{briefs.length>briefLimit&&<button className="world-load-more" onClick={()=>setBriefLimit(briefs.length)}>Show {briefs.length-briefLimit} more opportunities ↓</button>}<p className="world-small">Investigation order is editorial judgment, not a validated commercial ranking.</p></>}
-      {view==='retailers'&&<GlobalRetailers onOpen={onOpen} onCompare={onCompare} selected={selected}/>}
+      {view==='retailers'&&<GlobalRetailers catalog={catalog} onOpen={onOpen} onCompare={onCompare} selected={selected} imagePath={imagePath}/>}
       {view==='evidence'&&<><div className="world-section-title"><div><p className="eyebrow">Evidence you can inspect</p><h2>Data first. Assumptions visible.</h2><p>Macro statistics establish context. They do not establish product demand, Target absence, or a sales forecast.</p></div></div><div className="world-source-grid">{research.sources.map(s=><article key={s.id}><b>{s.metric}</b><h3><a href={s.url} {...external}>{s.title} ↗</a></h3><p>{s.context}</p><small>{s.period}</small><p className="world-source-limit">Limit: {s.limitation}</p></article>)}</div><Economics/><section className="world-roadmap"><h3>Where coverage needs to go next</h3><p>No retailer has been fully reconciled in this expansion. Prioritize unknown markets and the oldest evidence before adding more undated records.</p><div>{research.coverageQueue.map(r=><article key={r.region}><b>{r.region}</b><p>{r.next}</p></article>)}</div></section></>}
       </div>
     </div>

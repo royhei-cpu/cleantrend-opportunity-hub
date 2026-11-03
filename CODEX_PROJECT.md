@@ -10,6 +10,8 @@ Public site: https://royhei-cpu.github.io/cleantrend-opportunity-hub/
 
 November 4 expansion: the global opportunity workspace adds 41 listing records from 14 retailer-market sources to the 1,918-record base, for 1,959 combined records. It includes 12 sourced development hypotheses, concept comparison, regional discovery, downloadable briefs and scenario economics. Hypotheses do not establish Target absence or product demand. See the newest section of MAINTENANCE.md for the supplementary data contract and source-built Pages deployment.
 
+Retailers display correction: this workspace now uses every recorded catalog offer, with all 20 countries and a visible China filter (11 existing records across JD.com, Taobao and Tmall). Product cards appear before the collapsed retailer directory on mobile and desktop. Direct market links use `?view=retailers&country=China#world-workspace`. Existing source dates are preserved; this display correction is not a fresh assortment or price check.
+
 Do not use the older White Space Radar, CleanTrend Radar or 636-product ChatGPT-hosted copy. This repository retains the 1,900-product catalog and all 27 cleaning categories.
 
 ## Continue in Codex

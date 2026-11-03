@@ -1,5 +1,13 @@
 # CleanTrend maintenance
 
+## China and full-catalog retailer listings repair
+
+The Retailers workspace now indexes all recorded offers from the combined 1,959 catalog records. Previously it displayed only the 41 supplementary records and placed the retailer cards before the products, hiding China and pushing actual listings below a long directory on mobile. `buildRetailListings` retains the original product IDs and references for reviews, six-product comparisons and saved records. It deduplicates identical offers within each product; an offer is not a new unique product. Preserve offer-specific markets, prices and evidence dates. Do not copy a primary retailer's price or source date onto a different retailer's unrecorded offer.
+
+Country / market filtering includes all 20 recorded countries, with a visible China shortcut and the 11 existing China records (JD.com 9, Taobao 1, Tmall 1). China is also searchable as 中国. Products appear before a collapsed, compact retailer directory. Each product shows its stored image, source link, recorded price and source date when available. Eight China records have September 11 evidence dates; three have no recorded source date. No new source checks or live price/stock verification occurred during this display repair. Do not invent dates for the older entries.
+
+Direct links such as `?view=retailers&country=China#world-workspace` open the requested workspace and market. Original catalog search and signal-view links remain supported. Regression checks cover full-catalog inclusion, China filtering, offer-specific evidence, product-before-directory order, source images/links, deep links, retailer selection, reviews and comparison identity. All 29 automated tests pass. The browser preview remains subject to the app's security-policy verification limitation described below; automated component checks are not visual browser QA.
+
 ## Homecare Atlas interface and audio
 
 The public identity is now **Homecare Atlas**, reflecting the user's whole-home care scope. Preserve the existing GitHub Pages address and catalog IDs. The recorded catalog still focuses on cleaning, laundry and household tools; broader homecare coverage is developing. Do not imply that the new lifestyle art is a verified retailer product photo or that storage, organization and maintenance assortments are already comprehensive.
