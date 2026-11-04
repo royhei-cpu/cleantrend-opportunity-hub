@@ -2,6 +2,8 @@
 
 The user's latest direction is whole-home care with a simple, organized interface. The public site is branded Homecare Atlas. Opportunities, Retailers and All products are the three main routes. Optional ambient music, button sounds, volume and mute controls are available in the corner; music starts only after Play. Keep the existing public URL and browser-local saved records. See source/design-notes.md and MAINTENANCE.md for source coverage and verification limits.
 
+The **White Label Workshop** is the user's exact name for the product-development workspace. All twelve opportunity briefs link to a corresponding concept with national-brand benchmarks, suggested changes, real Blender exterior studies, four finishes, proposed specifications/dimensions, editable BOM/pricing and downloadable development packs. These A0 proposals remain separate from verified Target whitespace and from current supplier quotations. See workshop/README.md for reproduction, assets and QA limits.
+
 This is the project to open in Codex on Ryan's laptop.
 
 Repository: https://github.com/royhei-cpu/cleantrend-opportunity-hub

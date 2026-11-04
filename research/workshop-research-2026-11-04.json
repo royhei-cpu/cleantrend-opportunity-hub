@@ -1,0 +1,221 @@
+{
+  "reviewedAt": "2026-11-04",
+  "scope": "White Label Workshop manufacturer comparison references only; not a full catalog, live assortment or Target absence refresh.",
+  "method": "Manufacturer page extracts reviewed with web search/open; original source currencies and selections retained. No checkout, stock or physical measurement.",
+  "references": [
+    {
+      "id": "jj-system",
+      "brand": "Joseph Joseph",
+      "name": "CleanTech 6-Piece Cleaning Tool Set",
+      "url": "https://www.josephjoseph.com/products/cleantech-6-piece-cleaning-tool-set-stone",
+      "facts": [
+        "Five task tools and an extension pole are already offered.",
+        "Tools work by hand or attach to the pole; this is an existing modular benchmark."
+      ],
+      "price": 73,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Pole: 610 mm stored / 860 mm extended; manufacturer metric dimensions",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "oc-flat",
+      "brand": "O-Cedar",
+      "name": "H2prO Flat Mop System",
+      "url": "https://www.ocedar.com/use-and-care/h2pro",
+      "facts": [
+        "Manufacturer describes separate clean and dirty water chambers.",
+        "Washable pads and an adjustable handle are existing features."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Pad: 13 × 4.25 in (330.2 × 107.95 mm); handle: 56 in (1,422.4 mm)",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "oxo-reach",
+      "brand": "OXO",
+      "name": "Good Grips Extendable Tub & Tile Scrubber",
+      "url": "https://www.oxo.com/more-oxo/extendable-tub-tile-scrubber.html",
+      "facts": [
+        "Twist-adjustable reach, a pivoting head and replaceable scrubber.",
+        "Wet-grip comfort is already a stated feature."
+      ],
+      "price": 17.99,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Stored: 2.25 × 4.375 × 25.75 in; extended: 42 in (1,066.8 mm)",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "blueland",
+      "brand": "Blueland",
+      "name": "Multi-Surface Cleaner Starter Set",
+      "url": "https://www.blueland.com/products/multi-surface-starter-set?plan=one-time",
+      "facts": [
+        "Reviewed one-time selection includes one reusable bottle and two tablets.",
+        "Refill reuse already exists; the proposal must demonstrate a specific extra benefit."
+      ],
+      "price": 16,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": "blueland-multi-surface",
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-pet",
+      "brand": "Joseph Joseph",
+      "name": "CleanTech Pet Hair & Carpet Cleaning Set",
+      "url": "https://www.josephjoseph.com/products/cleantech-pet-hair-carpet-cleaning-set-stone",
+      "facts": [
+        "A dedicated pet-hair and carpet tool set already exists.",
+        "Use as a dry hair-removal benchmark; it is not an enzyme-cleaner equivalent."
+      ],
+      "price": 30,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "seventh",
+      "brand": "Seventh Generation",
+      "name": "All Purpose Cleaner – Free & Clear",
+      "url": "https://www.seventhgeneration.com/all-purpose-cleaner-free-clear",
+      "facts": [
+        "Manufacturer offers a fragrance-free all-purpose cleaner.",
+        "A surface cleaner is not a disinfectant; retain product-specific directions."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "23 US fl oz (manufacturer pack size)",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "clr",
+      "brand": "CLR",
+      "name": "Calcium, Lime & Rust Remover",
+      "url": "https://www.clrbrands.com/products/clr-household/clr-calcium-lime-and-rust-remover/",
+      "facts": [
+        "A specialist mineral-deposit remover is already offered.",
+        "Use its label and surface exclusions as research inputs; no formula equivalence has been established."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": "us-cvs-693606",
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer search listing found; full page blocked (403), label details need review",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "scotch-cloth",
+      "brand": "Scotch-Brite",
+      "name": "Microfiber 3-in-1 Cloth",
+      "url": "https://www.scotch-brite.com/3M/en_US/p/d/b5005609030/",
+      "facts": [
+        "Manufacturer specifies a reusable 90% polyester / 10% nylon cloth.",
+        "Room identification and drying storage are the proposed system changes."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "290 × 310 mm, manufacturer metric dimensions",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "oxo-dish",
+      "brand": "OXO",
+      "name": "Good Grips Soap Dispensing Dish Brush Storage Set",
+      "url": "https://www.oxo.com/shop/cleaning-organization/kitchen/oxo-gg-soap-dispensing-dish-brush-storage-set.html",
+      "facts": [
+        "Existing set has a replaceable head and removable drip tray.",
+        "The holder catches drips and the brush uses a push-button soap valve."
+      ],
+      "price": 16.99,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "oxo-detail",
+      "brand": "OXO",
+      "name": "Good Grips Deep Clean Brush Set",
+      "url": "https://www.oxo.com/deep-clean-brush-set-blue.html",
+      "facts": [
+        "Two brush sizes address small areas; the small brush has a wiper.",
+        "Precise access and multi-tool cleaning are existing benchmarks."
+      ],
+      "price": 9.99,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Large brush: 1 × 0.875 × 6.25 in; small: 0.75 × 0.5 × 6.25 in",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-glass",
+      "brand": "Joseph Joseph",
+      "name": "CleanTech 2-in-1 Glass Cleaning Tool",
+      "url": "https://www.josephjoseph.com/products/cleantech-2-in-1-glass-cleaning-tool-stone",
+      "facts": [
+        "An existing two-function glass tool within the CleanTech system.",
+        "Benchmark glass-care reach and storage separately from floor water removal."
+      ],
+      "price": 14,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    }
+  ],
+  "failedChecks": [
+    {
+      "url": "https://www.clrbrands.com/products/clr-household/clr-calcium-lime-and-rust-remover/",
+      "result": "403 on full page; manufacturer search snippet only. No current label, formula, price or surface-compatibility check established."
+    }
+  ],
+  "notPerformed": [
+    "Supplier quotations",
+    "Physical product purchases or measurement",
+    "Formula selection or approval",
+    "Target absence/equivalence/Target Plus review",
+    "Performance certification",
+    "Production engineering and tolerance validation",
+    "Intellectual-property clearance"
+  ],
+  "designStatus": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "wet-floor",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    250.0,
+    38.0,
+    1050.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-11-01",
+    "HA-11-02",
+    "HA-11-03",
+    "HA-11-04",
+    "HA-11-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

@@ -3,7 +3,8 @@
     "esbuild": "^0.25.12",
     "prettier": "^3.6.2",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "three": "0.187.0"
   },
   "type": "module",
   "private": true,
@@ -12,7 +13,7 @@
     "prebuild": "npm run prepare:catalog",
     "pretest": "npm run prepare:catalog",
     "build": "node build.mjs",
-    "test": "node --test logic.test.mjs checkout.test.mjs search.test.mjs app-search.test.mjs recommendations.test.mjs global.test.mjs audio.test.mjs homecare-ui.test.mjs"
+    "test": "node --test logic.test.mjs checkout.test.mjs search.test.mjs app-search.test.mjs recommendations.test.mjs global.test.mjs audio.test.mjs homecare-ui.test.mjs workshop.test.mjs"
   },
   "devDependencies": {
     "@babel/parser": "^7.28.5",

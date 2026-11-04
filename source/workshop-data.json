@@ -1,0 +1,2624 @@
+{
+  "revision": "A0",
+  "authoredAt": "2026-11-04",
+  "currency": "USD",
+  "stage": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance.",
+  "palette": [
+    {
+      "id": "sage",
+      "name": "Sage",
+      "hex": "#93a183",
+      "delta": 0
+    },
+    {
+      "id": "chalk",
+      "name": "Chalk",
+      "hex": "#e7e3d3",
+      "delta": 0
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "hex": "#b67e64",
+      "delta": 0.03
+    },
+    {
+      "id": "ink",
+      "name": "Ink",
+      "hex": "#24463d",
+      "delta": 0.05
+    }
+  ],
+  "colorNote": "Screen HEX values are visualization references, not Pantone/RAL matches or approved production standards. Color surcharge is a kit-level planning allowance. Approve physical resin and textile samples, gloss and batch color variation.",
+  "benchmarks": [
+    {
+      "id": "jj-system",
+      "brand": "Joseph Joseph",
+      "name": "CleanTech 6-Piece Cleaning Tool Set",
+      "url": "https://www.josephjoseph.com/products/cleantech-6-piece-cleaning-tool-set-stone",
+      "facts": [
+        "Five task tools and an extension pole are already offered.",
+        "Tools work by hand or attach to the pole; this is an existing modular benchmark."
+      ],
+      "price": 73,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Pole: 610 mm stored / 860 mm extended; manufacturer metric dimensions",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "oc-flat",
+      "brand": "O-Cedar",
+      "name": "H2prO Flat Mop System",
+      "url": "https://www.ocedar.com/use-and-care/h2pro",
+      "facts": [
+        "Manufacturer describes separate clean and dirty water chambers.",
+        "Washable pads and an adjustable handle are existing features."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Pad: 13 × 4.25 in (330.2 × 107.95 mm); handle: 56 in (1,422.4 mm)",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "oxo-reach",
+      "brand": "OXO",
+      "name": "Good Grips Extendable Tub & Tile Scrubber",
+      "url": "https://www.oxo.com/more-oxo/extendable-tub-tile-scrubber.html",
+      "facts": [
+        "Twist-adjustable reach, a pivoting head and replaceable scrubber.",
+        "Wet-grip comfort is already a stated feature."
+      ],
+      "price": 17.99,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Stored: 2.25 × 4.375 × 25.75 in; extended: 42 in (1,066.8 mm)",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "blueland",
+      "brand": "Blueland",
+      "name": "Multi-Surface Cleaner Starter Set",
+      "url": "https://www.blueland.com/products/multi-surface-starter-set?plan=one-time",
+      "facts": [
+        "Reviewed one-time selection includes one reusable bottle and two tablets.",
+        "Refill reuse already exists; the proposal must demonstrate a specific extra benefit."
+      ],
+      "price": 16,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": "blueland-multi-surface",
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-pet",
+      "brand": "Joseph Joseph",
+      "name": "CleanTech Pet Hair & Carpet Cleaning Set",
+      "url": "https://www.josephjoseph.com/products/cleantech-pet-hair-carpet-cleaning-set-stone",
+      "facts": [
+        "A dedicated pet-hair and carpet tool set already exists.",
+        "Use as a dry hair-removal benchmark; it is not an enzyme-cleaner equivalent."
+      ],
+      "price": 30,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "seventh",
+      "brand": "Seventh Generation",
+      "name": "All Purpose Cleaner – Free & Clear",
+      "url": "https://www.seventhgeneration.com/all-purpose-cleaner-free-clear",
+      "facts": [
+        "Manufacturer offers a fragrance-free all-purpose cleaner.",
+        "A surface cleaner is not a disinfectant; retain product-specific directions."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "23 US fl oz (manufacturer pack size)",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "clr",
+      "brand": "CLR",
+      "name": "Calcium, Lime & Rust Remover",
+      "url": "https://www.clrbrands.com/products/clr-household/clr-calcium-lime-and-rust-remover/",
+      "facts": [
+        "A specialist mineral-deposit remover is already offered.",
+        "Use its label and surface exclusions as research inputs; no formula equivalence has been established."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": "us-cvs-693606",
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer search listing found; full page blocked (403), label details need review",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "scotch-cloth",
+      "brand": "Scotch-Brite",
+      "name": "Microfiber 3-in-1 Cloth",
+      "url": "https://www.scotch-brite.com/3M/en_US/p/d/b5005609030/",
+      "facts": [
+        "Manufacturer specifies a reusable 90% polyester / 10% nylon cloth.",
+        "Room identification and drying storage are the proposed system changes."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "290 × 310 mm, manufacturer metric dimensions",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Price not established in this review."
+    },
+    {
+      "id": "oxo-dish",
+      "brand": "OXO",
+      "name": "Good Grips Soap Dispensing Dish Brush Storage Set",
+      "url": "https://www.oxo.com/shop/cleaning-organization/kitchen/oxo-gg-soap-dispensing-dish-brush-storage-set.html",
+      "facts": [
+        "Existing set has a replaceable head and removable drip tray.",
+        "The holder catches drips and the brush uses a push-button soap valve."
+      ],
+      "price": 16.99,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "oxo-detail",
+      "brand": "OXO",
+      "name": "Good Grips Deep Clean Brush Set",
+      "url": "https://www.oxo.com/deep-clean-brush-set-blue.html",
+      "facts": [
+        "Two brush sizes address small areas; the small brush has a wiper.",
+        "Precise access and multi-tool cleaning are existing benchmarks."
+      ],
+      "price": 9.99,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Large brush: 1 × 0.875 × 6.25 in; small: 0.75 × 0.5 × 6.25 in",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-glass",
+      "brand": "Joseph Joseph",
+      "name": "CleanTech 2-in-1 Glass Cleaning Tool",
+      "url": "https://www.josephjoseph.com/products/cleantech-2-in-1-glass-cleaning-tool-stone",
+      "facts": [
+        "An existing two-function glass tool within the CleanTech system.",
+        "Benchmark glass-care reach and storage separately from floor water removal."
+      ],
+      "price": 14,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Not published in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "compact",
+      "name": "Small-home modular tool system",
+      "kind": "mop",
+      "envelope": [
+        300,
+        110,
+        1240
+      ],
+      "mass": 900,
+      "retail": 29.99,
+      "tooling": 28000,
+      "assembly": 0.65,
+      "pack": 0.6,
+      "qa": 0.2,
+      "freight": 0.95,
+      "benchmarks": [
+        "jj-system",
+        "oc-flat"
+      ],
+      "recommendation": "Prototype the compact rail and accessible release before committing to a full tool family. Modularity itself is already established.",
+      "changes": [
+        [
+          "Compatibility",
+          "Shared tools already exist in Joseph Joseph CleanTech.",
+          "HA-01 visible connector code and a large push release; no claimed compatibility with other brands.",
+          "Cycle connector 5,000 times and measure release force."
+        ],
+        [
+          "Storage",
+          "No like-for-like measured storage-volume baseline yet.",
+          "A draining rail stores three heads separately from the pole.",
+          "Measure the complete stored kit against a purchased comparator."
+        ],
+        [
+          "Service",
+          "O-Cedar already offers replacement pads.",
+          "Publish part IDs, repair steps and replenishment availability for every wear part.",
+          "Validate replacement supply and a timed identification task."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-01-01",
+          "name": "Mop deck",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 115,
+          "unitLow": 0.55,
+          "unitHigh": 0.85,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-01-02",
+          "name": "Washable pad",
+          "material": "Polyester / polyamide",
+          "process": "Cut and sew",
+          "qty": 1,
+          "massG": 45,
+          "unitLow": 0.45,
+          "unitHigh": 0.75,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-01-03",
+          "name": "Telescopic shaft",
+          "material": "Aluminum",
+          "process": "Extrusion / cut",
+          "qty": 1,
+          "massG": 230,
+          "unitLow": 1.35,
+          "unitHigh": 2.1,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-01-04",
+          "name": "Grip and collar",
+          "material": "PP + TPE",
+          "process": "Two-shot / assembly",
+          "qty": 1,
+          "massG": 65,
+          "unitLow": 0.48,
+          "unitHigh": 0.8,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-01-05",
+          "name": "Release connector",
+          "material": "POM + stainless spring",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 25,
+          "unitLow": 0.32,
+          "unitHigh": 0.55,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-01-06",
+          "name": "Duster head and sleeve",
+          "material": "PP + microfiber",
+          "process": "Molding / sewing",
+          "qty": 1,
+          "massG": 100,
+          "unitLow": 0.7,
+          "unitHigh": 1.1,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-01-07",
+          "name": "Squeegee head and blade",
+          "material": "PP + silicone",
+          "process": "Molding / extrusion",
+          "qty": 1,
+          "massG": 80,
+          "unitLow": 0.6,
+          "unitHigh": 0.95,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-01-08",
+          "name": "Ventilated rail with fixings",
+          "material": "PP + stainless steel",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 110,
+          "unitLow": 0.6,
+          "unitHigh": 1.0,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Rail requires screw mounting or a separately validated over-door bracket; no unsupported adhesive-load claim.",
+      "code": "HA-01",
+      "revision": "A0",
+      "category": "Manual Tools",
+      "title": "One handle. A complete small-home system.",
+      "shopper": "Apartment residents who have little room for tools.",
+      "why": "MUJI and IKEA demonstrate modular systems. The open question is whether a Target version can reduce stored volume and make replacements simpler.",
+      "evidenceIds": [
+        "muji",
+        "ikea"
+      ],
+      "pilot": "Compare two working prototypes with 30 small-home households for four weeks.",
+      "successMetric": "Proposed gate: at least 20% less storage volume than the selected Target benchmark, with no cleaning-performance loss.",
+      "killCriterion": "Stop if the connector fails the durability protocol or spare heads cannot meet cost targets.",
+      "targetBaseline": "A full review of Target modular tools and Target Plus equivalents is still required.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Mop head, W × D",
+          "value": "300 × 110 mm"
+        },
+        {
+          "label": "Handle length",
+          "value": "720–1,240 mm target range"
+        },
+        {
+          "label": "Tube OD / wall",
+          "value": "22 / 0.8 mm nominal"
+        },
+        {
+          "label": "Grip diameter",
+          "value": "32 mm nominal"
+        },
+        {
+          "label": "Rail, W × D × H",
+          "value": "320 × 55 × 45 mm"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          330,
+          140,
+          770
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: at least 20% less storage volume than the selected Target benchmark, with no cleaning-performance loss.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "A full review of Target modular tools and Target Plus equivalents is still required.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "easy-grip",
+      "name": "Easy-grip reach scrubber",
+      "kind": "scrubber",
+      "envelope": [
+        150,
+        100,
+        1050
+      ],
+      "mass": 700,
+      "retail": 24.99,
+      "tooling": 22000,
+      "assembly": 0.5,
+      "pack": 0.45,
+      "qa": 0.18,
+      "freight": 0.7,
+      "benchmarks": [
+        "oxo-reach",
+        "jj-system"
+      ],
+      "recommendation": "Test the release and grip with people across hand-strength ranges. A comfort improvement needs measured evidence, not an ergonomic label.",
+      "changes": [
+        [
+          "Grip",
+          "OXO already offers a non-slip grip.",
+          "A broad 36 mm grip and a large palm-accessible release.",
+          "Measure wet grip, reach and operating force with intended users."
+        ],
+        [
+          "Reach",
+          "OXO extends to 1,066.8 mm.",
+          "650–1,050 mm target; no claim of greater reach.",
+          "Check short and tall users and limit shaft deflection."
+        ],
+        [
+          "Replacement",
+          "The OXO scrubber head is replaceable.",
+          "A visible head code and release target below 20 N, subject to test.",
+          "5,000 release cycles and wet pull-off testing."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-02-01",
+          "name": "Scrubber deck",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 95,
+          "unitLow": 0.55,
+          "unitHigh": 0.9,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-02-02",
+          "name": "Replaceable pad",
+          "material": "Nonwoven polyester",
+          "process": "Die cut / attach",
+          "qty": 1,
+          "massG": 30,
+          "unitLow": 0.25,
+          "unitHigh": 0.45,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-02-03",
+          "name": "Adjustable shaft",
+          "material": "Aluminum",
+          "process": "Extrusion / cut",
+          "qty": 1,
+          "massG": 200,
+          "unitLow": 1.15,
+          "unitHigh": 1.8,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-02-04",
+          "name": "Broad grip",
+          "material": "PP + TPE",
+          "process": "Two-shot molding",
+          "qty": 1,
+          "massG": 90,
+          "unitLow": 0.55,
+          "unitHigh": 0.85,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-02-05",
+          "name": "Pivot and release",
+          "material": "POM + stainless pin",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 45,
+          "unitLow": 0.4,
+          "unitHigh": 0.7,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-02-06",
+          "name": "Standing cradle",
+          "material": "PP + TPE feet",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 100,
+          "unitLow": 0.5,
+          "unitHigh": 0.85,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "No arthritis, medical, fall-prevention or universal-accessibility performance claim is established.",
+      "code": "HA-02",
+      "revision": "A0",
+      "category": "Manual Tools",
+      "title": "Easy-grip cleaning, without the clinical look.",
+      "shopper": "Older adults and anyone who finds squeezing and wringing difficult.",
+      "why": "AARP reports strong preference for remaining at home. This supports investigating usability, not claiming measured tool demand.",
+      "evidenceIds": [
+        "aarp",
+        "muji"
+      ],
+      "pilot": "Usability sessions with 24 adults across hand-strength and mobility ranges.",
+      "successMetric": "Proposed gate: 20% lower measured operating force, with no higher error rate than the comparator.",
+      "killCriterion": "Stop if weight or grip size excludes intended users, or wet-grip safety is worse.",
+      "targetBaseline": "Existing ergonomic and long-handle Target items must be checked. This is a feature-improvement hypothesis.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Scrubber head, W × D",
+          "value": "150 × 100 mm"
+        },
+        {
+          "label": "Handle length",
+          "value": "650–1,050 mm target range"
+        },
+        {
+          "label": "Grip, OD × length",
+          "value": "36 × 130 mm"
+        },
+        {
+          "label": "Release button",
+          "value": "22 × 18 mm contact area"
+        },
+        {
+          "label": "Nominal head articulation",
+          "value": "±45° design intent"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          180,
+          130,
+          770
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: 20% lower measured operating force, with no higher error rate than the comparator.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Existing ergonomic and long-handle Target items must be checked. This is a feature-improvement hypothesis.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "refill",
+      "name": "Measured refill bottle",
+      "kind": "bottle",
+      "envelope": [
+        90,
+        65,
+        245
+      ],
+      "mass": 180,
+      "retail": 6.99,
+      "tooling": 14000,
+      "assembly": 0.12,
+      "pack": 0.2,
+      "qa": 0.1,
+      "freight": 0.18,
+      "benchmarks": [
+        "blueland",
+        "seventh"
+      ],
+      "recommendation": "Prioritize trigger life and verified cost per prepared bottle. The starter price does not prove a per-clean saving.",
+      "changes": [
+        [
+          "Reuse",
+          "Blueland already offers a reusable bottle with tablets.",
+          "Replaceable trigger, accessible fill line and embossed compatibility code.",
+          "5,000 trigger cycles and refill error study."
+        ],
+        [
+          "Value",
+          "Reviewed Blueland selection is USD 16 for one bottle and two tablets.",
+          "USD 6.99 starter hypothesis includes bottle and two dose units; not an equivalent formula claim.",
+          "Compare matched cleaning tasks, dilution and doses."
+        ],
+        [
+          "Formula",
+          "No formula is selected for this proposal.",
+          "Source a qualified non-disinfecting concentrate; dosage remains unresolved.",
+          "Supplier formulation, stability, packaging compatibility and directions review."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-03-01",
+          "name": "Reusable bottle",
+          "material": "HDPE",
+          "process": "Extrusion blow molding",
+          "qty": 1,
+          "massG": 60,
+          "unitLow": 0.22,
+          "unitHigh": 0.38,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-03-02",
+          "name": "Replaceable trigger",
+          "material": "PP / PE / stainless steel",
+          "process": "Purchased assembly",
+          "qty": 1,
+          "massG": 34,
+          "unitLow": 0.3,
+          "unitHigh": 0.5,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-03-03",
+          "name": "Dose unit, unselected formula",
+          "material": "Qualified supplier formulation",
+          "process": "Contract manufacture",
+          "qty": 2,
+          "massG": 12,
+          "unitLow": 0.12,
+          "unitHigh": 0.24,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-03-04",
+          "name": "Dose protection sachet",
+          "material": "Barrier laminate, grade TBD",
+          "process": "Form / fill / seal",
+          "qty": 2,
+          "massG": 2,
+          "unitLow": 0.04,
+          "unitHigh": 0.08,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-03-05",
+          "name": "Instruction / fill-line label",
+          "material": "PE label",
+          "process": "Print / apply",
+          "qty": 1,
+          "massG": 3,
+          "unitLow": 0.04,
+          "unitHigh": 0.07,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Bottle capacity and headspace must be proven with water trials. Rendered liquid is an illustrative volume, not a formula.",
+      "code": "HA-03",
+      "revision": "A0",
+      "category": "Refill Systems",
+      "title": "A refill that wins on cost per clean.",
+      "shopper": "Value shoppers who want reuse to be easy and economical.",
+      "why": "FairPrice provides a same-volume refill/bottle comparison. Target already has refills, so another pouch alone is insufficient.",
+      "evidenceIds": [
+        "fairprice",
+        "target",
+        "target-refill",
+        "epa"
+      ],
+      "pilot": "Run an eight-week repeat-use study and packaging-weight comparison.",
+      "successMetric": "Proposed gate: at least 15% lower cost per equivalent clean after the second refill.",
+      "killCriterion": "Stop if added water, dosing errors or sprayer failures remove the cost advantage.",
+      "targetBaseline": "Everspring reusable bottles, concentrates and refill offers are already documented.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Bottle envelope, W × D × H",
+          "value": "90 × 65 × 245 mm"
+        },
+        {
+          "label": "Nominal usable volume",
+          "value": "500 mL; capacity trial required"
+        },
+        {
+          "label": "Neck finish",
+          "value": "28/410 procurement target; drawing approval required"
+        },
+        {
+          "label": "Fill-line position",
+          "value": "To be calibrated with filled prototypes"
+        },
+        {
+          "label": "Trigger delivery",
+          "value": "0.9–1.1 mL/stroke target"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          120,
+          95,
+          280
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: at least 15% lower cost per equivalent clean after the second refill.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Everspring reusable bottles, concentrates and refill offers are already documented.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "pet",
+      "name": "Pet-mess reset station",
+      "kind": "pet",
+      "envelope": [
+        240,
+        160,
+        245
+      ],
+      "mass": 880,
+      "retail": 19.99,
+      "tooling": 19000,
+      "assembly": 0.4,
+      "pack": 0.45,
+      "qa": 0.18,
+      "freight": 0.6,
+      "benchmarks": [
+        "jj-pet",
+        "oxo-detail"
+      ],
+      "recommendation": "Prototype the dry-to-wet sequence and the draining holder. Avoid bundling a formula until residue and surface testing are complete.",
+      "changes": [
+        [
+          "Routine",
+          "Joseph Joseph already offers pet-hair tools.",
+          "A distinct hair-first, spot-second routine with divided storage.",
+          "Time matched mess-cleanup tasks against separately purchased tools."
+        ],
+        [
+          "Care",
+          "No tested fabric compatibility for the proposed kit.",
+          "Surface exclusions and removable washable contact parts.",
+          "Fabric colorfastness, residue and dry-time trials."
+        ],
+        [
+          "Cleaner",
+          "A dry hair tool is not a stain treatment.",
+          "Qualified supplier cleaner is a separate, clearly labeled component.",
+          "Validate formula, directions and package compatibility."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-04-01",
+          "name": "Divided station",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 180,
+          "unitLow": 0.85,
+          "unitHigh": 1.35,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-04-02",
+          "name": "Hair pickup tool",
+          "material": "PP + TPE",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 110,
+          "unitLow": 0.85,
+          "unitHigh": 1.4,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-04-03",
+          "name": "Washable pad",
+          "material": "Microfiber",
+          "process": "Cut and sew",
+          "qty": 1,
+          "massG": 45,
+          "unitLow": 0.3,
+          "unitHigh": 0.5,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-04-04",
+          "name": "400 mL bottle and trigger",
+          "material": "HDPE + PP",
+          "process": "Purchased assembly",
+          "qty": 1,
+          "massG": 90,
+          "unitLow": 0.35,
+          "unitHigh": 0.6,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-04-05",
+          "name": "Unselected spot-cleaning fill",
+          "material": "Supplier formulation",
+          "process": "Contract fill",
+          "qty": 1,
+          "massG": 400,
+          "unitLow": 0.4,
+          "unitHigh": 0.75,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-04-06",
+          "name": "Removable drainage insert",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 55,
+          "unitLow": 0.2,
+          "unitHigh": 0.35,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Not for use on animals. No pet-safe, enzymatic, odor-elimination or fabric-safety claim is assumed.",
+      "code": "HA-04",
+      "revision": "A0",
+      "category": "Pet Cleaning",
+      "title": "A complete pet-mess reset station.",
+      "shopper": "Pet households dealing with hair, spills and fabric accidents.",
+      "why": "AVMA documents a large pet-owning base. Target already carries pet stain spray; the hypothesis is a better cleanup routine.",
+      "evidenceIds": [
+        "avma",
+        "target-pet"
+      ],
+      "pilot": "In-home comparison with 30 dog/cat households on specified mess types.",
+      "successMetric": "Proposed gate: 20% shorter total cleanup time with equivalent residue and odor results.",
+      "killCriterion": "Stop if bundling adds cost without improving time, or material compatibility fails.",
+      "targetBaseline": "up&up enzymatic pet stain and odor cleaner is an existing Target benchmark.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Station envelope, W × D × H",
+          "value": "240 × 160 × 245 mm"
+        },
+        {
+          "label": "Hair pickup tool",
+          "value": "150 × 55 × 110 mm"
+        },
+        {
+          "label": "Washable textile",
+          "value": "300 × 300 mm unfolded"
+        },
+        {
+          "label": "Cleaner bottle",
+          "value": "400 mL nominal"
+        },
+        {
+          "label": "Tray divider / drain gap",
+          "value": "2.2 / 4 mm nominal"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          270,
+          190,
+          280
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: 20% shorter total cleanup time with equivalent residue and odor results.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "up&up enzymatic pet stain and odor cleaner is an existing Target benchmark.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "quiet-scent",
+      "name": "Fragrance-free care trio",
+      "kind": "trio",
+      "envelope": [
+        290,
+        110,
+        245
+      ],
+      "mass": 1560,
+      "retail": 12.99,
+      "tooling": 18000,
+      "assembly": 0.25,
+      "pack": 0.4,
+      "qa": 0.15,
+      "freight": 0.7,
+      "benchmarks": [
+        "seventh",
+        "blueland"
+      ],
+      "recommendation": "Test whether consistent labeling makes selection easier. Fragrance-free products themselves are already widely offered.",
+      "changes": [
+        [
+          "Navigation",
+          "Seventh Generation already offers Free & Clear cleaner.",
+          "Consistent room labels and directions across three individually qualified products.",
+          "Structured selection task; proposed target 25% fewer errors."
+        ],
+        [
+          "Formulas",
+          "A multi-surface cleaner does not cover every household use.",
+          "Select separate surface, dish and laundry formulas with distinct directions.",
+          "Qualify each formula and keep liquids separate."
+        ],
+        [
+          "Packaging",
+          "Refill formats already exist.",
+          "Common replacement trigger/cap codes and a compact storage tray.",
+          "Confirm compatibility, child handling and replenishment cost."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-05-01",
+          "name": "400 mL bottle",
+          "material": "HDPE",
+          "process": "Blow molding",
+          "qty": 3,
+          "massG": 45,
+          "unitLow": 0.17,
+          "unitHigh": 0.28,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-05-02",
+          "name": "Task-appropriate closure",
+          "material": "PP",
+          "process": "Purchased",
+          "qty": 3,
+          "massG": 22,
+          "unitLow": 0.14,
+          "unitHigh": 0.3,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-05-03",
+          "name": "Separate qualified fills, 400 mL each",
+          "material": "Supplier formulas, not mixed",
+          "process": "Contract fill",
+          "qty": 3,
+          "massG": 400,
+          "unitLow": 0.28,
+          "unitHigh": 0.6,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-05-04",
+          "name": "Task labels",
+          "material": "PE labels",
+          "process": "Print / apply",
+          "qty": 3,
+          "massG": 3,
+          "unitLow": 0.04,
+          "unitHigh": 0.07,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-05-05",
+          "name": "Three-bottle tray",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 150,
+          "unitLow": 0.45,
+          "unitHigh": 0.75,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Fragrance-free is a formulation specification to verify. It does not mean allergy-free, non-toxic or safe for every surface.",
+      "code": "HA-05",
+      "revision": "A0",
+      "category": "Surface Cleaners",
+      "title": "A consistent fragrance-free cleaning routine.",
+      "shopper": "Shoppers who prefer minimal added scent across rooms.",
+      "why": "Target Free & Clear products already exist. The possible improvement is consistent navigation, dosing and labeling across the routine.",
+      "evidenceIds": [
+        "target",
+        "kao"
+      ],
+      "pilot": "Test navigation and routine completion against separate existing products.",
+      "successMetric": "Proposed gate: 25% fewer product-selection errors in a structured user task.",
+      "killCriterion": "Stop if users prefer existing individual items or the bundle duplicates the current offer.",
+      "targetBaseline": "Target already lists Free & Clear laundry, dish and surface cleaners.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Three-bottle tray, W × D × H",
+          "value": "290 × 110 × 35 mm"
+        },
+        {
+          "label": "Complete set envelope",
+          "value": "290 × 110 × 245 mm"
+        },
+        {
+          "label": "Each bottle",
+          "value": "400 mL nominal"
+        },
+        {
+          "label": "Readable front label area",
+          "value": "55 × 90 mm target"
+        },
+        {
+          "label": "Task identification",
+          "value": "Text + raised room symbol; color is supplementary"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          320,
+          140,
+          280
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: 25% fewer product-selection errors in a structured user task.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Target already lists Free & Clear laundry, dish and surface cleaners.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "hard-water",
+      "name": "Mineral-care task kit",
+      "kind": "mineral",
+      "envelope": [
+        200,
+        100,
+        245
+      ],
+      "mass": 730,
+      "retail": 9.99,
+      "tooling": 14000,
+      "assembly": 0.2,
+      "pack": 0.3,
+      "qa": 0.18,
+      "freight": 0.42,
+      "benchmarks": [
+        "clr",
+        "oxo-detail"
+      ],
+      "recommendation": "Start with surface compatibility and controlled deposit-removal tests. The formula is unresolved and must not be inferred from the render.",
+      "changes": [
+        [
+          "Task",
+          "CLR is an existing mineral-deposit benchmark.",
+          "A clearly bounded tap-and-seam routine with a small detail tool.",
+          "Match deposit removal on specified compatible surfaces."
+        ],
+        [
+          "Guidance",
+          "Full CLR label details were not accessible in this review.",
+          "Surface compatibility chart and prominent finish exclusions after testing.",
+          "Obtain current labels and assess each substrate before claims."
+        ],
+        [
+          "Dose",
+          "No formula or dwell time has been selected.",
+          "Supplier-approved measured application and rinse directions.",
+          "Stability, corrosion and package compatibility trials."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-06-01",
+          "name": "500 mL bottle and cap",
+          "material": "HDPE + PP",
+          "process": "Purchased assembly",
+          "qty": 1,
+          "massG": 70,
+          "unitLow": 0.25,
+          "unitHigh": 0.45,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-06-02",
+          "name": "Qualified mineral-care fill",
+          "material": "Supplier formula TBD",
+          "process": "Contract fill",
+          "qty": 1,
+          "massG": 500,
+          "unitLow": 0.4,
+          "unitHigh": 0.85,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-06-03",
+          "name": "Detail brush",
+          "material": "PP + nylon",
+          "process": "Molding / tufting",
+          "qty": 1,
+          "massG": 28,
+          "unitLow": 0.2,
+          "unitHigh": 0.38,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-06-04",
+          "name": "Compact tray",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 85,
+          "unitLow": 0.3,
+          "unitHigh": 0.55,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-06-05",
+          "name": "Compatibility instruction card",
+          "material": "Coated paperboard",
+          "process": "Print / die cut",
+          "qty": 1,
+          "massG": 12,
+          "unitLow": 0.08,
+          "unitHigh": 0.14,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Do not mix cleaners. Acid selection, concentration, dwell times and material exclusions are not specified at this concept stage.",
+      "code": "HA-06",
+      "revision": "A0",
+      "category": "Bathroom Care",
+      "title": "Surface-safe care for mineral buildup.",
+      "shopper": "Households with documented hard-water deposits.",
+      "why": "USGS defines water hardness; local prevalence and purchase intent still need measurement. Pair a targeted cleaner with surface guidance.",
+      "evidenceIds": [
+        "hardness",
+        "target"
+      ],
+      "pilot": "Bench tests on hard-water deposits plus 20 household trials.",
+      "successMetric": "Proposed gate: match the selected remover on deposit removal with no damage on claimed surfaces.",
+      "killCriterion": "Stop if finish damage occurs or the benefit is indistinguishable from existing Target products.",
+      "targetBaseline": "Check CLR, Lime-A-Way, specialty bathroom products and Target Plus before classifying any gap.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Tray envelope",
+          "value": "200 × 100 × 35 mm"
+        },
+        {
+          "label": "Set height",
+          "value": "245 mm nominal"
+        },
+        {
+          "label": "Bottle nominal volume",
+          "value": "500 mL"
+        },
+        {
+          "label": "Detail brush",
+          "value": "180 × 25 × 20 mm"
+        },
+        {
+          "label": "Instruction panel",
+          "value": "70 × 100 mm target"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          230,
+          130,
+          280
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: match the selected remover on deposit removal with no damage on claimed surfaces.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Check CLR, Lime-A-Way, specialty bathroom products and Target Plus before classifying any gap.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "repair",
+      "name": "HA-01 service-parts kit",
+      "kind": "parts",
+      "envelope": [
+        170,
+        110,
+        45
+      ],
+      "mass": 140,
+      "retail": 5.99,
+      "tooling": 10000,
+      "assembly": 0.18,
+      "pack": 0.2,
+      "qa": 0.12,
+      "freight": 0.12,
+      "benchmarks": [
+        "jj-system",
+        "oc-flat"
+      ],
+      "recommendation": "Demonstrate a successful repair and a reliable supply path. A QR code alone is not a repair system.",
+      "changes": [
+        [
+          "Replacement",
+          "National-brand systems already sell replacement elements.",
+          "A tool-level spare bill with visible part codes and separately purchasable wear parts.",
+          "80% unaided spare identification and successful fitting target."
+        ],
+        [
+          "Access",
+          "No cross-brand interface license or fit has been established.",
+          "A distinct serviceable HA-01 connector secured with ordinary screws.",
+          "Tolerance stack, retention and intellectual-property review."
+        ],
+        [
+          "Supply",
+          "No supplier service commitment has been obtained.",
+          "Propose a five-year spare availability goal and a shipping-cost ceiling.",
+          "Obtain supplier terms and model delivery cost."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-07-01",
+          "name": "Service coupler",
+          "material": "POM",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 30,
+          "unitLow": 0.2,
+          "unitHigh": 0.35,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-07-02",
+          "name": "Release button",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 8,
+          "unitLow": 0.04,
+          "unitHigh": 0.09,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-07-03",
+          "name": "Return spring",
+          "material": "Stainless steel",
+          "process": "Wire forming",
+          "qty": 1,
+          "massG": 3,
+          "unitLow": 0.03,
+          "unitHigh": 0.06,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-07-04",
+          "name": "Screw",
+          "material": "Stainless steel",
+          "process": "Purchased M3 × 12",
+          "qty": 2,
+          "massG": 2,
+          "unitLow": 0.02,
+          "unitHigh": 0.04,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-07-05",
+          "name": "Replacement blade insert",
+          "material": "Silicone",
+          "process": "Extrusion / cut",
+          "qty": 1,
+          "massG": 25,
+          "unitLow": 0.14,
+          "unitHigh": 0.25,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-07-06",
+          "name": "Divided service box",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 50,
+          "unitLow": 0.25,
+          "unitHigh": 0.42,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-07-07",
+          "name": "Instruction card",
+          "material": "Paperboard",
+          "process": "Print / die cut",
+          "qty": 1,
+          "massG": 8,
+          "unitLow": 0.05,
+          "unitHigh": 0.1,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "No cross-brand compatibility is claimed. Detailed joint geometry, fastener engagement and safe assembly require engineering approval.",
+      "code": "HA-07",
+      "revision": "A0",
+      "category": "Cleaning Accessories",
+      "title": "Replace the worn part. Keep the tool.",
+      "shopper": "Shoppers replacing an entire tool because one component wears out.",
+      "why": "MUJI lists a replacement pole button; IKEA lists bristle and textile refills. These support a serviceability concept.",
+      "evidenceIds": [
+        "muji",
+        "ikea",
+        "epa"
+      ],
+      "pilot": "Run a tool-repair task and supplier spare-part cost review.",
+      "successMetric": "Proposed gate: 80% of participants identify and fit the correct spare without assistance.",
+      "killCriterion": "Stop if spare availability or shipping cost makes repair impractical.",
+      "targetBaseline": "Existing Target replacement heads remain benchmarks; catalog absence does not prove a gap.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Service box, W × D × H",
+          "value": "170 × 110 × 45 mm"
+        },
+        {
+          "label": "HA-01 coupler envelope",
+          "value": "35 × 35 × 42 mm"
+        },
+        {
+          "label": "Release button",
+          "value": "22 × 18 mm"
+        },
+        {
+          "label": "Fastener proposal",
+          "value": "M3 × 12 mm, two pieces"
+        },
+        {
+          "label": "Compatibility",
+          "value": "Only proposed HA-01 tool family; interface not finalized"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          200,
+          140,
+          80
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: 80% of participants identify and fit the correct spare without assistance.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Existing Target replacement heads remain benchmarks; catalog absence does not prove a gap.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "washable",
+      "name": "Room-coded cloth and drying rack",
+      "kind": "cloths",
+      "envelope": [
+        220,
+        100,
+        165
+      ],
+      "mass": 300,
+      "retail": 9.99,
+      "tooling": 10000,
+      "assembly": 0.15,
+      "pack": 0.25,
+      "qa": 0.12,
+      "freight": 0.25,
+      "benchmarks": [
+        "scotch-cloth",
+        "oxo-dish"
+      ],
+      "recommendation": "Test the room symbols and drying arrangement. Avoid implying that room coding prevents contamination without evidence.",
+      "changes": [
+        [
+          "Textile",
+          "Scotch-Brite specifies a 290 × 310 mm microfiber cloth.",
+          "Three 300 × 300 mm cloths with stitched task symbols.",
+          "Absorbency, lint, dye transfer and 50-wash pilot checks."
+        ],
+        [
+          "Storage",
+          "A cloth by itself is already established.",
+          "A removable drip tray and separated drying rails.",
+          "Measure drying under the same controlled humidity."
+        ],
+        [
+          "Accessibility",
+          "Color alone may not identify room assignment.",
+          "Kitchen, bath and general-care text with raised/stitched shapes.",
+          "Measure assignment errors after two weeks."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-08-01",
+          "name": "300 mm square cloth",
+          "material": "Polyester / polyamide",
+          "process": "Cut / hem",
+          "qty": 3,
+          "massG": 26,
+          "unitLow": 0.22,
+          "unitHigh": 0.38,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-08-02",
+          "name": "Stitched identification patch",
+          "material": "Polyester",
+          "process": "Embroidery / sew",
+          "qty": 3,
+          "massG": 2,
+          "unitLow": 0.04,
+          "unitHigh": 0.07,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-08-03",
+          "name": "Drying rack body",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 100,
+          "unitLow": 0.4,
+          "unitHigh": 0.7,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-08-04",
+          "name": "Removable drip tray",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 60,
+          "unitLow": 0.22,
+          "unitHigh": 0.38,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-08-05",
+          "name": "Non-slip feet",
+          "material": "TPE",
+          "process": "Molding",
+          "qty": 4,
+          "massG": 2,
+          "unitLow": 0.02,
+          "unitHigh": 0.04,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Proposed 50-wash pilot is not a marketed lifetime claim. Separate cloths by task and follow validated care instructions.",
+      "code": "HA-08",
+      "revision": "A0",
+      "category": "Wipes",
+      "title": "Room-coded washable cloths with a drying home.",
+      "shopper": "Shared households trying to keep kitchen and bathroom tools separate.",
+      "why": "IKEA offers differentiated cloth colors and replacement pads. The hypothesis is better household organization, not a new cloth category.",
+      "evidenceIds": [
+        "ikea",
+        "bls"
+      ],
+      "pilot": "Four-week trial in 24 shared households and repeated wash testing.",
+      "successMetric": "Proposed gate: 25% fewer room-mixup errors in diary tasks after two weeks.",
+      "killCriterion": "Stop if users ignore the coding or absorbency falls below the comparator after washing.",
+      "targetBaseline": "Target cloths and sponge cloths already exist; only a validated system difference is relevant.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Rack, W × D × H",
+          "value": "220 × 100 × 165 mm"
+        },
+        {
+          "label": "Each cloth, unfolded",
+          "value": "300 × 300 mm"
+        },
+        {
+          "label": "Textile basis weight",
+          "value": "280 g/m² target before finishing"
+        },
+        {
+          "label": "Rail separation",
+          "value": "25 mm nominal"
+        },
+        {
+          "label": "Symbol patch",
+          "value": "25 × 25 mm; stitched text plus shape"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          250,
+          130,
+          200
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: 25% fewer room-mixup errors in diary tasks after two weeks.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Target cloths and sponge cloths already exist; only a validated system difference is relevant.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Sink-reset brush and dosing dock",
+      "kind": "sink",
+      "envelope": [
+        180,
+        100,
+        240
+      ],
+      "mass": 690,
+      "retail": 14.99,
+      "tooling": 22000,
+      "assembly": 0.3,
+      "pack": 0.35,
+      "qa": 0.18,
+      "freight": 0.4,
+      "benchmarks": [
+        "oxo-dish",
+        "oxo-detail"
+      ],
+      "recommendation": "Compare drip management and total reset time with OXO. Replaceable heads and a drip tray already exist.",
+      "changes": [
+        [
+          "Drips",
+          "OXO already has a removable drip tray.",
+          "Tool-free tray removal and an open drying gap.",
+          "Hold a fixed water dose and inspect for trapped liquid."
+        ],
+        [
+          "Dispensing",
+          "OXO dispenses soap through the brush.",
+          "Separate measured pump avoids fluid-filled brush handle.",
+          "Test dosing consistency, leakage and user preference."
+        ],
+        [
+          "Service",
+          "OXO replacement heads already exist.",
+          "Visible head code, ordinary release and refill shelf plan.",
+          "Cycle replacement and validate landed spare cost."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-09-01",
+          "name": "Dock and removable tray",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 150,
+          "unitLow": 0.6,
+          "unitHigh": 1.0,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-09-02",
+          "name": "Brush handle",
+          "material": "PP + TPE",
+          "process": "Molding",
+          "qty": 1,
+          "massG": 55,
+          "unitLow": 0.3,
+          "unitHigh": 0.5,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-09-03",
+          "name": "Replaceable brush head",
+          "material": "PP + nylon",
+          "process": "Molding / tufting",
+          "qty": 1,
+          "massG": 32,
+          "unitLow": 0.25,
+          "unitHigh": 0.45,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-09-04",
+          "name": "350 mL bottle and pump",
+          "material": "HDPE + PP",
+          "process": "Purchased assembly",
+          "qty": 1,
+          "massG": 70,
+          "unitLow": 0.38,
+          "unitHigh": 0.65,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-09-05",
+          "name": "Unselected dish formula, 350 mL",
+          "material": "Supplier formula TBD",
+          "process": "Contract fill",
+          "qty": 1,
+          "massG": 350,
+          "unitLow": 0.3,
+          "unitHigh": 0.55,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-09-06",
+          "name": "Wipe-down textile",
+          "material": "Microfiber",
+          "process": "Cut / sew",
+          "qty": 1,
+          "massG": 25,
+          "unitLow": 0.2,
+          "unitHigh": 0.35,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Soap chemistry is separate from material specifications. No non-scratch or food-contact safety claim is approved.",
+      "code": "HA-09",
+      "revision": "A0",
+      "category": "Dish Care",
+      "title": "The two-minute sink reset.",
+      "shopper": "Busy households wanting a simple end-of-meal routine.",
+      "why": "BLS records substantial household work time but does not isolate sink cleaning. Cross-market brush and refill formats offer test inputs.",
+      "evidenceIds": [
+        "bls",
+        "fairprice"
+      ],
+      "pilot": "Timed matched-task study with 30 households.",
+      "successMetric": "Proposed gate: 20% less reset time at equal cleaning result.",
+      "killCriterion": "Stop if the dock traps water or participants prefer their existing setup.",
+      "targetBaseline": "Existing Target dish brushes, dispensers and sink organizers need equivalent checks.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Dock, W × D × H",
+          "value": "180 × 100 × 35 mm"
+        },
+        {
+          "label": "Complete set height",
+          "value": "240 mm nominal"
+        },
+        {
+          "label": "Brush, head × length",
+          "value": "50 mm diameter × 220 mm"
+        },
+        {
+          "label": "Soap bottle",
+          "value": "350 mL nominal"
+        },
+        {
+          "label": "Pump output",
+          "value": "1.5 mL/stroke target"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          210,
+          130,
+          275
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: 20% less reset time at equal cleaning result.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Existing Target dish brushes, dispensers and sink organizers need equivalent checks.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "renter",
+      "name": "Three-task move-in caddy",
+      "kind": "caddy",
+      "envelope": [
+        300,
+        180,
+        265
+      ],
+      "mass": 1160,
+      "retail": 24.99,
+      "tooling": 24000,
+      "assembly": 0.4,
+      "pack": 0.55,
+      "qa": 0.18,
+      "freight": 0.75,
+      "benchmarks": [
+        "jj-system",
+        "oxo-dish"
+      ],
+      "recommendation": "Test bundle usefulness against buying separate items. Keep the scope to surface wiping, detail scrubbing and glass finishing.",
+      "changes": [
+        [
+          "Bundle",
+          "Coordinated national-brand tool kits already exist.",
+          "Only three defined tasks with an itemized replenishment budget.",
+          "Compare selection time and equivalent-task total cost."
+        ],
+        [
+          "Storage",
+          "No measured storage superiority established.",
+          "Lift-out wet section, separated bottle bay and compact carrying handle.",
+          "Check cupboard fit, water drainage and carrying loads."
+        ],
+        [
+          "Value",
+          "A GBP 73 six-piece kit is not directly comparable to this USD proposal.",
+          "USD 24.99 task-limited starter hypothesis, with no currency-converted saving claim.",
+          "Quote matched contents and shipping before a value claim."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-10-01",
+          "name": "Caddy body and divider",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 280,
+          "unitLow": 1.1,
+          "unitHigh": 1.7,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-10-02",
+          "name": "Carry handle",
+          "material": "PP + TPE",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 70,
+          "unitLow": 0.35,
+          "unitHigh": 0.6,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-10-03",
+          "name": "Lift-out drying tray",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 90,
+          "unitLow": 0.3,
+          "unitHigh": 0.5,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-10-04",
+          "name": "500 mL bottle and trigger",
+          "material": "HDPE + PP",
+          "process": "Purchased assembly",
+          "qty": 1,
+          "massG": 85,
+          "unitLow": 0.35,
+          "unitHigh": 0.6,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-10-05",
+          "name": "Unselected surface-cleaning fill",
+          "material": "Supplier formula TBD",
+          "process": "Contract fill",
+          "qty": 1,
+          "massG": 500,
+          "unitLow": 0.35,
+          "unitHigh": 0.65,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-10-06",
+          "name": "Detail brush",
+          "material": "PP + nylon",
+          "process": "Molding / tufting",
+          "qty": 1,
+          "massG": 32,
+          "unitLow": 0.25,
+          "unitHigh": 0.45,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-10-07",
+          "name": "Washable cloth",
+          "material": "Microfiber",
+          "process": "Cut / hem",
+          "qty": 1,
+          "massG": 30,
+          "unitLow": 0.25,
+          "unitHigh": 0.4,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-10-08",
+          "name": "Hand squeegee",
+          "material": "PP + silicone",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 65,
+          "unitLow": 0.4,
+          "unitHigh": 0.65,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "No included laundry, disinfection or toilet-care task. Do not market the bundle as complete whole-home coverage.",
+      "code": "HA-10",
+      "revision": "A0",
+      "category": "Cleaning Accessories",
+      "title": "A move-in kit organized by task.",
+      "shopper": "First-home and dorm shoppers buying essentials with limited space.",
+      "why": "IKEA shows coordinated tools and caddies. The hypothesis is clearer task coverage and replenishment, not an unprecedented kit.",
+      "evidenceIds": [
+        "ikea",
+        "bls"
+      ],
+      "pilot": "Test two bundles against a shop-your-own-items control with 30 new-home shoppers.",
+      "successMetric": "Proposed gate: 20% less selection time and no higher total equivalent-task cost.",
+      "killCriterion": "Stop if the bundle contains items most households will not use.",
+      "targetBaseline": "Review Target student kits, caddies and existing starter bundles.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Caddy, W × D × H",
+          "value": "300 × 180 × 265 mm"
+        },
+        {
+          "label": "Wall section",
+          "value": "2.2 mm nominal"
+        },
+        {
+          "label": "Carry grip",
+          "value": "115 × 26 mm opening target"
+        },
+        {
+          "label": "Bottle bay",
+          "value": "95 × 75 mm minimum clear target"
+        },
+        {
+          "label": "Load rating",
+          "value": "3 kg design target; test required"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          330,
+          210,
+          300
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: 20% less selection time and no higher total equivalent-task cost.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Review Target student kits, caddies and existing starter bundles.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "wet-floor",
+      "name": "Reach squeegee with replaceable blade",
+      "kind": "squeegee",
+      "envelope": [
+        250,
+        38,
+        1050
+      ],
+      "mass": 450,
+      "retail": 17.99,
+      "tooling": 15000,
+      "assembly": 0.3,
+      "pack": 0.35,
+      "qa": 0.15,
+      "freight": 0.5,
+      "benchmarks": [
+        "jj-glass",
+        "oxo-reach"
+      ],
+      "recommendation": "Prioritize blade serviceability and controlled wet-tile performance. A glass tool is a feature comparator, not a like-for-like floor test.",
+      "changes": [
+        [
+          "Head",
+          "Joseph Joseph already offers a glass-care tool.",
+          "Replaceable 250 mm blade for a defined shower-floor task.",
+          "Measure residual water on a controlled tiled test area."
+        ],
+        [
+          "Reach",
+          "OXO provides extendable bathroom tools.",
+          "650–1,050 mm light shaft with a stable head angle.",
+          "Wet grip and awkward-angle tests across user heights."
+        ],
+        [
+          "Blade",
+          "No validated material or hardness yet.",
+          "Silicone 55–65 Shore A procurement target, removable end stop.",
+          "Test chatter, wear and claimed-surface marking."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-11-01",
+          "name": "Head carrier",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 60,
+          "unitLow": 0.3,
+          "unitHigh": 0.5,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-11-02",
+          "name": "Replaceable blade",
+          "material": "Silicone",
+          "process": "Extrusion / cut",
+          "qty": 1,
+          "massG": 32,
+          "unitLow": 0.2,
+          "unitHigh": 0.38,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-11-03",
+          "name": "Telescopic shaft",
+          "material": "Aluminum",
+          "process": "Extrusion / cut",
+          "qty": 1,
+          "massG": 170,
+          "unitLow": 1.1,
+          "unitHigh": 1.7,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-11-04",
+          "name": "Grip and collar",
+          "material": "PP + TPE",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 65,
+          "unitLow": 0.35,
+          "unitHigh": 0.6,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-11-05",
+          "name": "Head joint and end stop",
+          "material": "POM + stainless pin",
+          "process": "Molding / assembly",
+          "qty": 1,
+          "massG": 30,
+          "unitLow": 0.2,
+          "unitHigh": 0.38,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-11-06",
+          "name": "Ventilated storage clip",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 30,
+          "unitLow": 0.18,
+          "unitHigh": 0.3,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "No fall-prevention or slip-resistance claim. Do not use a glass-care test as proof of floor performance.",
+      "code": "HA-11",
+      "revision": "A0",
+      "category": "Squeegees",
+      "title": "Dry the shower floor with less effort.",
+      "shopper": "Households cleaning wet bathroom floors and shower walls.",
+      "why": "UAE and Chile ranges show wipers and long-handle tools. Their presence supports format discovery, not US demand size.",
+      "evidenceIds": [
+        "muji",
+        "aarp"
+      ],
+      "pilot": "Controlled wet-tile comparison plus reach usability sessions.",
+      "successMetric": "Proposed gate: equal water pickup with fewer strokes on the defined test area.",
+      "killCriterion": "Stop if the head chatters, scratches claimed surfaces or stores poorly.",
+      "targetBaseline": "Target shower squeegees and long-handle equivalents need review.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Head, W × D",
+          "value": "250 × 38 mm"
+        },
+        {
+          "label": "Handle length",
+          "value": "650–1,050 mm target range"
+        },
+        {
+          "label": "Blade exposed depth",
+          "value": "18 mm nominal"
+        },
+        {
+          "label": "Blade thickness",
+          "value": "2 mm nominal"
+        },
+        {
+          "label": "Grip diameter",
+          "value": "32 mm nominal"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          280,
+          68,
+          770
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: equal water pickup with fewer strokes on the defined test area.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Target shower squeegees and long-handle equivalents need review.",
+          "status": "Needs current Target check"
+        }
+      ]
+    },
+    {
+      "id": "appliance",
+      "name": "Appliance-gap precision kit",
+      "kind": "detail",
+      "envelope": [
+        120,
+        70,
+        200
+      ],
+      "mass": 220,
+      "retail": 8.99,
+      "tooling": 12000,
+      "assembly": 0.2,
+      "pack": 0.22,
+      "qa": 0.12,
+      "freight": 0.2,
+      "benchmarks": [
+        "oxo-detail",
+        "jj-system"
+      ],
+      "recommendation": "Prototype the tip geometry and verify fit on accessible surfaces of named appliance models. Avoid maintenance or life-extension claims.",
+      "changes": [
+        [
+          "Access",
+          "OXO already offers large and small detail brushes.",
+          "Two new tip shapes, an accessible sleeve and a draining holder.",
+          "Fit test defined locations on five selected appliance models."
+        ],
+        [
+          "Guidance",
+          "General-purpose detailing does not establish appliance compatibility.",
+          "Model-specific exclusions and visible follow-manual instructions.",
+          "No disassembly, live electrical access or hidden internal use."
+        ],
+        [
+          "Care",
+          "No validated wash-life claim.",
+          "Tool-free washable cover and separated bristle storage.",
+          "Residue-removal, dry-time and 50-cycle cover tests."
+        ]
+      ],
+      "parts": [
+        {
+          "code": "HA-12-01",
+          "name": "Long brush body",
+          "material": "PP + TPE",
+          "process": "Molding",
+          "qty": 1,
+          "massG": 32,
+          "unitLow": 0.22,
+          "unitHigh": 0.38,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-12-02",
+          "name": "Angled brush body",
+          "material": "PP + TPE",
+          "process": "Molding",
+          "qty": 1,
+          "massG": 26,
+          "unitLow": 0.2,
+          "unitHigh": 0.35,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-12-03",
+          "name": "Soft bristle fields",
+          "material": "Nylon",
+          "process": "Tufting",
+          "qty": 2,
+          "massG": 5,
+          "unitLow": 0.08,
+          "unitHigh": 0.15,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-12-04",
+          "name": "Washable cover",
+          "material": "Microfiber",
+          "process": "Cut / sew",
+          "qty": 1,
+          "massG": 8,
+          "unitLow": 0.12,
+          "unitHigh": 0.22,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-12-05",
+          "name": "Divided holder",
+          "material": "PP",
+          "process": "Injection molding",
+          "qty": 1,
+          "massG": 75,
+          "unitLow": 0.3,
+          "unitHigh": 0.5,
+          "status": "Engineering allowance · supplier quote needed"
+        },
+        {
+          "code": "HA-12-06",
+          "name": "Model-use instruction card",
+          "material": "Paperboard",
+          "process": "Print / die cut",
+          "qty": 1,
+          "massG": 10,
+          "unitLow": 0.05,
+          "unitHigh": 0.1,
+          "status": "Engineering allowance · supplier quote needed"
+        }
+      ],
+      "special": "Unplug and follow the appliance manual. Concepts do not authorize cleaning electrical components or inaccessible mechanisms.",
+      "code": "HA-12",
+      "revision": "A0",
+      "category": "Appliance Care",
+      "title": "Precision tools for neglected appliance gaps.",
+      "shopper": "Shoppers cleaning accessible seals, edges and exterior crevices.",
+      "why": "AEON lists a washing-machine brush and Gala lists task-specific tools. Investigate whether a small kit improves access.",
+      "evidenceIds": [
+        "bls"
+      ],
+      "pilot": "Fit checks across selected appliance models and controlled residue tests.",
+      "successMetric": "Proposed gate: reach 90% of defined accessible test locations without visible damage.",
+      "killCriterion": "Stop if safe use requires appliance disassembly or users cannot follow exclusions.",
+      "targetBaseline": "Review existing Target appliance brushes and maintenance kits including marketplace sellers.",
+      "materialNote": "Resin grades, colorants, chemical resistance, tooling split, draft, wall sections and tolerances require supplier engineering review. Render geometry represents exterior design intent; threads, seals and snap-fits are not production CAD.",
+      "status": "Concept proposal · not production released",
+      "bomUnit": "USD per finished kit; engineering allowances",
+      "quoteStatus": "No supplier quotations obtained",
+      "planningVolume": 50000,
+      "moq": 10000,
+      "scrapPercent": 3,
+      "supplierMargin": 15,
+      "retailMargin": 45,
+      "dutyPercent": null,
+      "specs": [
+        {
+          "label": "Holder, W × D × H",
+          "value": "120 × 70 × 65 mm"
+        },
+        {
+          "label": "Complete kit height",
+          "value": "200 mm nominal"
+        },
+        {
+          "label": "Long brush",
+          "value": "190 × 18 × 16 mm"
+        },
+        {
+          "label": "Narrow tip",
+          "value": "8 × 3 mm target section"
+        },
+        {
+          "label": "Washable cover",
+          "value": "45 × 20 mm laid flat"
+        }
+      ],
+      "package": {
+        "type": "Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending",
+        "dimensionsMm": [
+          150,
+          100,
+          235
+        ],
+        "finish": "Water-based print target; material and claims review needed"
+      },
+      "validation": [
+        {
+          "gate": "Benchmark purchase",
+          "test": "Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Engineering",
+          "test": "Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Performance",
+          "test": "Proposed gate: reach 90% of defined accessible test locations without visible damage.",
+          "status": "Proposed test"
+        },
+        {
+          "gate": "Durability / handling",
+          "test": "Agree a task-specific cycle, drop, leak and wet-handling protocol; record failures and acceptance criteria before testing.",
+          "status": "Not started"
+        },
+        {
+          "gate": "Commercial",
+          "test": "Obtain at least two comparable quotations with tooling, MOQ, origin, freight, duty and replenishment terms.",
+          "status": "No quotes"
+        },
+        {
+          "gate": "Target review",
+          "test": "Review existing Target appliance brushes and maintenance kits including marketplace sellers.",
+          "status": "Needs current Target check"
+        }
+      ]
+    }
+  ]
+}

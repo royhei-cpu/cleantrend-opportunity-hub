@@ -1,5 +1,17 @@
 # CleanTrend maintenance
 
+## White Label Workshop
+
+The user requested the exact public name **White Label Workshop**. The new `?view=workshop&concept=compact#world-workspace` route develops each of the twelve opportunity hypotheses, with eleven manufacturer references across seven brands, concrete comparison/change tables, specifications, dimensions, color choices, an editable BOM and pricing scenarios. Benchmarks are development comparison recommendations, not verified Target gaps or a validated ranking. Keep this data separate from the catalog's 1,959 records and preserve all original IDs, dates, comparison behavior and checkout storage.
+
+`source/workshop-data.json` contains authored A0 proposals. `workshop/build_data.py` reproduces these assumptions; it never performs source research. `research/workshop-research-2026-11-04.json` records actual manufacturer review scope and the CLR full-page failure. Do not give existing offers new evidence dates. Prices are displayed source references in their original currencies and pack selections; no exchange-rate inference or like-for-like saving is established.
+
+All twelve concepts have native Blender 5.2.2 scenes, GLB exterior geometry, studio/front renders, dimension-reference SVGs and self-contained eleven-file development ZIPs. The model dimensions and part groups are verified against `source/workshop-assets.json`, which hashes all 84 deliverable assets. Preserve these assets together. Blender procedures, archive generation, the design reference and verification limits are documented in `workshop/README.md`.
+
+Every BOM component cost, labor, packaging, QA, scrap, tooling, margin, freight and retail value is an engineering planning allowance. No supplier quotations, approved formulas, detailed production CAD, validated intellectual-property clearance or certified performance are implied. Duty defaults blank and landed cost stays uncalculated until a rate is entered. The base pack uses Sage; configured brief/CSV exports capture changed color/cost settings. Camera/explode arrangements are exterior review tools, not assembly instructions. Keep these status boundaries and unresolved validation gates visible.
+
+The build now splits the workshop UI and local Three.js viewer into hashed chunks; copy every generated chunk into the release artifact. Three.js is pinned in the package lock. It loads only when the workshop/interactive preview is requested; no third-party model viewer or CDN script is needed. Browser preview remains blocked by admin policy verification; actual Blender image inspection and automated component/geometry checks do not substitute for visual browser QA.
+
 ## China and full-catalog retailer listings repair
 
 The Retailers workspace now indexes all recorded offers from the combined 1,959 catalog records. Previously it displayed only the 41 supplementary records and placed the retailer cards before the products, hiding China and pushing actual listings below a long directory on mobile. `buildRetailListings` retains the original product IDs and references for reviews, six-product comparisons and saved records. It deduplicates identical offers within each product; an offer is not a new unique product. Preserve offer-specific markets, prices and evidence dates. Do not copy a primary retailer's price or source date onto a different retailer's unrecorded offer.

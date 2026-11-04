@@ -11,10 +11,15 @@ const {default:App,catalog,categories}=await import('./.render.mjs?build='+Date.
 if(catalog.length<1900||new Set(catalog.map(p=>p.id)).size!==catalog.length||categories.length!==27)throw Error('Catalog count/category regression');
 const React=await import('react');const {renderToString}=await import('react-dom/server');
 const html=renderToString(React.createElement(App));
-const bundle=await build({entryPoints:[path.join(dir,'client.jsx')],bundle:true,minify:true,charset:'utf8',format:'esm',write:false,define:{'process.env.NODE_ENV':'"production"'},logLevel:'warning'});
-const js=bundle.outputFiles[0].contents;const hash=createHash('sha256').update(js).digest('hex').slice(0,12);
+const bundle=await build({entryPoints:[path.join(dir,'client.jsx')],bundle:true,minify:true,charset:'utf8',format:'esm',splitting:true,outdir:path.join(root,'assets'),entryNames:'entry-[hash]',chunkNames:'workshop-[hash]',metafile:true,write:false,define:{'process.env.NODE_ENV':'"production"'},logLevel:'warning'});
+const entry=Object.entries(bundle.metafile.outputs).find(([,value])=>value.entryPoint===path.relative(process.cwd(),path.join(dir,'client.jsx'))||value.entryPoint===path.join(dir,'client.jsx'))?.[0];
+if(!entry)throw Error('Client entry output not found');
+const main=bundle.outputFiles.find(file=>file.path===path.resolve(entry));
+if(!main)throw Error('Client entry bytes not found');
+const js=main.contents;const hash=createHash('sha256').update(js).digest('hex').slice(0,12);
 await writeFile(path.join(root,'assets',`app-${hash}.js`),js);
-const css=await readFile(path.join(dir,'styles.css'),'utf8')+'\n'+await readFile(path.join(dir,'restored.css'),'utf8')+'\n'+await readFile(path.join(dir,'global.css'),'utf8')+'\n'+await readFile(path.join(dir,'calm.css'),'utf8');const cssHash=createHash('sha256').update(css).digest('hex').slice(0,12);
+for(const file of bundle.outputFiles)if(file!==main)await writeFile(file.path,file.contents);
+const css=await readFile(path.join(dir,'styles.css'),'utf8')+'\n'+await readFile(path.join(dir,'restored.css'),'utf8')+'\n'+await readFile(path.join(dir,'global.css'),'utf8')+'\n'+await readFile(path.join(dir,'calm.css'),'utf8')+'\n'+await readFile(path.join(dir,'workshop.css'),'utf8');const cssHash=createHash('sha256').update(css).digest('hex').slice(0,12);
 await writeFile(path.join(root,'assets',`style-${cssHash}.css`),css);
 await writeFile(path.join(root,'index.html'),`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Homecare Atlas | Global Retail Intelligence</title><meta name="description" content="Explore global homecare products, investigate Target opportunities and compare evidence for everyday care at home."><link rel="icon" href="/cleantrend-opportunity-hub/favicon.svg"><link rel="stylesheet" href="/cleantrend-opportunity-hub/assets/style-${cssHash}.css"></head><body><div id="app">${html}</div><script type="module" src="/cleantrend-opportunity-hub/assets/app-${hash}.js"></script></body></html>`);
 console.log(JSON.stringify({products:catalog.length,categories:categories.length,javascript:`assets/app-${hash}.js`,stylesheet:`assets/style-${cssHash}.css`,htmlBytes:html.length}));

@@ -1,0 +1,19 @@
+{
+  "id": "easy-grip",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    150.0,
+    100.0,
+    1050.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-02-01",
+    "HA-02-02",
+    "HA-02-03",
+    "HA-02-04",
+    "HA-02-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}
