@@ -1,12 +1,12 @@
-# CleanTrend maintenance
+# Homecare maintenance
 
 ## White Label Workshop
 
-The user requested the exact public name **White Label Workshop**. The new `?view=workshop&concept=compact#world-workspace` route develops each of the twelve opportunity hypotheses, with eleven manufacturer references across seven brands, concrete comparison/change tables, specifications, dimensions, color choices, an editable BOM and pricing scenarios. Benchmarks are development comparison recommendations, not verified Target gaps or a validated ranking. Keep this data separate from the catalog's 1,959 records and preserve all original IDs, dates, comparison behavior and checkout storage.
+The user requested the exact public name **White Label Workshop**. The `?view=workshop#world-workspace` route develops thirty-six proposals across the original twenty-seven home-care subcategories, with fifty brand references, concrete comparison/change tables, specifications, dimensions, color choices, an editable BOM and pricing scenarios. Benchmarks are development comparison recommendations, not verified Target gaps or a validated ranking. Keep this data separate from the catalog's 1,959 records and preserve all original IDs, dates, comparison behavior and checkout storage.
 
 `source/workshop-data.json` contains authored A0 proposals. `workshop/build_data.py` reproduces these assumptions; it never performs source research. `research/workshop-research-2026-11-04.json` records actual manufacturer review scope and the CLR full-page failure. Do not give existing offers new evidence dates. Prices are displayed source references in their original currencies and pack selections; no exchange-rate inference or like-for-like saving is established.
 
-All twelve concepts have native Blender 5.2.2 scenes, GLB exterior geometry, studio/front renders, dimension-reference SVGs and self-contained eleven-file development ZIPs. The model dimensions and part groups are verified against `source/workshop-assets.json`, which hashes all 84 deliverable assets. Preserve these assets together. Blender procedures, archive generation, the design reference and verification limits are documented in `workshop/README.md`.
+All thirty-six concepts have native Blender 5.2.2 scenes, GLB exterior geometry, studio/front renders, dimension-reference SVGs and self-contained eleven-file development ZIPs. The model dimensions and part groups are verified against `source/workshop-assets.json`, which hashes all 252 deliverable assets. Preserve these assets together. Blender procedures, archive generation, the design reference and verification limits are documented in `workshop/README.md`.
 
 Every BOM component cost, labor, packaging, QA, scrap, tooling, margin, freight and retail value is an engineering planning allowance. No supplier quotations, approved formulas, detailed production CAD, validated intellectual-property clearance or certified performance are implied. Duty defaults blank and landed cost stays uncalculated until a rate is entered. The base pack uses Sage; configured brief/CSV exports capture changed color/cost settings. Camera/explode arrangements are exterior review tools, not assembly instructions. Keep these status boundaries and unresolved validation gates visible.
 
@@ -20,9 +20,9 @@ Country / market filtering includes all 20 recorded countries, with a visible Ch
 
 Direct links such as `?view=retailers&country=China#world-workspace` open the requested workspace and market. Original catalog search and signal-view links remain supported. Regression checks cover full-catalog inclusion, China filtering, offer-specific evidence, product-before-directory order, source images/links, deep links, retailer selection, reviews and comparison identity. All 29 automated tests pass. The browser preview remains subject to the app's security-policy verification limitation described below; automated component checks are not visual browser QA.
 
-## Homecare Atlas interface and audio
+## Homecare interface and audio
 
-The public identity is now **Homecare Atlas**, reflecting the user's whole-home care scope. Preserve the existing GitHub Pages address and catalog IDs. The recorded catalog still focuses on cleaning, laundry and household tools; broader homecare coverage is developing. Do not imply that the new lifestyle art is a verified retailer product photo or that storage, organization and maintenance assortments are already comprehensive.
+The public identity is now **Homecare**, reflecting the user's whole-home care scope. Preserve catalog IDs and saved records. The user requested a nonpersonal Homecare address as well as the visible Homecare brand. Confirm the replacement domain or account name before changing deployment addresses; keep the existing address live during migration. The recorded catalog still focuses on cleaning, laundry and household tools; broader homecare coverage is developing. Do not imply that the new lifestyle art is a verified retailer product photo or that storage, organization and maintenance assortments are already comprehensive.
 
 The three primary routes are Opportunities, Retailers and All products. The catalog and older coverage reports are under a collapsible library; direct `?q=` and `?view=` links open it. Six concept briefs show initially, with a control to reveal the remaining six. Category filtering, comparison, sources and browser-local saved records remain available.
 

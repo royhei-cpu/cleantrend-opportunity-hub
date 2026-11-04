@@ -1,4 +1,4 @@
-"""Homecare Atlas A0 exterior design studies. Run in Blender 5.2+.
+"""Homecare A0 exterior design studies. Run in Blender 5.2+.
 
 blender -b --python blender_workshop.py -- --data workshop-data.json --out output
 Native units: metres. Source dimensions: millimetres. Not production CAD.

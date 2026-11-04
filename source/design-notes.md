@@ -1,4 +1,4 @@
-# Homecare Atlas visual system
+# Homecare visual system
 
 The user's scope is homecare as a whole, and the interface must be simple, organized and easy to navigate. The recorded catalog remains focused on cleaning, laundry and household tools; the visual redesign does not expand verified assortment coverage.
 
@@ -23,7 +23,7 @@ Both assets were generated with the built-in image tool, then converted to JPEG 
 
 ### Hero prompt
 
-Use case: photorealistic-natural. Standalone production hero photograph for Homecare Atlas, an attractive calm HOMECARE research website. Wide landscape 16:9 editorial photograph, premium realistic warm daylight. Woven pale laundry basket with oatmeal linen throw at back left, two folded sage towels in front, light wood divided home organizer at right with small unbranded natural hand brush and folded textile, an empty shallow ivory ceramic tray in front, small amber soap pump subtly in background, leafy branch in a stoneware vase at back right. These are illustrative everyday homecare objects, no particular retailer products. Warm ivory plaster wall #f7f5ef and travertine tabletop, soft dappled leaf shadows, calm home setting. Frame the objects around center/right with a small breathing space on left; everything harmonious and uncluttered, basket and home organization as main subjects, not cleaning-bottle advertising. No text, no labels, no brand names, no watermarks, no UI, no montage, no border.
+Use case: photorealistic-natural. Standalone production hero photograph for Homecare, an attractive calm HOMECARE research website. Wide landscape 16:9 editorial photograph, premium realistic warm daylight. Woven pale laundry basket with oatmeal linen throw at back left, two folded sage towels in front, light wood divided home organizer at right with small unbranded natural hand brush and folded textile, an empty shallow ivory ceramic tray in front, small amber soap pump subtly in background, leafy branch in a stoneware vase at back right. These are illustrative everyday homecare objects, no particular retailer products. Warm ivory plaster wall #f7f5ef and travertine tabletop, soft dappled leaf shadows, calm home setting. Frame the objects around center/right with a small breathing space on left; everything harmonious and uncluttered, basket and home organization as main subjects, not cleaning-bottle advertising. No text, no labels, no brand names, no watermarks, no UI, no montage, no border.
 
 ### Concept illustration prompt
 

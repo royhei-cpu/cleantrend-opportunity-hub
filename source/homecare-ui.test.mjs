@@ -77,7 +77,9 @@ test('The Homecare interface has three direct routes, progressive disclosure and
  const click=async label=>{const button=screen.root.findAllByType('button').find(b=>text(b)===label);assert.ok(button,label);await act(async()=>button.props.onClick());};
  try {
   await act(async()=>{screen=create(React.createElement(App));});
-  assert.ok(text(screen.toJSON()).includes('Homecare Atlas'));
+  assert.equal(text(screen.root.findByProps({className:'brand'}).findByType('strong')),'Homecare');
+  assert.equal(screen.root.findByProps({className:'brand'}).props['aria-label'],'Homecare home');
+  assert.equal(text(screen.root.findByProps({className:'brand-mark'})),'H');
   assert.equal(screen.root.findByProps({className:'catalog-library'}).props.open,false);
   assert.equal(screen.root.findByProps({className:'world-nav'}).findAllByType('button').length,3);
   assert.equal(screen.root.findAllByProps({className:'world-opportunity'}).length,6);

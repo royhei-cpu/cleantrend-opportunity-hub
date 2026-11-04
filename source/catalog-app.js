@@ -1116,16 +1116,16 @@ function ew() {
           (0, r.jsxs)("a", {
             className: "brand",
             href: "#top",
-            "aria-label": "Homecare Atlas home",
+            "aria-label": "Homecare home",
             children: [
               (0, r.jsx)("span", {
                 className: "brand-mark",
                 "aria-hidden": "true",
-                children: "HA",
+                children: "H",
               }),
               (0, r.jsxs)("span", {
                 children: [
-                  (0, r.jsx)("strong", { children: "Homecare Atlas" }),
+                  (0, r.jsx)("strong", { children: "Homecare" }),
                   (0, r.jsx)("small", { children: "Global retail intelligence" }),
                 ],
               }),
