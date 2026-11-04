@@ -1,0 +1,20 @@
+{
+  "id": "stackable-storage",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    600.0,
+    400.0,
+    180.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-16-01",
+    "HA-16-02",
+    "HA-16-03",
+    "HA-16-04",
+    "HA-16-05",
+    "HA-16-06"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

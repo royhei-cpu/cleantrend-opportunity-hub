@@ -1,0 +1,19 @@
+{
+  "id": "dusting-sleeve",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    110.0,
+    65.0,
+    430.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-24-01",
+    "HA-24-02",
+    "HA-24-03",
+    "HA-24-04",
+    "HA-24-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

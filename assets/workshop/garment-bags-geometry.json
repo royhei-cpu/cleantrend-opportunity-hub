@@ -1,0 +1,20 @@
+{
+  "id": "garment-bags",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    420.0,
+    550.0,
+    8.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-15-01",
+    "HA-15-02",
+    "HA-15-03",
+    "HA-15-04",
+    "HA-15-05",
+    "HA-15-06"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

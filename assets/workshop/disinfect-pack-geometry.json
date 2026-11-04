@@ -1,0 +1,18 @@
+{
+  "id": "disinfect-pack",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    230.0,
+    130.0,
+    260.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-28-01",
+    "HA-28-02",
+    "HA-28-04",
+    "HA-28-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

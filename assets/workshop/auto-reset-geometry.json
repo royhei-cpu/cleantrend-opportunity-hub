@@ -1,0 +1,19 @@
+{
+  "id": "auto-reset",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    250.0,
+    160.0,
+    200.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-33-01",
+    "HA-33-02",
+    "HA-33-04",
+    "HA-33-05",
+    "HA-33-06"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

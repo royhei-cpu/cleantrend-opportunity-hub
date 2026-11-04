@@ -1,7 +1,7 @@
 {
   "reviewedAt": "2026-11-04",
-  "scope": "White Label Workshop manufacturer comparison references only; not a full catalog, live assortment or Target absence refresh.",
-  "method": "Manufacturer page extracts reviewed with web search/open; original source currencies and selections retained. No checkout, stock or physical measurement.",
+  "scope": "White Label Workshop: the original 27 home-care catalog subcategories. Brand comparisons only; not a live assortment or Target-absence refresh.",
+  "method": "Manufacturer product, model-support, category and indexed data-sheet extracts reviewed. Access limitations are stated for each reference. One Drillbrush reference comes from the existing manufacturer-linked catalog and was not live-rereviewed. Original currencies and pack selections retained. No checkout or physical measurement.",
   "references": [
     {
       "id": "jj-system",
@@ -200,12 +200,718 @@
       "reviewedAt": "2026-11-04",
       "access": "Manufacturer page reviewed",
       "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-tota",
+      "brand": "Joseph Joseph",
+      "name": "Tota Twin 90L laundry separation basket, Black",
+      "url": "https://us.josephjoseph.com/products/tota-90l-laundry-separation-basket-black",
+      "facts": [
+        "Two 45 L compartments with removable cotton tote bags and handles.",
+        "Flat-packed assembly and fabric exterior are existing features."
+      ],
+      "price": 115,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "560 × 395 × 710 mm, W × D × H",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "brabantia-bo",
+      "brand": "Brabantia",
+      "name": "Bo Laundry Bin Hi, 2 × 45 L",
+      "url": "https://www.brabantia.com/int_en/laundry-ironing/laundry/laundry-bins-bags/bo-laundry-bins/bo-laundry-bin-hi-2-x-45-litre/",
+      "facts": [
+        "The reviewed manufacturer range includes a raised 2 × 45 L laundry bin.",
+        "Two-stream sorting is already offered; measure handling and footprint with an exact purchased SKU."
+      ],
+      "price": null,
+      "currency": "EUR",
+      "market": "Europe",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer model-range page reviewed; finish-specific SKU and price unresolved",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "brabantia-hangon",
+      "brand": "Brabantia",
+      "name": "HangOn drying rack, 25 metres, White",
+      "url": "https://www.brabantia.com/uk/hangon-drying-rack-25-metres-white/",
+      "facts": [
+        "25 m drying length, adjustable wings and eight hanger hooks.",
+        "A folding steel rack is already offered."
+      ],
+      "price": 70,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "leifheit-pegasus",
+      "brand": "Leifheit",
+      "name": "Pegasus Family 18m / Pegasus 180 Solid Classic, 81514",
+      "url": "https://www.leifheit.com/en-en/standing-dryers/16412/standing-dryer-pegasus-180-solid-classic/81514",
+      "facts": [
+        "18 m drying length with folding wings and a flat-folding frame.",
+        "Manufacturer lists 87 × 157 × 66 cm assembled dimensions."
+      ],
+      "price": null,
+      "currency": "EUR",
+      "market": "Germany / Europe",
+      "dimensions": "1,570 × 660 × 870 mm, W × D × H",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "brabantia-bags",
+      "brand": "Brabantia",
+      "name": "Wash bag set, 3 pieces in 2 sizes, 149221",
+      "url": "https://sales.brabantia.com/Articles/149221.pdf",
+      "facts": [
+        "Manufacturer-indexed data sheet identifies three wash bags in two sizes.",
+        "Exact dimensions and materials require the full data sheet before like-for-like testing."
+      ],
+      "price": null,
+      "currency": "EUR",
+      "market": "Europe",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer indexed data-sheet result; full PDF timed out",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "guppyfriend-bag",
+      "brand": "GUPPYFRIEND",
+      "name": "Washing Bag",
+      "url": "https://guppyfriend.us/products/guppyfriend-washing-bag",
+      "facts": [
+        "A zippered 50 × 74 cm washing bag is offered.",
+        "Its specialist filtration claims cannot be transferred to an ordinary garment-protection bag."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "500 × 740 mm, flat bag",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "sterilite-1496",
+      "brand": "Sterilite",
+      "name": "32 Qt Latching Box, 1496",
+      "url": "https://www.sterilite.com/product/32-qt-latching-box/",
+      "facts": [
+        "Clear base and latching lid; manufacturer describes stackability.",
+        "32 Qt and 66 Qt versions share a lid, so family compatibility already exists."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "603.25 × 406.4 × 174.63 mm exterior; converted from 23¾ × 16 × 6⅞ in",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "iris-weatherpro",
+      "brand": "IRIS USA",
+      "name": "WeatherPro 19 Qt gasket storage box",
+      "url": "https://www.irisusainc.com/collections/sale/products/storage-container-weatherpro-19-qt-gasket-box?variant=37927626997925",
+      "facts": [
+        "Gasketed, latching storage in a 19 Qt format.",
+        "Pack sizes and colors vary; no unverified per-box price is inferred."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "oxo-divider",
+      "brand": "OXO",
+      "name": "Expandable Drawer Dividers, 2-pack",
+      "url": "https://www.oxo.com/expandable-drawer-dividers-2-pack.html",
+      "facts": [
+        "No-tool divider installation with padded ends.",
+        "Extends to 17 in; adjustability is already established."
+      ],
+      "price": 19.99,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Maximum extension 431.8 mm (17 in); USD 19.99 displayed promotional reference",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-drawer",
+      "brand": "Joseph Joseph",
+      "name": "DrawerStore expanding organiser, Gray",
+      "url": "https://us.josephjoseph.com/products/drawerstore-expanding-organiser-gray",
+      "facts": [
+        "Sliding expansion and a loose-item dish are existing features.",
+        "A compartmented tray is a different format from individual dividers; compare drawer tasks rather than unit count."
+      ],
+      "price": 34,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "290–480 × 380 × 53 mm, W × D × H",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-easystore",
+      "brand": "Joseph Joseph",
+      "name": "EasyStore bathroom caddy, Matt Black",
+      "url": "https://us.josephjoseph.com/products/easystore-bathroom-caddy-black",
+      "facts": [
+        "Multiple compartments and a non-slip base.",
+        "Manufacturer calls for hand washing."
+      ],
+      "price": 29,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "249 × 119 × 116 mm, W × D × H",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "umbra-glam",
+      "brand": "Umbra",
+      "name": "Glam cosmetic organizer, White-Grey",
+      "url": "https://www.umbra.com/products/glam-organizer",
+      "facts": [
+        "Open compartments and a removable insert support countertop organization.",
+        "Manufacturer warns against alcohol and acetone exposure on the plastic."
+      ],
+      "price": 27.5,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "10.5 × 6.75 × 5 in (manufacturer imperial dimensions)",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "oxo-pop",
+      "brand": "OXO",
+      "name": "POP Big Square Medium container, 4.4 Qt / 4.2 L",
+      "url": "https://www.oxo.com/pop-container-big-square-medium-4-4-qt-4-2-l.html",
+      "facts": [
+        "A push-button lid and stackable dry-food container are established features.",
+        "The product title/specification identify 4.4 Qt / 4.2 L; conflicting body-copy conversions were excluded."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "6.25 × 6.3 × 9.9 in; finish-specific price not established",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "rubbermaid-brilliance",
+      "brand": "Rubbermaid",
+      "name": "Brilliance Pantry container set, 2160557",
+      "url": "https://www.rubbermaid.com/food-storage/everyday-use-containers/brilliance/brilliance-pantry-food-storage-container-set-assorted-sizes/SAP_2160557.html",
+      "facts": [
+        "Reviewed set lists three 16-cup containers, lids and three scoops.",
+        "Clear bodies and latching lids are existing pantry features; pack contents differ from the proposed set."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "simplehuman-recycler",
+      "brand": "simplehuman",
+      "name": "58L step recycler, Latte",
+      "url": "https://www.simplehuman.com/products/step-recycler-58l?variant=67625729654915",
+      "facts": [
+        "58 L split into 34 L and 24 L sections.",
+        "Pedal lid and an integrated liner system are already offered."
+      ],
+      "price": 220,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "58 L total; USD 220 refers to the reviewed Latte variant",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "jj-totem",
+      "brand": "Joseph Joseph",
+      "name": "Totem Compact 40L waste & recycling bin, Stone",
+      "url": "https://us.josephjoseph.com/products/totem-compact-40l-waste-recycling-bins-stone",
+      "facts": [
+        "Two 20 L sections plus a removable 3 L food-waste caddy.",
+        "A compact multi-stream station already exists; measure floor area and emptying effort."
+      ],
+      "price": 240,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "40 L main compartments plus 3 L caddy",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "oxo-compost",
+      "brand": "OXO",
+      "name": "Easy-Clean Compost Bin, 1.75 gallon",
+      "url": "https://www.oxo.com/easy-clean-compost-bin-1-75.html?color=White",
+      "facts": [
+        "Stay-open lid, carry handle and smooth interior.",
+        "1.75 US gallon is approximately 6.62 L; exact finish-specific price was not established."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Nominal capacity 1.75 US gal",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "jj-stack",
+      "brand": "Joseph Joseph",
+      "name": "Stack 4 food-waste caddy, Grey",
+      "url": "https://www.josephjoseph.com/products/stack-4-food-waste-bin-grey",
+      "facts": [
+        "4 L caddy with ventilation and replaceable filter.",
+        "PP body and stainless carry handle are stated by the manufacturer."
+      ],
+      "price": 35,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "235 × 197 × 161 mm, W × D × H; 780 g listed mass",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "scrub-original",
+      "brand": "Scrub Daddy",
+      "name": "Scrub Daddy Original",
+      "url": "https://scrubdaddy.co.uk/product/scrub-daddy-original/",
+      "facts": [
+        "Proprietary FlexTexture changes firmness with water temperature.",
+        "A material-specific feature; the proposal does not claim equivalent chemistry."
+      ],
+      "price": 3.49,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "scotch-sponge",
+      "brand": "Scotch-Brite",
+      "name": "Non-Scratch Scrub Sponge, 10 × 6 cm",
+      "url": "https://www.3mindia.in/3M/en_IN/p/d/v101033037/",
+      "facts": [
+        "Manufacturer describes a nonwoven scrub layer with sponge backing.",
+        "Its non-scratch claim does not validate an untested proposed sponge."
+      ],
+      "price": null,
+      "currency": "INR",
+      "market": "India",
+      "dimensions": "100 × 60 mm listed size",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "oxo-duster",
+      "brand": "OXO",
+      "name": "Microfiber Hand Duster",
+      "url": "https://www.oxo.com/shop/cleaning-organization/home-office/brooms-dusters.html?page=1",
+      "facts": [
+        "Reviewed manufacturer range lists the hand duster and a separate refill.",
+        "Reusable/refillable dusting is already offered."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer category entry reviewed; exact item variant and price need confirmation",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "oxo-toilet",
+      "brand": "OXO",
+      "name": "Compact Toilet Brush & Canister",
+      "url": "https://www.oxo.com/compact-toilet-brush-canister.html",
+      "facts": [
+        "Canister opens when the brush is lifted and closes when stored.",
+        "A concealed toilet brush and ventilated storage format already exist."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "simplehuman-toilet",
+      "brand": "simplehuman",
+      "name": "Toilet Brush, White, BT1083",
+      "url": "https://www.simplehuman.com/products/toilet-brush",
+      "facts": [
+        "Magnetic collar connects cover and rod for carrying.",
+        "Crescent-shaped brush head; brand offers replacement brush parts separately."
+      ],
+      "price": 35,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "oxo-sweep",
+      "brand": "OXO",
+      "name": "Upright Sweep Set",
+      "url": "https://www.oxo.com/shop/cleaning-organization/home-office/brooms-dusters.html?page=1",
+      "facts": [
+        "Manufacturer range lists an upright sweep set.",
+        "Long-handled collection is an existing format."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer category entry reviewed; exact item specifications and price need confirmation",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "libman-lobby",
+      "brand": "Libman",
+      "name": "Open Dustpan with Lobby Broom, 919",
+      "url": "https://libmanpro.com/sites/default/files/2022-08/lobby%20pans.pdf",
+      "facts": [
+        "Manufacturer PDF depicts model 919 and related open/closed lobby-pan variants.",
+        "A paired standing broom and pan is an established format."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer model-range PDF reviewed; exact SKU dimensions and price unresolved",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "clorox-mist",
+      "brand": "Clorox",
+      "name": "Disinfecting Mist, Multi-Surface",
+      "url": "https://www.clorox.com/products/clorox-disinfecting-mist-multi-surface/",
+      "facts": [
+        "A labeled disinfecting-mist product with product-specific use directions.",
+        "The reviewed page specifies a wet contact time; do not transfer its registration, formulation or claims to a concept."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "lysol-spray",
+      "brand": "Lysol",
+      "name": "Disinfectant Spray, Crisp Linen",
+      "url": "https://www.lysol.com/products/disinfectant-spray/",
+      "facts": [
+        "An established disinfectant spray range with surface-specific directions.",
+        "Claims depend on the exact registered product and label, not packaging resemblance."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "bissell-aeroslim",
+      "brand": "BISSELL",
+      "name": "AeroSlim Hand Vacuum, 29869",
+      "url": "https://support.bissell.com/app/products/detail/p/175490",
+      "facts": [
+        "Manufacturer support identifies model 29869 and its assembly/use guidance.",
+        "A compact hand-vacuum format is established; current runtime, price and availability were not verified."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer model-support page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "bd-dustbuster",
+      "brand": "BLACK+DECKER",
+      "name": "dustbuster HLVA315J62",
+      "url": "https://support.blackanddecker.com/hc/en-us/articles/360012614857-What-are-the-decibel-level-ratings-for-our-current-line-of-Dustbuster-vacuum-cleaners",
+      "facts": [
+        "Manufacturer support lists handheld vacuum model HLVA315J62.",
+        "Do not infer a current retail price, suction rating or like-for-like performance from a support listing."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer model-support table reviewed; retail SKU and current availability unresolved",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "drillbrush-heads",
+      "brand": "Drillbrush",
+      "name": "Edge Brush 3-piece kit, E-S-WGR-QC-DB",
+      "url": "https://drillbrush.com/products/edge-brush-3-piece-kit-soft-medium-stiff-bristles-home-marine-pool-pet-and-outdoor-cleaning-e-s-wgr-qc-db",
+      "facts": [
+        "Existing catalog records a three-piece brush-attachment kit in soft, medium and stiff bristles.",
+        "Drill is a separate power source; verify chuck, speed and surface instructions before comparison."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Exact dimensions not established in this review",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Existing manufacturer-linked catalog record; live page not rereviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "bkf-soft",
+      "brand": "Bar Keepers Friend",
+      "name": "Soft Cleanser",
+      "url": "https://barkeepersfriend.com/products/soft-cleanser/",
+      "facts": [
+        "Ready-to-use liquid cleanser and a squeeze application format.",
+        "Manufacturer specifies surface limits, prompt rinsing and a spot test; no formula equivalence is assumed."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "febreze-free",
+      "brand": "Febreze",
+      "name": "FABRIC Refresher, Free Nature Unscented, 27 oz",
+      "url": "https://smartlabel.pg.com/00037000858379",
+      "facts": [
+        "P&G SmartLabel identifies this named fabric-refresher variant and ingredient disclosures.",
+        "A fabric spray is not a passive moisture absorber; compare task-specific use rather than package price."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Brand-owner SmartLabel record reviewed; current availability unresolved",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "ah-odor",
+      "brand": "Arm & Hammer",
+      "name": "Moisture Absorber and Odor Eliminators",
+      "url": "https://www.armandhammer.com/en/other-products/licensed-products/home-care/arm-and-hammer-moisture-absorber-and-odor-eliminators",
+      "facts": [
+        "Manufacturer lists a moisture-absorber / odor-eliminator range.",
+        "The reviewed range entry does not establish exact capacity or performance for a proposed cartridge."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer range entry reviewed; exact SKU and price unresolved",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "meguiars-interior",
+      "brand": "Meguiar’s",
+      "name": "Quik Interior Detailer Cleaner, G13616",
+      "url": "https://www.meguiars.co.za/product/quik-interior-detailer-cleaner/",
+      "facts": [
+        "Manufacturer describes a mist-and-wipe interior cleaner in a 473 mL format.",
+        "Its compatibility and protection claims do not validate the proposed kit."
+      ],
+      "price": null,
+      "currency": "ZAR",
+      "market": "South Africa",
+      "dimensions": "473 mL listed pack; regional price not used for value comparisons",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "drano-gel",
+      "brand": "Drano",
+      "name": "Max Gel Clog Remover",
+      "url": "https://www.scjp.com/en-us/products/drano-max-gel-clog-remover",
+      "facts": [
+        "Manufacturer identifies the Max Gel chemical drain-care product.",
+        "A chemical clog remover and a mechanical hair-capture tool are different task formats; no performance equivalence."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "marigold-kitchen",
+      "brand": "Marigold",
+      "name": "Extra-Life Kitchen Gloves, S, 175435",
+      "url": "https://www.marigold.co.uk/extra-life-kitchen-gloves-small",
+      "facts": [
+        "Natural-rubber latex gloves with triple-dipped construction and textured grip.",
+        "Latex content is explicitly disclosed; it is not suitable for every user."
+      ],
+      "price": 3.25,
+      "currency": "GBP",
+      "market": "United Kingdom",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Displayed reference price; shipping, tax, location and promotions may differ. No checkout or stock confirmation."
+    },
+    {
+      "id": "vileda-nitrile",
+      "brand": "Vileda",
+      "name": "Multi-Sensitive Nitrile 40 gloves",
+      "url": "https://www.vileda.com/multi-sensitive-nitrile-rubber-gloves",
+      "facts": [
+        "Manufacturer identifies a latex-free nitrile household glove.",
+        "Material choice and sensitivity positioning already exist; proposed resistance needs its own testing."
+      ],
+      "price": null,
+      "currency": "EUR",
+      "market": "Europe",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "libman-deck",
+      "brand": "Libman",
+      "name": "Floor Scrub, head only, 507",
+      "url": "https://www.libmanpro.com/products/floor-scrub-head-only",
+      "facts": [
+        "Manufacturer identifies a heavy-duty flat-surface scrub head.",
+        "Replaceable brush heads are already established."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "Not established in reviewed source",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer product page reviewed",
+      "priceNote": "Price not established for the exact reviewed variant."
+    },
+    {
+      "id": "rubbermaid-deck",
+      "brand": "Rubbermaid Commercial",
+      "name": "10 in Bi-Level Floor Scrub, polypropylene fill",
+      "url": "https://www.rubbermaidcommercial.com/cleaning/brushes/",
+      "facts": [
+        "Manufacturer range lists a bi-level brush with straight and angled bristles.",
+        "Flat-surface and edge scrubbing are already addressed."
+      ],
+      "price": null,
+      "currency": "USD",
+      "market": "United States",
+      "dimensions": "10 in nominal brush size",
+      "catalogId": null,
+      "reviewedAt": "2026-11-04",
+      "access": "Manufacturer brush-range entry reviewed; exact SKU and price unresolved",
+      "priceNote": "Price not established for the exact reviewed variant."
     }
   ],
   "failedChecks": [
     {
       "url": "https://www.clrbrands.com/products/clr-household/clr-calcium-lime-and-rust-remover/",
       "result": "403 on full page; manufacturer search snippet only. No current label, formula, price or surface-compatibility check established."
+    },
+    {
+      "url": "https://sales.brabantia.com/Articles/149221.pdf",
+      "result": "Full PDF timed out; manufacturer indexed result only. Set count established; dimensions, materials and price unresolved."
     }
   ],
   "notPerformed": [

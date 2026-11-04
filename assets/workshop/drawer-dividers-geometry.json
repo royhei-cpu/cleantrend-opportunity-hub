@@ -1,0 +1,19 @@
+{
+  "id": "drawer-dividers",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    450.0,
+    90.0,
+    70.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-17-01",
+    "HA-17-02",
+    "HA-17-03",
+    "HA-17-04",
+    "HA-17-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

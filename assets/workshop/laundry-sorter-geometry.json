@@ -1,0 +1,20 @@
+{
+  "id": "laundry-sorter",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    520.0,
+    350.0,
+    650.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-13-01",
+    "HA-13-02",
+    "HA-13-03",
+    "HA-13-04",
+    "HA-13-05",
+    "HA-13-06"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

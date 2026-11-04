@@ -112,8 +112,8 @@ function GlobalRetailers({ catalog, onOpen, onCompare, selected, imagePath }) {
 
 export function GlobalOpportunityHub({ catalog, onOpen, onCompare, selected, view, setView, onBrowseCatalog, imagePath }) {
   const [category,setCategory]=useState('All opportunities');const [concepts,setConcepts]=useState([]);const [message,setMessage]=useState('');const [full,setFull]=useState(false);const [briefLimit,setBriefLimit]=useState(6);
-  const [workshopConcept,setWorkshopConcept]=useState('compact');
-  useEffect(()=>{const id=new URLSearchParams(window.location.search).get('concept');if(research.opportunities.some(p=>p.id===id))setWorkshopConcept(id);},[]);
+  const [workshopConcept,setWorkshopConcept]=useState('laundry-sorter');
+  useEffect(()=>{const id=new URLSearchParams(window.location.search).get('concept');if(id&&/^[a-z0-9-]{1,60}$/.test(id))setWorkshopConcept(id);},[]);
   const summary=useMemo(()=>coverageSummary(catalog),[catalog]);
   const categories=[...new Set(research.opportunities.map(o=>o.category))];
   const briefs=research.opportunities.filter(o=>category==='All opportunities'||o.category===category);

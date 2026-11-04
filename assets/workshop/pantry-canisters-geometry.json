@@ -1,0 +1,19 @@
+{
+  "id": "pantry-canisters",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    360.0,
+    130.0,
+    260.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-19-01",
+    "HA-19-02",
+    "HA-19-03",
+    "HA-19-04",
+    "HA-19-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

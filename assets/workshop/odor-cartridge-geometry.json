@@ -1,0 +1,18 @@
+{
+  "id": "odor-cartridge",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    140.0,
+    100.0,
+    120.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-32-01",
+    "HA-32-02",
+    "HA-32-03",
+    "HA-32-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

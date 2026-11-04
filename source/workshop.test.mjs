@@ -12,13 +12,18 @@ import {createHash} from 'node:crypto';
 import {prepareModel} from './workshop-viewer.js';
 import {workshopLibrary as library,defaultScenario,costScenario,bomCSV,configuredBriefHTML,benchmarkPrice,envelopeText} from './workshop-logic.js';
 import research from './global-research.json' with {type:'json'};
+import catalog from './catalog.json' with {type:'json'};
 import assetManifest from './workshop-assets.json' with {type:'json'};
 const dir=path.dirname(fileURLToPath(import.meta.url)),assets=path.join(dir,'../assets/workshop');
 
 test('Every opportunity has a distinct, explicitly proposed engineering pack with real manufacturer benchmarks',()=>{
- assert.equal(library.concepts.length,12);assert.equal(library.benchmarks.length,11);
- assert.deepEqual(new Set(library.concepts.map(p=>p.id)),new Set(research.opportunities.map(p=>p.id)));
- assert.equal(new Set(library.concepts.map(p=>p.code)).size,12);
+ assert.equal(library.concepts.length,36);assert.equal(library.benchmarks.length,50);
+ for(const p of research.opportunities)assert.ok(library.concepts.some(c=>c.id===p.id));
+ assert.deepEqual(new Set(library.categories),new Set(catalog.map(p=>p.category)));
+ assert.equal(library.categories.length,27);
+ assert.deepEqual(new Set(library.concepts.map(p=>p.category)),new Set(library.categories));
+ assert.equal(library.defaultConcept,'laundry-sorter');
+ assert.equal(new Set(library.concepts.map(p=>p.code)).size,36);
  for(const p of library.concepts){
   assert.equal(p.revision,'A0');assert.match(p.status,/not production released/);assert.match(p.quoteStatus,/No supplier/);
   assert.ok(p.envelope.every(v=>Number.isFinite(v)&&v>0));assert.ok(p.parts.length>=5);assert.ok(p.specs.length>=5);assert.equal(p.validation.length,6);
@@ -67,8 +72,8 @@ test('All Blender models parse as real GLB geometry with the stated primary dime
  }
 });
 
-test('All 12 download packs and their source assets match the checked artifact hashes',async()=>{
- assert.equal(assetManifest.concepts.length,12);assert.equal(assetManifest.files.length,84);
+test('All 36 download packs and their source assets match the checked artifact hashes',async()=>{
+ assert.equal(assetManifest.concepts.length,36);assert.equal(assetManifest.files.length,252);
  for(const p of library.concepts){const a=assetManifest.concepts.find(a=>a.id===p.id);assert.deepEqual(a.primaryDimensionsMm,p.envelope);assert.equal(a.archiveEntries,11);}
  for(const file of assetManifest.files){
   const content=await readFile(path.join(dir,'..',file.path));assert.equal(content.length,file.bytes,file.path);assert.equal(createHash('sha256').update(content).digest('hex'),file.sha256,file.path);
@@ -86,14 +91,14 @@ function browser(search=''){
  globalThis.document={hidden:false,getElementById:()=>({scrollIntoView(){}}),addEventListener(){},removeEventListener(){}};
 }
 
-test('White Label Workshop deep links expose real packs, national brands, all 12 concepts and editable pricing',async()=>{
+test('White Label Workshop deep links expose real packs, national brands, all 36 concepts and editable pricing',async()=>{
  browser('?view=workshop&concept=refill');let screen;
  const click=async label=>{const button=screen.root.findAllByType('button').find(b=>text(b)===label);assert.ok(button,label);await act(async()=>button.props.onClick());};
  try{
   await act(async()=>{screen=create(React.createElement(App));});
   const workshop=screen.root.findByProps({'aria-label':'White Label Workshop'});assert.ok(workshop);
   assert.equal(screen.root.findByProps({'aria-label':'Workshop product concept'}).props.value,'refill');
-  assert.equal(screen.root.findByProps({'aria-label':'Workshop product concept'}).findAllByType('option').length,12);
+  assert.equal(screen.root.findByProps({'aria-label':'Workshop product concept'}).findAllByType('option').length,36);
   assert.match(text(screen.root.findByProps({'aria-label':'Recommended national-brand benchmarks'})),/Blueland/);
   const pack=screen.root.findAllByType('a').find(a=>text(a)==='Download development pack ↓');assert.match(pack.props.href,/refill-development-pack\.zip$/);
   await click('Specifications');assert.match(text(screen.root.findByProps({'aria-label':'Proposed technical specifications'})),/500 mL/);
@@ -118,4 +123,39 @@ test('Each opportunity opens its matching design and costing workspace',async()=
   assert.equal(screen.root.findByProps({'aria-label':'Workshop product concept'}).props.value,'easy-grip');
   assert.equal(screen.root.findByProps({id:'world-tab-workshop'}).props['aria-selected'],true);
  }finally{if(screen)await act(async()=>screen.unmount());delete globalThis.window;delete globalThis.document;}
+});
+
+
+test('Home-care-only scope opens on laundry and each original subcategory has a usable product and pack',async()=>{
+ browser('?view=workshop');let screen;
+ try{
+  await act(async()=>{screen=create(React.createElement(App));});
+  assert.equal(screen.root.findByProps({'aria-label':'Workshop product concept'}).props.value,'laundry-sorter');
+  const categories=screen.root.findByProps({'aria-label':'Workshop home-care subcategory'}).findAllByType('option');
+  assert.equal(categories.length,28);
+  assert.ok(!categories.some(c=>/apparel|toys|electronics|bedding|Home textiles/i.test(text(c))));
+  for(const category of library.categories){
+   await act(async()=>screen.root.findByProps({'aria-label':'Workshop home-care subcategory'}).props.onChange({target:{value:category}}));
+   const selector=screen.root.findByProps({'aria-label':'Workshop product concept'}),p=library.concepts.find(p=>p.id===selector.props.value);
+   assert.equal(p.category,category);assert.equal(selector.findAllByType('option').length,library.concepts.filter(p=>p.category===category).length);
+   const pack=screen.root.findAllByType('a').find(a=>text(a)==='Download development pack ↓');assert.ok(pack.props.href.endsWith(p.id+'-development-pack.zip'));
+   assert.ok(text(screen.root.findByProps({'aria-label':'Recommended national-brand benchmarks'})).includes(library.benchmarks.find(b=>b.id===p.benchmarks[0]).brand));
+  }
+  await act(async()=>screen.root.findByProps({'aria-label':'Workshop home-care subcategory'}).props.onChange({target:{value:'Laundry Care'}}));
+  await act(async()=>screen.root.findByProps({'aria-label':'Workshop product concept'}).props.onChange({target:{value:'garment-bags'}}));
+  const specs=screen.root.findAllByType('button').find(b=>text(b)==='Specifications');await act(async()=>specs.props.onClick());
+  const content=text(screen.root.findByProps({'aria-label':'Proposed technical specifications'}));assert.match(content,/Mesh 70 g/);assert.ok(!content.includes('Nominal molded wall'));
+ }finally{if(screen)await act(async()=>screen.unmount());delete globalThis.window;delete globalThis.document;}
+});
+
+test('New home-care deep links resolve to their own specs and model, with a safe fallback for unknown IDs',async()=>{
+ for(const id of ['odor-cartridge','care-gloves','unknown-concept']){
+  browser('?view=workshop&concept='+id);let screen;
+  try{
+   await act(async()=>{screen=create(React.createElement(App));});
+   const expected=id==='unknown-concept'?'laundry-sorter':id;
+   assert.equal(screen.root.findByProps({'aria-label':'Workshop product concept'}).props.value,expected);
+   assert.ok(screen.root.findAllByType('a').some(a=>a.props.href?.endsWith(expected+'.blend')));
+  }finally{if(screen)await act(async()=>screen.unmount());delete globalThis.window;delete globalThis.document;}
+ }
 });

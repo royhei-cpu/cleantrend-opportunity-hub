@@ -1,0 +1,19 @@
+{
+  "id": "glass-finish",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    220.0,
+    140.0,
+    150.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-27-01",
+    "HA-27-02",
+    "HA-27-03",
+    "HA-27-04",
+    "HA-27-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "care-gloves",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    230.0,
+    320.0,
+    12.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-35-01",
+    "HA-35-02",
+    "HA-35-03",
+    "HA-35-04",
+    "HA-35-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

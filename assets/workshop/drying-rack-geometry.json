@@ -1,0 +1,20 @@
+{
+  "id": "drying-rack",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    1100.0,
+    550.0,
+    1000.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-14-01",
+    "HA-14-02",
+    "HA-14-03",
+    "HA-14-04",
+    "HA-14-05",
+    "HA-14-06"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

@@ -92,14 +92,21 @@ definitions = [
   parts=[P('01','Long brush body','PP + TPE','Molding',1,32,.22,.38),P('02','Angled brush body','PP + TPE','Molding',1,26,.20,.35),P('03','Soft bristle fields','Nylon','Tufting',2,5,.08,.15),P('04','Washable cover','Microfiber','Cut / sew',1,8,.12,.22),P('05','Divided holder','PP','Injection molding',1,75,.30,.50),P('06','Model-use instruction card','Paperboard','Print / die cut',1,10,.05,.10)],special='Unplug and follow the appliance manual. Concepts do not authorize cleaning electrical components or inaccessible mechanisms.'),
 ]
 
+expansion=json.loads((ROOT/'workshop/homecare-expansion.json').read_text())
+benchmarks.extend(expansion['benchmarks'])
+definitions.extend(expansion['concepts'])
+
 briefs={p['id']:p for p in json.loads((ROOT/'source/global-research.json').read_text())['opportunities']}
 for n,p in enumerate(definitions,1):
-    b=briefs[p['id']]
-    p.update(code=f'HA-{n:02d}',revision='A0',category=b['category'],title=b['title'],shopper=b['shopper'],why=b['why'],evidenceIds=b['evidenceIds'],pilot=b['pilot'],successMetric=b['successMetric'],killCriterion=b['killCriterion'],targetBaseline=b['targetBaseline'],materialNote=common_material_note,status='Concept proposal · not production released',bomUnit='USD per finished kit; engineering allowances',quoteStatus='No supplier quotations obtained',planningVolume=50000,moq=10000,scrapPercent=3,supplierMargin=15,retailMargin=45,dutyPercent=None)
+    b=briefs.get(p['id'],p)
+    p.update(code=f'HA-{n:02d}',revision='A0',category=b['category'],title=b['title'],shopper=b['shopper'],why=b['why'],evidenceIds=b['evidenceIds'],pilot=b['pilot'],successMetric=b['successMetric'],killCriterion=b['killCriterion'],targetBaseline=b['targetBaseline'],materialNote=p.get('materialNote',common_material_note),status='Concept proposal · not production released',bomUnit='USD per finished kit; engineering allowances',quoteStatus='No supplier quotations obtained',planningVolume=50000,moq=10000,scrapPercent=3,supplierMargin=15,retailMargin=45,dutyPercent=None)
+    p['department']=p['category']
+    p.setdefault('wallSpec','2.2 ± 0.3 mm molded-wall screening target; part-specific drawing and shrinkage review required')
+    p.setdefault('finishDescription','Matte molded body, contrasting grip, satin metal where used.')
     p['specs']=[{'label':a,'value':v} for a,v in p.pop('dimensions')]
     p['mass']=max(p['mass'],math.ceil(sum(line['qty']*line['massG'] for line in p['parts'])/10)*10)
     for line in p['parts']:line['code']=p['code']+'-'+line['code']
-    p['package']={'type':'Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending','dimensionsMm':[p['envelope'][0]+30,p['envelope'][1]+30,(770 if p['kind'] in ['mop','scrubber','squeegee'] else p['envelope'][2]+35)],'finish':'Water-based print target; material and claims review needed'}
+    p['package']=p.get('package') or {'type':'Printed paperboard carton with molded-pulp or folded-board separators; final transit design pending','dimensionsMm':[p['envelope'][0]+30,p['envelope'][1]+30,(770 if p['kind'] in ['mop','scrubber','squeegee'] else p['envelope'][2]+35)],'finish':'Water-based print target; material and claims review needed'}
     p['validation']=[
       {'gate':'Benchmark purchase','test':'Purchase exact comparator SKUs; record market, pack, receipt price, product dimensions and test conditions.','status':'Not started'},
       {'gate':'Engineering','test':'Resolve tolerance stacks, interfaces, material grades, draft, joining, sealing and assembly with a supplier; release drawings after prototype review.','status':'Not started'},
@@ -109,6 +116,8 @@ for n,p in enumerate(definitions,1):
       {'gate':'Target review','test':p['targetBaseline'],'status':'Needs current Target check'},
     ]
 
-payload={'revision':'A0','authoredAt':DATE,'currency':'USD','stage':'Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance.','palette':[{'id':'sage','name':'Sage','hex':'#93a183','delta':0},{'id':'chalk','name':'Chalk','hex':'#e7e3d3','delta':0},{'id':'clay','name':'Clay','hex':'#b67e64','delta':.03},{'id':'ink','name':'Ink','hex':'#24463d','delta':.05}], 'colorNote':'Screen HEX values are visualization references, not Pantone/RAL matches or approved production standards. Color surcharge is a kit-level planning allowance. Approve physical resin and textile samples, gloss and batch color variation.','benchmarks':benchmarks,'concepts':definitions}
+categories=sorted({p['category'] for p in json.loads((ROOT/'source/catalog.json').read_text())})
+assert set(categories)=={p['category'] for p in definitions}, 'Workshop must cover the existing catalog taxonomy'
+payload={'categories':categories,'scope':expansion['scope'],'defaultConcept':'laundry-sorter','revision':'A0','authoredAt':DATE,'currency':'USD','stage':'Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance.','palette':[{'id':'sage','name':'Sage','hex':'#93a183','delta':0},{'id':'chalk','name':'Chalk','hex':'#e7e3d3','delta':0},{'id':'clay','name':'Clay','hex':'#b67e64','delta':.03},{'id':'ink','name':'Ink','hex':'#24463d','delta':.05}], 'colorNote':'Screen HEX values are visualization references, not Pantone/RAL matches or approved production standards. Color surcharge is a kit-level planning allowance. Approve physical resin and textile samples, gloss and batch color variation.','benchmarks':benchmarks,'concepts':definitions}
 (ROOT/'source/workshop-data.json').write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n')
 print(f'Wrote {len(definitions)} proposals and {len(benchmarks)} manufacturer benchmarks')

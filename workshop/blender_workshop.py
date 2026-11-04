@@ -50,6 +50,24 @@ def cyl(name,radius,length,loc,mat,code,parent,axis='Z'):
     bevel=o.modifiers.new('Edge break','BEVEL');bevel.width=min(radius*.1,.8)*MM;bevel.segments=3
     return tag(o,name,mat,code,parent)
 
+def rod(name,a,b,radius,mat,code,parent):
+    a,b=Vector(a),Vector(b);delta=b-a
+    o=cyl(name,radius,delta.length,(a+b)/2,mat,code,parent)
+    o.rotation_euler=delta.to_track_quat('Z','Y').to_euler()
+    return o
+
+def ring(name,outer,inner,height,loc,mat,code,parent):
+    # Open cylindrical wall with both sides; intentionally no solid top cap.
+    x,y,z=loc;verts=[];faces=[];n=48
+    for r,h in [(outer,0),(outer,height),(inner,0),(inner,height)]:
+        verts.extend([((x+r*math.cos(i*2*math.pi/n))*MM,(y+r*math.sin(i*2*math.pi/n))*MM,(z+h)*MM) for i in range(n)])
+    for i in range(n):
+        j=(i+1)%n
+        faces.extend([(i,j,n+j,n+i),(2*n+j,2*n+i,3*n+i,3*n+j),(n+i,n+j,3*n+j,3*n+i),(j,i,2*n+i,2*n+j)])
+    mesh=bpy.data.meshes.new(name);mesh.from_pydata(verts,[],faces);mesh.update()
+    o=bpy.data.objects.new(name,mesh);bpy.context.collection.objects.link(o)
+    return tag(o,name,mat,code,parent)
+
 def tray(name,w,d,h,loc,mat,code,parent):
     x,y,z=loc;t=2.2
     box(name+' floor',(w,d,t),(x,y,z+t/2),mat,code,parent)
@@ -189,6 +207,203 @@ for proposal in data['concepts']:
         brush('Angled precision brush',(27,5,12),h-27,body,code(2),primary,23)
         box('Washable detail sleeve',(30,20,40),(30,0,80),textile,code(4),primary,4)
         box('Dividing fin',(3,d-7,45),(0,0,28),ivory,code(5),primary,1)
+    elif kind=='hamper':
+        body.node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.85
+        box('Frame base',(w,d,20),(0,0,10),ivory,code(1),primary,8)
+        for x in [-w/2+12,w/2-12]:
+            for y in [-d/2+12,d/2-12]:box('Frame upright',(18,18,h-25),(x,y,(h-25)/2+15),ivory,code(1),primary,6)
+        for x in [-w*.24,w*.24]:
+            tray('Woven removable bag',w*.44,d-32,h-75,(x,0,25),body,code(2),primary)
+            for y in [-d/2+26,d/2-26]:
+                for dx in [-60,60]:box('Webbing handle riser',(22,4,55),(x+dx,y,h-52),rubber,code(3),primary,1)
+                box('Webbing carry bridge',(140,4,20),(x,y,h-23),rubber,code(3),primary,1)
+            box('Task label',(45,3,25),(x,-d/2+12,h*.62),ivory,code(6),primary,2)
+        box('Lift-off split lid',(w,d,14),(0,0,h-7),ivory,code(4),primary,8)
+        box('Lid split line',(3,d-15,2),(0,0,h+.2),dark,code(4),primary,.5)
+        for x in [-w/2+15,w/2-15]:
+            for y in [-d/2+15,d/2-15]:box('Floor pad',(22,22,8),(x,y,4),rubber,code(5),primary,3)
+    elif kind=='dryer':
+        for y in [-d/2+25,d/2-25]:
+            rod('Cross-frame A',(-w*.35,y,14),(w/2-12,y,h-12),8,body,code(1),primary)
+            rod('Cross-frame B',(w*.35,y,14),(-w/2+12,y,h-12),8,body,code(1),primary)
+            cyl('Pivot',18,20,(0,y,14+(h-26)*(w*.35)/(w*.35+w/2-12)),ivory,code(4),primary,axis='Y')
+            box('Pivot guard',(45,24,45),(0,y,14+(h-26)*(w*.35)/(w*.35+w/2-12)),ivory,code(6),primary,8)
+            for x in [-w*.35,w*.35]:box('Soft floor foot',(45,35,22),(x,y,11),rubber,code(5),primary,7)
+        for x in [-w/2+12,w/2-12]:rod('Top end frame',(x,-d/2+8,h-12),(x,d/2-8,h-12),8,body,code(1),primary)
+        for i in range(12):
+            y=-d/2+25+i*(d-50)/11
+            rod('Drying rail '+str(i),(-w/2+12,y,h-8),(w/2-12,y,h-8),2,metal,code(2),primary)
+            for x in [-w/2+12,w/2-12]:box('Replaceable clip',(16,12,15),(x,y,h-9),ivory,code(3),primary,3)
+    elif kind=='washbags':
+        body.node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.95
+        for i,(bw,bd,loc,z) in enumerate([(w,d,(0,0),1),(320,400,(-35,-40),3.5),(220,280,(-60,-95),6)]):
+            x,y=loc;box('Mesh bag '+str(i),(bw,bd,1.5),(x,y,z),body,code(i+1),primary,.3)
+            for bx in [x-bw/2+3,x+bw/2-3]:box('Bound long seam',(6,bd,2),(bx,y,z),ivory,code(5),primary,.4)
+            for by in [y-bd/2+3,y+bd/2-3]:box('Bound short seam',(bw,6,2),(x,by,z),ivory,code(5),primary,.4)
+            box('Covered zipper',(bw-10,5,3),(x,y-bd/2+9,z+1),dark,code(4),primary,.6)
+            box('Zipper tuck',(25,30,3),(x+bw/2-20,y-bd/2+18,z+1.5),ivory,code(4),primary,.6)
+            box('Size tab',(25,30,2),(x-bw/2+35,y-bd/2+22,z+2),rubber,code(6),primary,.4)
+    elif kind=='storage':
+        tray('Storage shell',w,d,h-10,(0,0,0),body,code(1),primary)
+        box('Recessed lid',(w,d,8),(0,0,h-4),ivory,code(2),primary,6)
+        box('Stacking rim',(w-24,d-24,4),(0,0,h+1),ivory,code(2),primary,4)
+        for x in [-w/2,w/2]:
+            box('Replaceable end latch',(12,100,45),(x,0,h-30),rubber,code(3),primary,5)
+            cyl('Latch hinge',4,80,(x,0,h-13),metal,code(4),primary,axis='Y')
+        box('Label pocket',(100,2,60),(0,-d/2-1,h*.52),ivory,code(5),primary,2)
+        box('Identification card',(88,1,48),(0,-d/2-2,h*.52),textile,code(6),primary,1)
+    elif kind=='dividers':
+        for i,y in enumerate([-32,0,32]):
+            box('Outer divider rail',(w*.66,8,h),(w*.14,y,h/2),body,code(1),primary,4)
+            box('Sliding inner rail',(w*.60,6,h-12),(-w*.17,y,h/2),ivory,code(2),primary,3)
+            for x in [-w/2+7,w/2-7]:box('Soft end pad',(12,21,h),(x,y,h/2),rubber,code(3),primary,3)
+            box('Release',(25,15,10),(15,y,h-5),rubber,code(4),primary,3)
+            for x in [-80,-60,-40,-20,0]:box('Length scale',(1,1,12),(x,y-5,h-17),dark,code(5),primary,.2)
+    elif kind=='vanity':
+        tray('Open organizer base',w,d,35,(0,0,0),body,code(1),primary)
+        for x in [-w*.31,-w*.015]:tray('Removable tall cup',75,90,h-12,(x,15,8),ivory,code(2),primary)
+        tray('Dry item tray',76,d-14,55,(w*.32,0,8),ivory,code(3),primary)
+        box('Removable drip insert',(w-18,d-18,4),(0,0,8),body,code(4),primary,2)
+        for x in [-w/2+18,w/2-18]:
+            for y in [-d/2+18,d/2-18]:cyl('Base pad',6,5,(x,y,2.5),rubber,code(5),primary)
+        box('Task marking',(35,2,16),(w*.3,-d/2-1,22),ivory,code(6),primary,1)
+    elif kind=='pantry':
+        for i,(x,ch) in enumerate([(-120,155),(0,205),(120,260)]):
+            tray('Container body '+str(i),110,120,ch-14,(x,0,0),body,code(1),primary)
+            box('Removable seal',(108,118,3),(x,0,ch-13),rubber,code(3),primary,3)
+            box('Lid shell',(114,124,10),(x,0,ch-7),ivory,code(2),primary,5)
+            for y in [-64,64]:box('Lift latch',(35,6,26),(x,y,ch-20),dark,code(4),primary,3)
+            box('Front label',(70,2,45),(x,-61,ch*.5),ivory,code(5),primary,2)
+    elif kind=='recycler':
+        tray('Station shell',w,d,h-75,(0,0,10),body,code(1),primary)
+        for x in [-w*.235,w*.235]:
+            tray('Lift-out bucket',w*.43,d-30,h-105,(x,0,24),ivory,code(2),primary)
+            box('Independent lid',(w*.475,d-12,13),(x,0,h-40),body,code(3),primary,7)
+            rod('Carry bail left',(x-70,-40,h-85),(x-70,-40,h-18),2,metal,code(4),primary)
+            rod('Carry bail right',(x+70,-40,h-85),(x+70,-40,h-18),2,metal,code(4),primary)
+            rod('Carry bail grip',(x-70,-40,h-18),(x+70,-40,h-18),2,metal,code(4),primary)
+            box('Local stream label',(90,2,50),(x,-d/2-1,h*.62),ivory,code(6),primary,2)
+        for x in [-w/2+20,w/2-20]:
+            for y in [-d/2+20,d/2-20]:box('Soft foot',(30,30,14),(x,y,7),rubber,code(5),primary,4)
+    elif kind=='compost':
+        tray('Outer caddy',w,d,h-50,(0,0,0),body,code(1),primary)
+        tray('Lift-out bucket',w-12,d-12,h-56,(0,0,5),ivory,code(2),primary)
+        box('Lift-off lid',(w,d,9),(0,0,h-46),body,code(3),primary,6)
+        for x in [-w/2+12,w/2-12]:rod('Wire bail upright',(x,0,h*.55),(x,0,h-3),2,metal,code(4),primary)
+        rod('Wire bail grip',(-w/2+12,0,h-3),(w/2-12,0,h-3),2,metal,code(4),primary)
+        box('Removable vent cartridge',(55,30,5),(0,35,h-39),dark,code(5),primary,3)
+        for x in [-w/2+18,w/2-18]:
+            for y in [-d/2+18,d/2-18]:cyl('Base foot',6,5,(x,y,2),rubber,code(6),primary)
+    elif kind=='floorbottle':
+        tray('Presentation tray',w,d,24,(0,0,0),body,code(4 if ident=='floor-dose' else 5),primary)
+        bottle('Task bottle',(-w*.23,0,5),85,65,h-5,code(1),primary,cap=ident!='disinfect-pack',closurecode=code(2),labelcode=code(4 if ident=='disinfect-pack' else 6))
+        if ident!='disinfect-pack':
+            ring('Measured dose cup',26,23,38,(w*.25,-25,26),ivory,code(2),primary)
+            box('Cloth or applicator',(85,50,16),(w*.23,25,34),textile,code(5 if ident=='floor-dose' else 4),primary,4)
+    elif kind=='spongedock':
+        tray('Drip tray',w,d,12,(0,0,0),ivory,code(4),primary)
+        for x in [-w/2+12,w/2-12]:box('Elevated dock support',(10,d-10,35),(x,0,27),body,code(3),primary,3)
+        for y in [-25,25]:
+            box('Absorbent sponge',(100,36,25),(0,y,47),textile,code(1),primary,8)
+            box('Scrub face',(100,36,4),(0,y,61),body,code(2),primary,3)
+        for x in [-w/2+14,w/2-14]:
+            for y in [-d/2+14,d/2-14]:cyl('Base pad',4,4,(x,y,2),rubber,code(5),primary)
+    elif kind=='duster':
+        cyl('Duster grip',15,145,(0,0,75),body,code(1),primary)
+        box('Flexible carrier',(25,10,h-140),(0,0,140+(h-140)/2),ivory,code(2),primary,4)
+        for z in range(170,int(h)-5,12):box('Microfiber sleeve ridge',(w-5,55,18),(0,0,z),textile,code(3),primary,8)
+        box('Pull tab',(32,4,30),(35,-24,180),body,code(4),primary,2)
+        box('Retaining clip',(22,15,16),(0,0,156),rubber,code(5),primary,3)
+    elif kind=='toilet':
+        cyl('Holder floor',w/2,7,(0,0,3.5),body,code(4),primary)
+        ring('Ventilated holder',w/2,w/2-3,h*.42,(0,0,6),body,code(4),primary)
+        ring('Drip cup',w*.42,w*.42-3,30,(0,0,10),ivory,code(5),primary)
+        cyl('Brush core',29,55,(0,0,115),ivory,code(2),primary)
+        for a in range(0,360,30):
+            for z in [95,110,125,140]:
+                ar=math.radians(a);rod('Brush bristle',(29*math.cos(ar),29*math.sin(ar),z),(40*math.cos(ar),40*math.sin(ar),z),1,bristle,code(3),primary)
+        cyl('Handle stem',8,h-145,(0,0,145+(h-145)/2),ivory,code(1),primary)
+        cyl('Broad grip',14,105,(0,0,h-52.5),body,code(1),primary)
+        cyl('Carry collar',w*.37,8,(0,0,h*.45),ivory,code(1),primary)
+        cyl('Service joint',9,15,(0,0,150),metal,code(6),primary)
+    elif kind=='sweep':
+        tray('Standing dustpan',w,d,95,(0,0,0),body,code(4),primary)
+        box('Replaceable sealing lip',(w-6,12,6),(0,-d/2+3,5),rubber,code(5),primary,2)
+        cyl('Pan shaft',9,h-50,(-85,70,h/2+25),metal,code(3),primary)
+        cyl('Broom shaft',9,h-80,(60,25,h/2+40),metal,code(3),primary)
+        box('Broom block',(210,35,35),(60,25,115),ivory,code(1),primary,6)
+        for x in range(-35,160,12):box('Broom bristle tuft',(7,28,65),(x,25,67),bristle,code(2),primary,1)
+        box('Storage clip',(170,28,24),(-5,50,h*.7),ivory,code(6),primary,4)
+        for x in [-85,60]:cyl('Handle grip',13,90,(x,70 if x<0 else 25,h-45),body,code(3),primary)
+    elif kind=='glasskit':
+        tray('Dock with drip tray',w,d,30,(0,0,0),body,code(5),primary)
+        box('Finishing blade carrier',(200,18,22),(0,20,h-15),ivory,code(1),primary,4)
+        box('Replaceable blade',(200,4,18),(0,8,h-15),rubber,code(2),primary,1)
+        box('Tool grip',(30,22,95),(0,20,70),body,code(1),primary,7)
+        box('Wash pad carrier',(180,24,20),(0,-35,85),ivory,code(3),primary,4)
+        box('Wash pad',(180,18,18),(0,-48,85),textile,code(4),primary,5)
+        box('Folded finishing cloth',(95,65,15),(48,20,37),textile,code(4),primary,4)
+    elif kind=='vacuum':
+        box('Motor housing',(190,86,90),(35,0,70),body,code(1),primary,30)
+        box('Dust cup',(115,80,78),(-112,0,62),ivory,code(5),primary,20)
+        box('Intake nozzle',(55,42,28),(-175,0,38),body,code(7),primary,9)
+        box('Service grip',(140,45,30),(55,0,120),body,code(1),primary,12)
+        box('Grip stand',(28,45,55),(110,0,92),rubber,code(7),primary,8)
+        box('Battery service cover',(85,62,5),(65,0,23),ivory,code(3),primary,5)
+        box('Dust release',(25,25,6),(-38,0,111),rubber,code(7),primary,3)
+        for x in [2,13,24,35,46,57]:box('Motor vent',(4,2,24),(x,-44,72),dark,code(1),primary,1)
+        box('Control switch',(23,20,5),(60,0,137),rubber,code(4),primary,4)
+        # Internal modules are represented by exterior service covers, not functional CAD.
+        box('Filter access code',(30,2,15),(-95,-42,62),body,code(6),primary,2)
+    elif kind=='drillkit':
+        tray('Vented storage tray',w,d,24,(0,0,0),body,code(5),primary)
+        for i,(x,r) in enumerate([(-80,25),(0,36),(77,47)]):
+            cyl('Brush block',r,16,(x,15,45),ivory,code(1),primary)
+            cyl('Hex shank exterior proxy',3.175,55,(x,15,82),metal,code(3),primary)
+            for a in range(0,360,30):
+                ar=math.radians(a);cyl('Brush tuft',2.5,25,(x+(r-5)*math.cos(ar),15+(r-5)*math.sin(ar),27),bristle,code(2),primary)
+        box('Unpowered manual holder',(150,28,24),(0,-50,38),rubber,code(4),primary,8)
+    elif kind=='odorpod':
+        box('Passive pod body',(w,d,h-10),(0,0,(h-10)/2),body,code(1),primary,15)
+        box('Removable cap',(w,d,8),(0,0,h-4),ivory,code(2),primary,7)
+        for x in range(-50,51,12):box('Vent slot',(4,2,65),(x,-d/2-1,h*.5),dark,code(1),primary,2)
+        box('Cartridge access panel',(w-20,3,h-30),(0,d/2+1,h/2),ivory,code(3),primary,6)
+        cyl('Date dial',16,4,(0,0,h+1),body,code(5),primary)
+        for a in range(0,360,60):
+            ar=math.radians(a);box('Date index',(2,4,1),(13*math.cos(ar),13*math.sin(ar),h+3),dark,code(5),primary,.2)
+    elif kind=='autokit':
+        tray('Separated auto-care tray',w,d,35,(0,0,0),body,code(1),primary)
+        bottle('250 mL interior-care proposal',(-75,0,6),65,48,h-6,code(2),primary,labelcode=code(6))
+        brush('Manual detail brush',(40,25,15),160,body,code(4),primary,24)
+        for i in range(2):box('Folded task cloth',(95,65,12),(50,-35,43+i*15),textile if i==0 else ivory,code(5),primary,4)
+    elif kind=='drainkit':
+        tray('Service tray',w,d,22,(0,0,0),body,code(5),primary)
+        cyl('Silicone drain cover',49,6,(-45,0,30),rubber,code(1),primary)
+        ring('Capture basket',25,22,35,(-45,0,28),ivory,code(2),primary)
+        box('Accessible lift tab',(25,20,8),(-12,-25,39),body,code(3),primary,4)
+        box('Non-sharp hair hook',(14,105,7),(72,0,35),ivory,code(4),primary,3)
+        box('Hook return',(30,10,7),(63,47,35),ivory,code(4),primary,3)
+    elif kind=='gloves':
+        body.node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.7
+        for side in [-1,1]:
+            x=side*80
+            box('Glove palm',(86,120,8),(x,10,5),body,code(1 if side<0 else 2),primary,24)
+            box('Glove long cuff',(95,105,7),(x,-93,4.5),body,code(1 if side<0 else 2),primary,18)
+            for i,length in enumerate([90,106,100,78]):box('Glove finger',(17,length,8),(x-30+i*20,65+length/2,4.8),body,code(1 if side<0 else 2),primary,8)
+            thumb=box('Glove thumb',(24,75,8),(x-side*46,20,4.7),body,code(1 if side<0 else 2),primary,10);thumb.rotation_euler.z=side*.5
+            box('Folded cuff lining',(85,14,3),(x,-140,9),ivory,code(3),primary,2)
+            box('Task / hanging tab',(20,18,4),(x+25,-145,10),rubber,code(4),primary,3)
+            for i in range(5):box('Raised grip rib',(55,2,1.5),(x,-10+i*10,10),rubber,code(1 if side<0 else 2),primary,.4)
+            box('Size and care marking',(16,8,1),(x,-110,9),ivory,code(5),primary,.3)
+    elif kind=='deckbrush':
+        box('Brush carrier',(w,d,28),(0,0,70),body,code(1),primary,8)
+        box('Replaceable face',(w-8,d-8,12),(0,0,50),ivory,code(2),primary,4)
+        for x in range(-110,111,15):
+            for y in [-30,-15,0,15,30]:cyl('Outdoor brush tuft',3.8,43,(x,y,25),bristle,code(2),primary)
+        cyl('Head service joint',18,45,(0,0,100),ivory,code(5),primary)
+        cyl('Handle shaft',11,h-160,(0,0,120+(h-160)/2),metal,code(3),primary)
+        cyl('Grip',16,130,(0,0,h-65),body,code(4),primary)
+    else:raise ValueError('No model defined for '+kind)
     objects=[o for o in bpy.data.objects if o.type=='MESH']
     main=[o for o in objects if o.parent==primary]
     lo,hi=bounds(main);extent=hi-lo

@@ -1,0 +1,20 @@
+{
+  "id": "service-vac",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    360.0,
+    100.0,
+    130.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-29-01",
+    "HA-29-03",
+    "HA-29-04",
+    "HA-29-05",
+    "HA-29-06",
+    "HA-29-07"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

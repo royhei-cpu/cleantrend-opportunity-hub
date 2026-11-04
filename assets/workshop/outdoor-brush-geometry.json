@@ -1,0 +1,19 @@
+{
+  "id": "outdoor-brush",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    260.0,
+    100.0,
+    1200.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-36-01",
+    "HA-36-02",
+    "HA-36-03",
+    "HA-36-04",
+    "HA-36-05"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}

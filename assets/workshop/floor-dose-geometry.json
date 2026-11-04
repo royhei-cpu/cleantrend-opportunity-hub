@@ -1,0 +1,19 @@
+{
+  "id": "floor-dose",
+  "revision": "A0",
+  "blenderVersion": "5.2.2 LTS",
+  "primaryDimensionsMm": [
+    230.0,
+    130.0,
+    260.0
+  ],
+  "envelopeDefinition": "Primary assembled product, not the separate accessories or studio floor",
+  "partCodes": [
+    "HA-22-01",
+    "HA-22-02",
+    "HA-22-04",
+    "HA-22-05",
+    "HA-22-06"
+  ],
+  "status": "Industrial-design proposals. Dimensioned exterior mockups, not manufacturing drawings. No validated Target gaps, supplier quotes, approved formulas or certified performance."
+}
